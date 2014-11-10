@@ -3,7 +3,7 @@ glowing-robot
 
 CIS55 Group Project
 
-==Members
+Members
 * Jonathan Disher
 * Rob Garcelon
 * Maria Card
