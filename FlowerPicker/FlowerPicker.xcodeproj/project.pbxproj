@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CB5FA531A1450D000F6C0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA521A1450D000F6C0FD /* main.m */; };
+		7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA551A1450D000F6C0FD /* AppDelegate.m */; };
+		7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */; };
+		7CB5FA5C1A1450D000F6C0FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA5B1A1450D000F6C0FD /* ViewController.m */; };
+		7CB5FA5F1A1450D000F6C0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */; };
+		7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA601A1450D000F6C0FD /* Images.xcassets */; };
+		7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */; };
+		7CB5FA701A1450D100F6C0FD /* FlowerPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CB5FA6A1A1450D100F6C0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CB5FA451A1450D000F6C0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CB5FA4C1A1450D000F6C0FD;
+			remoteInfo = FlowerPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CB5FA4D1A1450D000F6C0FD /* FlowerPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB5FA511A1450D000F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB5FA521A1450D000F6C0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CB5FA541A1450D000F6C0FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CB5FA551A1450D000F6C0FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CB5FA581A1450D000F6C0FD /* FlowerPicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlowerPicker.xcdatamodel; sourceTree = "<group>"; };
+		7CB5FA5A1A1450D000F6C0FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CB5FA5B1A1450D000F6C0FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CB5FA5E1A1450D000F6C0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CB5FA601A1450D000F6C0FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7CB5FA631A1450D000F6C0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7CB5FA691A1450D100F6C0FD /* FlowerPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB5FA6E1A1450D100F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerPickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CB5FA4A1A1450D000F6C0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB5FA661A1450D100F6C0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CB5FA441A1450D000F6C0FD = {
+			isa = PBXGroup;
+			children = (
+				7CB5FA4F1A1450D000F6C0FD /* FlowerPicker */,
+				7CB5FA6C1A1450D100F6C0FD /* FlowerPickerTests */,
+				7CB5FA4E1A1450D000F6C0FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CB5FA4E1A1450D000F6C0FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5FA4D1A1450D000F6C0FD /* FlowerPicker.app */,
+				7CB5FA691A1450D100F6C0FD /* FlowerPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CB5FA4F1A1450D000F6C0FD /* FlowerPicker */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5FA541A1450D000F6C0FD /* AppDelegate.h */,
+				7CB5FA551A1450D000F6C0FD /* AppDelegate.m */,
+				7CB5FA5A1A1450D000F6C0FD /* ViewController.h */,
+				7CB5FA5B1A1450D000F6C0FD /* ViewController.m */,
+				7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */,
+				7CB5FA601A1450D000F6C0FD /* Images.xcassets */,
+				7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */,
+				7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */,
+				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
+			);
+			path = FlowerPicker;
+			sourceTree = "<group>";
+		};
+		7CB5FA501A1450D000F6C0FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5FA511A1450D000F6C0FD /* Info.plist */,
+				7CB5FA521A1450D000F6C0FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CB5FA6C1A1450D100F6C0FD /* FlowerPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */,
+				7CB5FA6D1A1450D100F6C0FD /* Supporting Files */,
+			);
+			path = FlowerPickerTests;
+			sourceTree = "<group>";
+		};
+		7CB5FA6D1A1450D100F6C0FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5FA6E1A1450D100F6C0FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CB5FA4C1A1450D000F6C0FD /* FlowerPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB5FA731A1450D100F6C0FD /* Build configuration list for PBXNativeTarget "FlowerPicker" */;
+			buildPhases = (
+				7CB5FA491A1450D000F6C0FD /* Sources */,
+				7CB5FA4A1A1450D000F6C0FD /* Frameworks */,
+				7CB5FA4B1A1450D000F6C0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowerPicker;
+			productName = FlowerPicker;
+			productReference = 7CB5FA4D1A1450D000F6C0FD /* FlowerPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CB5FA681A1450D100F6C0FD /* FlowerPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB5FA761A1450D100F6C0FD /* Build configuration list for PBXNativeTarget "FlowerPickerTests" */;
+			buildPhases = (
+				7CB5FA651A1450D100F6C0FD /* Sources */,
+				7CB5FA661A1450D100F6C0FD /* Frameworks */,
+				7CB5FA671A1450D100F6C0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CB5FA6B1A1450D100F6C0FD /* PBXTargetDependency */,
+			);
+			name = FlowerPickerTests;
+			productName = FlowerPickerTests;
+			productReference = 7CB5FA691A1450D100F6C0FD /* FlowerPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CB5FA451A1450D000F6C0FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = CDGL;
+				TargetAttributes = {
+					7CB5FA4C1A1450D000F6C0FD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7CB5FA681A1450D100F6C0FD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 7CB5FA4C1A1450D000F6C0FD;
+					};
+				};
+			};
+			buildConfigurationList = 7CB5FA481A1450D000F6C0FD /* Build configuration list for PBXProject "FlowerPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CB5FA441A1450D000F6C0FD;
+			productRefGroup = 7CB5FA4E1A1450D000F6C0FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CB5FA4C1A1450D000F6C0FD /* FlowerPicker */,
+				7CB5FA681A1450D100F6C0FD /* FlowerPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CB5FA4B1A1450D000F6C0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB5FA5F1A1450D000F6C0FD /* Main.storyboard in Resources */,
+				7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */,
+				7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB5FA671A1450D100F6C0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CB5FA491A1450D000F6C0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */,
+				7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */,
+				7CB5FA5C1A1450D000F6C0FD /* ViewController.m in Sources */,
+				7CB5FA531A1450D000F6C0FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB5FA651A1450D100F6C0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB5FA701A1450D100F6C0FD /* FlowerPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CB5FA6B1A1450D100F6C0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CB5FA4C1A1450D000F6C0FD /* FlowerPicker */;
+			targetProxy = 7CB5FA6A1A1450D100F6C0FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CB5FA5E1A1450D000F6C0FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CB5FA631A1450D000F6C0FD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CB5FA711A1450D100F6C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7CB5FA721A1450D100F6C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CB5FA741A1450D100F6C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FlowerPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CB5FA751A1450D100F6C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FlowerPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CB5FA771A1450D100F6C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlowerPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowerPicker.app/FlowerPicker";
+			};
+			name = Debug;
+		};
+		7CB5FA781A1450D100F6C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlowerPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowerPicker.app/FlowerPicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CB5FA481A1450D000F6C0FD /* Build configuration list for PBXProject "FlowerPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB5FA711A1450D100F6C0FD /* Debug */,
+				7CB5FA721A1450D100F6C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CB5FA731A1450D100F6C0FD /* Build configuration list for PBXNativeTarget "FlowerPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB5FA741A1450D100F6C0FD /* Debug */,
+				7CB5FA751A1450D100F6C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CB5FA761A1450D100F6C0FD /* Build configuration list for PBXNativeTarget "FlowerPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB5FA771A1450D100F6C0FD /* Debug */,
+				7CB5FA781A1450D100F6C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7CB5FA581A1450D000F6C0FD /* FlowerPicker.xcdatamodel */,
+			);
+			currentVersion = 7CB5FA581A1450D000F6C0FD /* FlowerPicker.xcdatamodel */;
+			path = FlowerPicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7CB5FA451A1450D000F6C0FD /* Project object */;
+}
