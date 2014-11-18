@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Red Rose</key>
+	<dict>
+		<key>displayName</key>
+		<string>Red Rose</string>
+		<key>type</key>
+		<string>rose</string>
+		<key>color</key>
+		<string>red</string>
+		<key>dozCost</key>
+		<integer>50</integer>
+		<key>boqCost</key>
+		<integer>200</integer>
+		<key>season</key>
+		<dict>
+			<key>spring</key>
+			<true/>
+			<key>summer</key>
+			<true/>
+			<key>fall</key>
+			<true/>
+			<key>winter</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

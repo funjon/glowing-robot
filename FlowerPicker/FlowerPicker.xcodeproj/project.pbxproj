@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C6560411A1AF6CB00EF6AAE /* flowerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C6560401A1AF6CB00EF6AAE /* flowerData.plist */; };
 		7CB5FA531A1450D000F6C0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA521A1450D000F6C0FD /* main.m */; };
 		7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA551A1450D000F6C0FD /* AppDelegate.m */; };
 		7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C6560401A1AF6CB00EF6AAE /* flowerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flowerData.plist; sourceTree = "<group>"; };
 		7CB5FA4D1A1450D000F6C0FD /* FlowerPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB5FA511A1450D000F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB5FA521A1450D000F6C0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				7CB5FA551A1450D000F6C0FD /* AppDelegate.m */,
 				7CB5FA5A1A1450D000F6C0FD /* ViewController.h */,
 				7CB5FA5B1A1450D000F6C0FD /* ViewController.m */,
+				7C6560401A1AF6CB00EF6AAE /* flowerData.plist */,
 				7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */,
 				7CB5FA601A1450D000F6C0FD /* Images.xcassets */,
 				7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */,
@@ -205,6 +208,7 @@
 				7CB5FA5F1A1450D000F6C0FD /* Main.storyboard in Resources */,
 				7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */,
 				7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */,
+				7C6560411A1AF6CB00EF6AAE /* flowerData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
