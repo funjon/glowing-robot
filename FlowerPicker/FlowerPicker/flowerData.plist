@@ -14,6 +14,8 @@
 		<integer>50</integer>
 		<key>boqCost</key>
 		<integer>200</integer>
+		<key>imageName</key>
+		<string>rose-red.jpg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
