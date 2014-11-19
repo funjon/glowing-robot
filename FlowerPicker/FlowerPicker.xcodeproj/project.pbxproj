@@ -16,6 +16,80 @@
 		7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA601A1450D000F6C0FD /* Images.xcassets */; };
 		7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */; };
 		7CB5FA701A1450D100F6C0FD /* FlowerPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */; };
+		C321FCAE1A1C5EF8006FF9FE /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C321FCAD1A1C5EF8006FF9FE /* Contents.json */; };
+		C321FCF91A1C64EA006FF9FE /* blueDelphinium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB01A1C64E9006FF9FE /* blueDelphinium.jpg */; };
+		C321FCFA1A1C64EA006FF9FE /* blueHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB11A1C64E9006FF9FE /* blueHydrangea.jpg */; };
+		C321FCFB1A1C64EA006FF9FE /* blueIris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB21A1C64E9006FF9FE /* blueIris.jpg */; };
+		C321FCFC1A1C64EA006FF9FE /* blueMum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB31A1C64E9006FF9FE /* blueMum.jpg */; };
+		C321FCFD1A1C64EA006FF9FE /* blueRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB41A1C64E9006FF9FE /* blueRose.jpg */; };
+		C321FCFE1A1C64EA006FF9FE /* brownCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB51A1C64E9006FF9FE /* brownCalla.jpg */; };
+		C321FCFF1A1C64EA006FF9FE /* brownDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB61A1C64E9006FF9FE /* brownDaisy.jpg */; };
+		C321FD001A1C64EA006FF9FE /* brownHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB71A1C64E9006FF9FE /* brownHydrangea.jpg */; };
+		C321FD011A1C64EA006FF9FE /* brownOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB81A1C64E9006FF9FE /* brownOrchids.jpg */; };
+		C321FD021A1C64EA006FF9FE /* brownRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCB91A1C64E9006FF9FE /* brownRose.jpg */; };
+		C321FD031A1C64EA006FF9FE /* brownSunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCBA1A1C64E9006FF9FE /* brownSunflower.jpg */; };
+		C321FD041A1C64EA006FF9FE /* greenAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCBB1A1C64E9006FF9FE /* greenAlstroemerias.jpg */; };
+		C321FD051A1C64EA006FF9FE /* greenCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCBC1A1C64E9006FF9FE /* greenCalla.jpg */; };
+		C321FD061A1C64EA006FF9FE /* greenHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCBD1A1C64E9006FF9FE /* greenHydrangea.jpg */; };
+		C321FD071A1C64EA006FF9FE /* greenLilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCBE1A1C64E9006FF9FE /* greenLilies.jpg */; };
+		C321FD081A1C64EA006FF9FE /* greenMum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCBF1A1C64E9006FF9FE /* greenMum.jpg */; };
+		C321FD091A1C64EA006FF9FE /* greenOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC01A1C64E9006FF9FE /* greenOrchids.jpg */; };
+		C321FD0A1A1C64EA006FF9FE /* greenRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC11A1C64E9006FF9FE /* greenRose.jpg */; };
+		C321FD0B1A1C64EA006FF9FE /* orangeAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC21A1C64E9006FF9FE /* orangeAlstroemerias.jpg */; };
+		C321FD0C1A1C64EA006FF9FE /* orangeCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC31A1C64E9006FF9FE /* orangeCalla.jpg */; };
+		C321FD0D1A1C64EA006FF9FE /* orangeDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC41A1C64E9006FF9FE /* orangeDaisy.jpg */; };
+		C321FD0E1A1C64EA006FF9FE /* orangeLilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC51A1C64E9006FF9FE /* orangeLilies.jpg */; };
+		C321FD0F1A1C64EA006FF9FE /* orangeRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC61A1C64E9006FF9FE /* orangeRose.jpg */; };
+		C321FD101A1C64EA006FF9FE /* orangeSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC71A1C64E9006FF9FE /* orangeSnapdragon.jpg */; };
+		C321FD111A1C64EA006FF9FE /* orangeSunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC81A1C64E9006FF9FE /* orangeSunflower.jpg */; };
+		C321FD121A1C64EA006FF9FE /* pinkAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCC91A1C64E9006FF9FE /* pinkAlstroemerias.jpg */; };
+		C321FD131A1C64EA006FF9FE /* pinkCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCCA1A1C64E9006FF9FE /* pinkCalla.jpg */; };
+		C321FD141A1C64EA006FF9FE /* pinkDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCCB1A1C64E9006FF9FE /* pinkDaisy.jpg */; };
+		C321FD151A1C64EA006FF9FE /* pinkHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCCC1A1C64E9006FF9FE /* pinkHydrangea.jpg */; };
+		C321FD161A1C64EA006FF9FE /* pinkLilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCCD1A1C64E9006FF9FE /* pinkLilies.jpg */; };
+		C321FD171A1C64EA006FF9FE /* pinkOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCCE1A1C64E9006FF9FE /* pinkOrchids.jpg */; };
+		C321FD181A1C64EA006FF9FE /* pinkRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCCF1A1C64E9006FF9FE /* pinkRose.jpg */; };
+		C321FD191A1C64EA006FF9FE /* pinkSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD01A1C64E9006FF9FE /* pinkSnapdragon.jpg */; };
+		C321FD1A1A1C64EA006FF9FE /* purpleAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD11A1C64E9006FF9FE /* purpleAlstroemerias.jpg */; };
+		C321FD1B1A1C64EA006FF9FE /* purpleCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD21A1C64E9006FF9FE /* purpleCalla.jpg */; };
+		C321FD1C1A1C64EA006FF9FE /* purpleDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD31A1C64E9006FF9FE /* purpleDaisy.jpg */; };
+		C321FD1D1A1C64EA006FF9FE /* purpleHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD41A1C64E9006FF9FE /* purpleHydrangea.jpg */; };
+		C321FD1E1A1C64EA006FF9FE /* purpleIris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD51A1C64E9006FF9FE /* purpleIris.jpg */; };
+		C321FD1F1A1C64EA006FF9FE /* purpleOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD61A1C64E9006FF9FE /* purpleOrchids.jpg */; };
+		C321FD201A1C64EA006FF9FE /* purpleRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD71A1C64E9006FF9FE /* purpleRose.jpg */; };
+		C321FD211A1C64EA006FF9FE /* purpleSnapdragon copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD81A1C64E9006FF9FE /* purpleSnapdragon copy.jpg */; };
+		C321FD221A1C64EA006FF9FE /* purpleSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCD91A1C64E9006FF9FE /* purpleSnapdragon.jpg */; };
+		C321FD231A1C64EA006FF9FE /* redAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCDA1A1C64E9006FF9FE /* redAlstroemerias.jpg */; };
+		C321FD241A1C64EA006FF9FE /* redCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCDB1A1C64E9006FF9FE /* redCalla.jpg */; };
+		C321FD251A1C64EA006FF9FE /* redDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCDC1A1C64E9006FF9FE /* redDaisy.jpg */; };
+		C321FD261A1C64EA006FF9FE /* redLilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCDD1A1C64E9006FF9FE /* redLilies.jpg */; };
+		C321FD271A1C64EA006FF9FE /* redOrchid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCDE1A1C64E9006FF9FE /* redOrchid.jpg */; };
+		C321FD281A1C64EA006FF9FE /* redRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCDF1A1C64E9006FF9FE /* redRose.jpg */; };
+		C321FD291A1C64EA006FF9FE /* redSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE01A1C64E9006FF9FE /* redSnapdragon.jpg */; };
+		C321FD2A1A1C64EA006FF9FE /* redSunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE11A1C64E9006FF9FE /* redSunflower.jpg */; };
+		C321FD2B1A1C64EA006FF9FE /* turquoiseDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE21A1C64E9006FF9FE /* turquoiseDaisy.jpg */; };
+		C321FD2C1A1C64EA006FF9FE /* turquoiseHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE31A1C64E9006FF9FE /* turquoiseHydrangea.jpg */; };
+		C321FD2D1A1C64EA006FF9FE /* turquoiseMum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE41A1C64E9006FF9FE /* turquoiseMum.jpg */; };
+		C321FD2E1A1C64EA006FF9FE /* turquoiseOrchid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE51A1C64E9006FF9FE /* turquoiseOrchid.jpg */; };
+		C321FD2F1A1C64EA006FF9FE /* turquoiseRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE61A1C64E9006FF9FE /* turquoiseRose.jpg */; };
+		C321FD301A1C64EA006FF9FE /* view diagram 1 (drawn).jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE71A1C64E9006FF9FE /* view diagram 1 (drawn).jpg */; };
+		C321FD311A1C64EA006FF9FE /* whiteAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE81A1C64E9006FF9FE /* whiteAlstroemerias.jpg */; };
+		C321FD321A1C64EA006FF9FE /* whiteCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCE91A1C64E9006FF9FE /* whiteCalla.jpg */; };
+		C321FD331A1C64EA006FF9FE /* whiteDaisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCEA1A1C64E9006FF9FE /* whiteDaisy.jpg */; };
+		C321FD341A1C64EA006FF9FE /* whiteDelphinium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCEB1A1C64E9006FF9FE /* whiteDelphinium.jpg */; };
+		C321FD351A1C64EA006FF9FE /* whiteHydrangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCEC1A1C64E9006FF9FE /* whiteHydrangea.jpg */; };
+		C321FD361A1C64EA006FF9FE /* whiteLilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCED1A1C64E9006FF9FE /* whiteLilies.jpg */; };
+		C321FD371A1C64EA006FF9FE /* whiteOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCEE1A1C64EA006FF9FE /* whiteOrchids.jpg */; };
+		C321FD381A1C64EA006FF9FE /* whiteRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCEF1A1C64EA006FF9FE /* whiteRose.jpg */; };
+		C321FD391A1C64EA006FF9FE /* whiteSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF01A1C64EA006FF9FE /* whiteSnapdragon.jpg */; };
+		C321FD3A1A1C64EA006FF9FE /* yellowAlstroemerias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF11A1C64EA006FF9FE /* yellowAlstroemerias.jpg */; };
+		C321FD3B1A1C64EA006FF9FE /* yellowCalla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF21A1C64EA006FF9FE /* yellowCalla.jpg */; };
+		C321FD3C1A1C64EA006FF9FE /* yellowLilies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF31A1C64EA006FF9FE /* yellowLilies.jpg */; };
+		C321FD3D1A1C64EA006FF9FE /* yellowMum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF41A1C64EA006FF9FE /* yellowMum.jpg */; };
+		C321FD3E1A1C64EA006FF9FE /* yellowOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF51A1C64EA006FF9FE /* yellowOrchids.jpg */; };
+		C321FD3F1A1C64EA006FF9FE /* yellowRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF61A1C64EA006FF9FE /* yellowRose.jpg */; };
+		C321FD401A1C64EA006FF9FE /* yellowSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF71A1C64EA006FF9FE /* yellowSnapdragon.jpg */; };
+		C321FD411A1C64EA006FF9FE /* yellowSunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C321FCF81A1C64EA006FF9FE /* yellowSunflower.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +118,80 @@
 		7CB5FA691A1450D100F6C0FD /* FlowerPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB5FA6E1A1450D100F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerPickerTests.m; sourceTree = "<group>"; };
+		C321FCAD1A1C5EF8006FF9FE /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C321FCB01A1C64E9006FF9FE /* blueDelphinium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueDelphinium.jpg; sourceTree = "<group>"; };
+		C321FCB11A1C64E9006FF9FE /* blueHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCB21A1C64E9006FF9FE /* blueIris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueIris.jpg; sourceTree = "<group>"; };
+		C321FCB31A1C64E9006FF9FE /* blueMum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueMum.jpg; sourceTree = "<group>"; };
+		C321FCB41A1C64E9006FF9FE /* blueRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueRose.jpg; sourceTree = "<group>"; };
+		C321FCB51A1C64E9006FF9FE /* brownCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brownCalla.jpg; sourceTree = "<group>"; };
+		C321FCB61A1C64E9006FF9FE /* brownDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brownDaisy.jpg; sourceTree = "<group>"; };
+		C321FCB71A1C64E9006FF9FE /* brownHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brownHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCB81A1C64E9006FF9FE /* brownOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brownOrchids.jpg; sourceTree = "<group>"; };
+		C321FCB91A1C64E9006FF9FE /* brownRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brownRose.jpg; sourceTree = "<group>"; };
+		C321FCBA1A1C64E9006FF9FE /* brownSunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brownSunflower.jpg; sourceTree = "<group>"; };
+		C321FCBB1A1C64E9006FF9FE /* greenAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCBC1A1C64E9006FF9FE /* greenCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenCalla.jpg; sourceTree = "<group>"; };
+		C321FCBD1A1C64E9006FF9FE /* greenHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCBE1A1C64E9006FF9FE /* greenLilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenLilies.jpg; sourceTree = "<group>"; };
+		C321FCBF1A1C64E9006FF9FE /* greenMum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenMum.jpg; sourceTree = "<group>"; };
+		C321FCC01A1C64E9006FF9FE /* greenOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenOrchids.jpg; sourceTree = "<group>"; };
+		C321FCC11A1C64E9006FF9FE /* greenRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenRose.jpg; sourceTree = "<group>"; };
+		C321FCC21A1C64E9006FF9FE /* orangeAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCC31A1C64E9006FF9FE /* orangeCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeCalla.jpg; sourceTree = "<group>"; };
+		C321FCC41A1C64E9006FF9FE /* orangeDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeDaisy.jpg; sourceTree = "<group>"; };
+		C321FCC51A1C64E9006FF9FE /* orangeLilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeLilies.jpg; sourceTree = "<group>"; };
+		C321FCC61A1C64E9006FF9FE /* orangeRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeRose.jpg; sourceTree = "<group>"; };
+		C321FCC71A1C64E9006FF9FE /* orangeSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeSnapdragon.jpg; sourceTree = "<group>"; };
+		C321FCC81A1C64E9006FF9FE /* orangeSunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orangeSunflower.jpg; sourceTree = "<group>"; };
+		C321FCC91A1C64E9006FF9FE /* pinkAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCCA1A1C64E9006FF9FE /* pinkCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkCalla.jpg; sourceTree = "<group>"; };
+		C321FCCB1A1C64E9006FF9FE /* pinkDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkDaisy.jpg; sourceTree = "<group>"; };
+		C321FCCC1A1C64E9006FF9FE /* pinkHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCCD1A1C64E9006FF9FE /* pinkLilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkLilies.jpg; sourceTree = "<group>"; };
+		C321FCCE1A1C64E9006FF9FE /* pinkOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkOrchids.jpg; sourceTree = "<group>"; };
+		C321FCCF1A1C64E9006FF9FE /* pinkRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkRose.jpg; sourceTree = "<group>"; };
+		C321FCD01A1C64E9006FF9FE /* pinkSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkSnapdragon.jpg; sourceTree = "<group>"; };
+		C321FCD11A1C64E9006FF9FE /* purpleAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCD21A1C64E9006FF9FE /* purpleCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleCalla.jpg; sourceTree = "<group>"; };
+		C321FCD31A1C64E9006FF9FE /* purpleDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleDaisy.jpg; sourceTree = "<group>"; };
+		C321FCD41A1C64E9006FF9FE /* purpleHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCD51A1C64E9006FF9FE /* purpleIris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleIris.jpg; sourceTree = "<group>"; };
+		C321FCD61A1C64E9006FF9FE /* purpleOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleOrchids.jpg; sourceTree = "<group>"; };
+		C321FCD71A1C64E9006FF9FE /* purpleRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleRose.jpg; sourceTree = "<group>"; };
+		C321FCD81A1C64E9006FF9FE /* purpleSnapdragon copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "purpleSnapdragon copy.jpg"; sourceTree = "<group>"; };
+		C321FCD91A1C64E9006FF9FE /* purpleSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleSnapdragon.jpg; sourceTree = "<group>"; };
+		C321FCDA1A1C64E9006FF9FE /* redAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCDB1A1C64E9006FF9FE /* redCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redCalla.jpg; sourceTree = "<group>"; };
+		C321FCDC1A1C64E9006FF9FE /* redDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redDaisy.jpg; sourceTree = "<group>"; };
+		C321FCDD1A1C64E9006FF9FE /* redLilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redLilies.jpg; sourceTree = "<group>"; };
+		C321FCDE1A1C64E9006FF9FE /* redOrchid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redOrchid.jpg; sourceTree = "<group>"; };
+		C321FCDF1A1C64E9006FF9FE /* redRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redRose.jpg; sourceTree = "<group>"; };
+		C321FCE01A1C64E9006FF9FE /* redSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redSnapdragon.jpg; sourceTree = "<group>"; };
+		C321FCE11A1C64E9006FF9FE /* redSunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redSunflower.jpg; sourceTree = "<group>"; };
+		C321FCE21A1C64E9006FF9FE /* turquoiseDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turquoiseDaisy.jpg; sourceTree = "<group>"; };
+		C321FCE31A1C64E9006FF9FE /* turquoiseHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turquoiseHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCE41A1C64E9006FF9FE /* turquoiseMum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turquoiseMum.jpg; sourceTree = "<group>"; };
+		C321FCE51A1C64E9006FF9FE /* turquoiseOrchid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turquoiseOrchid.jpg; sourceTree = "<group>"; };
+		C321FCE61A1C64E9006FF9FE /* turquoiseRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turquoiseRose.jpg; sourceTree = "<group>"; };
+		C321FCE71A1C64E9006FF9FE /* view diagram 1 (drawn).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "view diagram 1 (drawn).jpg"; sourceTree = "<group>"; };
+		C321FCE81A1C64E9006FF9FE /* whiteAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCE91A1C64E9006FF9FE /* whiteCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteCalla.jpg; sourceTree = "<group>"; };
+		C321FCEA1A1C64E9006FF9FE /* whiteDaisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteDaisy.jpg; sourceTree = "<group>"; };
+		C321FCEB1A1C64E9006FF9FE /* whiteDelphinium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteDelphinium.jpg; sourceTree = "<group>"; };
+		C321FCEC1A1C64E9006FF9FE /* whiteHydrangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteHydrangea.jpg; sourceTree = "<group>"; };
+		C321FCED1A1C64E9006FF9FE /* whiteLilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteLilies.jpg; sourceTree = "<group>"; };
+		C321FCEE1A1C64EA006FF9FE /* whiteOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteOrchids.jpg; sourceTree = "<group>"; };
+		C321FCEF1A1C64EA006FF9FE /* whiteRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteRose.jpg; sourceTree = "<group>"; };
+		C321FCF01A1C64EA006FF9FE /* whiteSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteSnapdragon.jpg; sourceTree = "<group>"; };
+		C321FCF11A1C64EA006FF9FE /* yellowAlstroemerias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowAlstroemerias.jpg; sourceTree = "<group>"; };
+		C321FCF21A1C64EA006FF9FE /* yellowCalla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowCalla.jpg; sourceTree = "<group>"; };
+		C321FCF31A1C64EA006FF9FE /* yellowLilies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowLilies.jpg; sourceTree = "<group>"; };
+		C321FCF41A1C64EA006FF9FE /* yellowMum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowMum.jpg; sourceTree = "<group>"; };
+		C321FCF51A1C64EA006FF9FE /* yellowOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowOrchids.jpg; sourceTree = "<group>"; };
+		C321FCF61A1C64EA006FF9FE /* yellowRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowRose.jpg; sourceTree = "<group>"; };
+		C321FCF71A1C64EA006FF9FE /* yellowSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowSnapdragon.jpg; sourceTree = "<group>"; };
+		C321FCF81A1C64EA006FF9FE /* yellowSunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowSunflower.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +240,8 @@
 				7C6560401A1AF6CB00EF6AAE /* flowerData.plist */,
 				7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */,
 				7CB5FA601A1450D000F6C0FD /* Images.xcassets */,
+				C321FCAF1A1C64E9006FF9FE /* flower pic */,
+				C321FCAC1A1C5EF8006FF9FE /* AppIcon.appiconset */,
 				7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */,
 				7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
@@ -123,6 +273,96 @@
 				7CB5FA6E1A1450D100F6C0FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C321FCAC1A1C5EF8006FF9FE /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				C321FCAD1A1C5EF8006FF9FE /* Contents.json */,
+			);
+			name = AppIcon.appiconset;
+			path = Images.xcassets/AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		C321FCAF1A1C64E9006FF9FE /* flower pic */ = {
+			isa = PBXGroup;
+			children = (
+				C321FCB01A1C64E9006FF9FE /* blueDelphinium.jpg */,
+				C321FCB11A1C64E9006FF9FE /* blueHydrangea.jpg */,
+				C321FCB21A1C64E9006FF9FE /* blueIris.jpg */,
+				C321FCB31A1C64E9006FF9FE /* blueMum.jpg */,
+				C321FCB41A1C64E9006FF9FE /* blueRose.jpg */,
+				C321FCB51A1C64E9006FF9FE /* brownCalla.jpg */,
+				C321FCB61A1C64E9006FF9FE /* brownDaisy.jpg */,
+				C321FCB71A1C64E9006FF9FE /* brownHydrangea.jpg */,
+				C321FCB81A1C64E9006FF9FE /* brownOrchids.jpg */,
+				C321FCB91A1C64E9006FF9FE /* brownRose.jpg */,
+				C321FCBA1A1C64E9006FF9FE /* brownSunflower.jpg */,
+				C321FCBB1A1C64E9006FF9FE /* greenAlstroemerias.jpg */,
+				C321FCBC1A1C64E9006FF9FE /* greenCalla.jpg */,
+				C321FCBD1A1C64E9006FF9FE /* greenHydrangea.jpg */,
+				C321FCBE1A1C64E9006FF9FE /* greenLilies.jpg */,
+				C321FCBF1A1C64E9006FF9FE /* greenMum.jpg */,
+				C321FCC01A1C64E9006FF9FE /* greenOrchids.jpg */,
+				C321FCC11A1C64E9006FF9FE /* greenRose.jpg */,
+				C321FCC21A1C64E9006FF9FE /* orangeAlstroemerias.jpg */,
+				C321FCC31A1C64E9006FF9FE /* orangeCalla.jpg */,
+				C321FCC41A1C64E9006FF9FE /* orangeDaisy.jpg */,
+				C321FCC51A1C64E9006FF9FE /* orangeLilies.jpg */,
+				C321FCC61A1C64E9006FF9FE /* orangeRose.jpg */,
+				C321FCC71A1C64E9006FF9FE /* orangeSnapdragon.jpg */,
+				C321FCC81A1C64E9006FF9FE /* orangeSunflower.jpg */,
+				C321FCC91A1C64E9006FF9FE /* pinkAlstroemerias.jpg */,
+				C321FCCA1A1C64E9006FF9FE /* pinkCalla.jpg */,
+				C321FCCB1A1C64E9006FF9FE /* pinkDaisy.jpg */,
+				C321FCCC1A1C64E9006FF9FE /* pinkHydrangea.jpg */,
+				C321FCCD1A1C64E9006FF9FE /* pinkLilies.jpg */,
+				C321FCCE1A1C64E9006FF9FE /* pinkOrchids.jpg */,
+				C321FCCF1A1C64E9006FF9FE /* pinkRose.jpg */,
+				C321FCD01A1C64E9006FF9FE /* pinkSnapdragon.jpg */,
+				C321FCD11A1C64E9006FF9FE /* purpleAlstroemerias.jpg */,
+				C321FCD21A1C64E9006FF9FE /* purpleCalla.jpg */,
+				C321FCD31A1C64E9006FF9FE /* purpleDaisy.jpg */,
+				C321FCD41A1C64E9006FF9FE /* purpleHydrangea.jpg */,
+				C321FCD51A1C64E9006FF9FE /* purpleIris.jpg */,
+				C321FCD61A1C64E9006FF9FE /* purpleOrchids.jpg */,
+				C321FCD71A1C64E9006FF9FE /* purpleRose.jpg */,
+				C321FCD81A1C64E9006FF9FE /* purpleSnapdragon copy.jpg */,
+				C321FCD91A1C64E9006FF9FE /* purpleSnapdragon.jpg */,
+				C321FCDA1A1C64E9006FF9FE /* redAlstroemerias.jpg */,
+				C321FCDB1A1C64E9006FF9FE /* redCalla.jpg */,
+				C321FCDC1A1C64E9006FF9FE /* redDaisy.jpg */,
+				C321FCDD1A1C64E9006FF9FE /* redLilies.jpg */,
+				C321FCDE1A1C64E9006FF9FE /* redOrchid.jpg */,
+				C321FCDF1A1C64E9006FF9FE /* redRose.jpg */,
+				C321FCE01A1C64E9006FF9FE /* redSnapdragon.jpg */,
+				C321FCE11A1C64E9006FF9FE /* redSunflower.jpg */,
+				C321FCE21A1C64E9006FF9FE /* turquoiseDaisy.jpg */,
+				C321FCE31A1C64E9006FF9FE /* turquoiseHydrangea.jpg */,
+				C321FCE41A1C64E9006FF9FE /* turquoiseMum.jpg */,
+				C321FCE51A1C64E9006FF9FE /* turquoiseOrchid.jpg */,
+				C321FCE61A1C64E9006FF9FE /* turquoiseRose.jpg */,
+				C321FCE71A1C64E9006FF9FE /* view diagram 1 (drawn).jpg */,
+				C321FCE81A1C64E9006FF9FE /* whiteAlstroemerias.jpg */,
+				C321FCE91A1C64E9006FF9FE /* whiteCalla.jpg */,
+				C321FCEA1A1C64E9006FF9FE /* whiteDaisy.jpg */,
+				C321FCEB1A1C64E9006FF9FE /* whiteDelphinium.jpg */,
+				C321FCEC1A1C64E9006FF9FE /* whiteHydrangea.jpg */,
+				C321FCED1A1C64E9006FF9FE /* whiteLilies.jpg */,
+				C321FCEE1A1C64EA006FF9FE /* whiteOrchids.jpg */,
+				C321FCEF1A1C64EA006FF9FE /* whiteRose.jpg */,
+				C321FCF01A1C64EA006FF9FE /* whiteSnapdragon.jpg */,
+				C321FCF11A1C64EA006FF9FE /* yellowAlstroemerias.jpg */,
+				C321FCF21A1C64EA006FF9FE /* yellowCalla.jpg */,
+				C321FCF31A1C64EA006FF9FE /* yellowLilies.jpg */,
+				C321FCF41A1C64EA006FF9FE /* yellowMum.jpg */,
+				C321FCF51A1C64EA006FF9FE /* yellowOrchids.jpg */,
+				C321FCF61A1C64EA006FF9FE /* yellowRose.jpg */,
+				C321FCF71A1C64EA006FF9FE /* yellowSnapdragon.jpg */,
+				C321FCF81A1C64EA006FF9FE /* yellowSunflower.jpg */,
+			);
+			name = "flower pic";
+			path = "../../../../Desktop/flower pic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,10 +445,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C321FCFD1A1C64EA006FF9FE /* blueRose.jpg in Resources */,
+				C321FD041A1C64EA006FF9FE /* greenAlstroemerias.jpg in Resources */,
+				C321FD0C1A1C64EA006FF9FE /* orangeCalla.jpg in Resources */,
+				C321FCAE1A1C5EF8006FF9FE /* Contents.json in Resources */,
+				C321FD221A1C64EA006FF9FE /* purpleSnapdragon.jpg in Resources */,
+				C321FD351A1C64EA006FF9FE /* whiteHydrangea.jpg in Resources */,
+				C321FD0A1A1C64EA006FF9FE /* greenRose.jpg in Resources */,
+				C321FD381A1C64EA006FF9FE /* whiteRose.jpg in Resources */,
+				C321FCFA1A1C64EA006FF9FE /* blueHydrangea.jpg in Resources */,
+				C321FD091A1C64EA006FF9FE /* greenOrchids.jpg in Resources */,
+				C321FD141A1C64EA006FF9FE /* pinkDaisy.jpg in Resources */,
+				C321FCFE1A1C64EA006FF9FE /* brownCalla.jpg in Resources */,
+				C321FD071A1C64EA006FF9FE /* greenLilies.jpg in Resources */,
+				C321FD201A1C64EA006FF9FE /* purpleRose.jpg in Resources */,
+				C321FD271A1C64EA006FF9FE /* redOrchid.jpg in Resources */,
+				C321FD021A1C64EA006FF9FE /* brownRose.jpg in Resources */,
+				C321FD291A1C64EA006FF9FE /* redSnapdragon.jpg in Resources */,
+				C321FD3A1A1C64EA006FF9FE /* yellowAlstroemerias.jpg in Resources */,
+				C321FD0F1A1C64EA006FF9FE /* orangeRose.jpg in Resources */,
+				C321FD391A1C64EA006FF9FE /* whiteSnapdragon.jpg in Resources */,
+				C321FD131A1C64EA006FF9FE /* pinkCalla.jpg in Resources */,
+				C321FCFB1A1C64EA006FF9FE /* blueIris.jpg in Resources */,
+				C321FD321A1C64EA006FF9FE /* whiteCalla.jpg in Resources */,
+				C321FD301A1C64EA006FF9FE /* view diagram 1 (drawn).jpg in Resources */,
+				C321FD051A1C64EA006FF9FE /* greenCalla.jpg in Resources */,
+				C321FD411A1C64EA006FF9FE /* yellowSunflower.jpg in Resources */,
+				C321FD121A1C64EA006FF9FE /* pinkAlstroemerias.jpg in Resources */,
+				C321FD001A1C64EA006FF9FE /* brownHydrangea.jpg in Resources */,
+				C321FD061A1C64EA006FF9FE /* greenHydrangea.jpg in Resources */,
+				C321FD331A1C64EA006FF9FE /* whiteDaisy.jpg in Resources */,
+				C321FD2F1A1C64EA006FF9FE /* turquoiseRose.jpg in Resources */,
+				C321FD3E1A1C64EA006FF9FE /* yellowOrchids.jpg in Resources */,
+				C321FD161A1C64EA006FF9FE /* pinkLilies.jpg in Resources */,
+				C321FD2D1A1C64EA006FF9FE /* turquoiseMum.jpg in Resources */,
+				C321FD1B1A1C64EA006FF9FE /* purpleCalla.jpg in Resources */,
+				C321FD0B1A1C64EA006FF9FE /* orangeAlstroemerias.jpg in Resources */,
+				C321FD171A1C64EA006FF9FE /* pinkOrchids.jpg in Resources */,
+				C321FD251A1C64EA006FF9FE /* redDaisy.jpg in Resources */,
 				7CB5FA5F1A1450D000F6C0FD /* Main.storyboard in Resources */,
 				7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */,
+				C321FD1F1A1C64EA006FF9FE /* purpleOrchids.jpg in Resources */,
+				C321FD3B1A1C64EA006FF9FE /* yellowCalla.jpg in Resources */,
+				C321FD2A1A1C64EA006FF9FE /* redSunflower.jpg in Resources */,
+				C321FD0E1A1C64EA006FF9FE /* orangeLilies.jpg in Resources */,
+				C321FD1D1A1C64EA006FF9FE /* purpleHydrangea.jpg in Resources */,
+				C321FCFF1A1C64EA006FF9FE /* brownDaisy.jpg in Resources */,
+				C321FD2C1A1C64EA006FF9FE /* turquoiseHydrangea.jpg in Resources */,
+				C321FD3F1A1C64EA006FF9FE /* yellowRose.jpg in Resources */,
+				C321FD281A1C64EA006FF9FE /* redRose.jpg in Resources */,
+				C321FD1C1A1C64EA006FF9FE /* purpleDaisy.jpg in Resources */,
+				C321FD011A1C64EA006FF9FE /* brownOrchids.jpg in Resources */,
+				C321FD241A1C64EA006FF9FE /* redCalla.jpg in Resources */,
+				C321FD181A1C64EA006FF9FE /* pinkRose.jpg in Resources */,
+				C321FD111A1C64EA006FF9FE /* orangeSunflower.jpg in Resources */,
 				7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */,
+				C321FD371A1C64EA006FF9FE /* whiteOrchids.jpg in Resources */,
+				C321FD3C1A1C64EA006FF9FE /* yellowLilies.jpg in Resources */,
+				C321FCFC1A1C64EA006FF9FE /* blueMum.jpg in Resources */,
+				C321FD081A1C64EA006FF9FE /* greenMum.jpg in Resources */,
+				C321FD211A1C64EA006FF9FE /* purpleSnapdragon copy.jpg in Resources */,
+				C321FD2B1A1C64EA006FF9FE /* turquoiseDaisy.jpg in Resources */,
+				C321FD0D1A1C64EA006FF9FE /* orangeDaisy.jpg in Resources */,
+				C321FD3D1A1C64EA006FF9FE /* yellowMum.jpg in Resources */,
+				C321FD191A1C64EA006FF9FE /* pinkSnapdragon.jpg in Resources */,
+				C321FD361A1C64EA006FF9FE /* whiteLilies.jpg in Resources */,
+				C321FD101A1C64EA006FF9FE /* orangeSnapdragon.jpg in Resources */,
+				C321FD2E1A1C64EA006FF9FE /* turquoiseOrchid.jpg in Resources */,
+				C321FD401A1C64EA006FF9FE /* yellowSnapdragon.jpg in Resources */,
+				C321FD231A1C64EA006FF9FE /* redAlstroemerias.jpg in Resources */,
+				C321FD1E1A1C64EA006FF9FE /* purpleIris.jpg in Resources */,
+				C321FD311A1C64EA006FF9FE /* whiteAlstroemerias.jpg in Resources */,
+				C321FCF91A1C64EA006FF9FE /* blueDelphinium.jpg in Resources */,
+				C321FD031A1C64EA006FF9FE /* brownSunflower.jpg in Resources */,
+				C321FD261A1C64EA006FF9FE /* redLilies.jpg in Resources */,
+				C321FD1A1A1C64EA006FF9FE /* purpleAlstroemerias.jpg in Resources */,
+				C321FD341A1C64EA006FF9FE /* whiteDelphinium.jpg in Resources */,
 				7C6560411A1AF6CB00EF6AAE /* flowerData.plist in Resources */,
+				C321FD151A1C64EA006FF9FE /* pinkHydrangea.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
