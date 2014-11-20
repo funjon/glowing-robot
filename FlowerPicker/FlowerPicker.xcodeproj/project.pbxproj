@@ -11,7 +11,6 @@
 		7CB5FA531A1450D000F6C0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA521A1450D000F6C0FD /* main.m */; };
 		7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA551A1450D000F6C0FD /* AppDelegate.m */; };
 		7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */; };
-		7CB5FA5C1A1450D000F6C0FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA5B1A1450D000F6C0FD /* ViewController.m */; };
 		7CB5FA5F1A1450D000F6C0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */; };
 		7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA601A1450D000F6C0FD /* Images.xcassets */; };
 		7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */; };
@@ -88,6 +87,13 @@
 		E1CD059C1A1D93DE003B8C77 /* yellowSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1CD05561A1D93DE003B8C77 /* yellowSnapdragon.jpg */; };
 		E1CD059D1A1D93DE003B8C77 /* yellowSunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1CD05571A1D93DE003B8C77 /* yellowSunflower.jpg */; };
 		E1CD05A11A1D9A70003B8C77 /* LaunchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1CD05A01A1D9A70003B8C77 /* LaunchImage.jpg */; };
+		E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */; };
+		E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */; };
+		E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */; };
+		E1CD05AF1A1DB19F003B8C77 /* ListsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */; };
+		E1CD05B21A1DB1D9003B8C77 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */; };
+		E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */; };
+		E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +114,6 @@
 		7CB5FA541A1450D000F6C0FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CB5FA551A1450D000F6C0FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7CB5FA581A1450D000F6C0FD /* FlowerPicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlowerPicker.xcdatamodel; sourceTree = "<group>"; };
-		7CB5FA5A1A1450D000F6C0FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7CB5FA5B1A1450D000F6C0FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7CB5FA5E1A1450D000F6C0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CB5FA601A1450D000F6C0FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7CB5FA631A1450D000F6C0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -188,6 +192,20 @@
 		E1CD05561A1D93DE003B8C77 /* yellowSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yellowSnapdragon.jpg; path = ../../../../../../Downloads/flower/yellowSnapdragon.jpg; sourceTree = "<group>"; };
 		E1CD05571A1D93DE003B8C77 /* yellowSunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yellowSunflower.jpg; path = ../../../../../../Downloads/flower/yellowSunflower.jpg; sourceTree = "<group>"; };
 		E1CD05A01A1D9A70003B8C77 /* LaunchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LaunchImage.jpg; path = ../../../../../../Downloads/LaunchImage.jpg; sourceTree = "<group>"; };
+		E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutsPageViewController.h; sourceTree = "<group>"; };
+		E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutsPageViewController.m; sourceTree = "<group>"; };
+		E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloristsWebViewController.h; sourceTree = "<group>"; };
+		E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristsWebViewController.m; sourceTree = "<group>"; };
+		E1CD05AA1A1DB16E003B8C77 /* FlowerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerDetailsViewController.h; sourceTree = "<group>"; };
+		E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerDetailsViewController.m; sourceTree = "<group>"; };
+		E1CD05AD1A1DB19F003B8C77 /* ListsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsTableViewController.h; sourceTree = "<group>"; };
+		E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsTableViewController.m; sourceTree = "<group>"; };
+		E1CD05B01A1DB1D9003B8C77 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		E1CD05B31A1DB1F5003B8C77 /* FloristsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloristsTableViewController.h; sourceTree = "<group>"; };
+		E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristsTableViewController.m; sourceTree = "<group>"; };
+		E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,14 +249,26 @@
 			children = (
 				7CB5FA541A1450D000F6C0FD /* AppDelegate.h */,
 				7CB5FA551A1450D000F6C0FD /* AppDelegate.m */,
-				7CB5FA5A1A1450D000F6C0FD /* ViewController.h */,
-				7CB5FA5B1A1450D000F6C0FD /* ViewController.m */,
-				7C6560401A1AF6CB00EF6AAE /* flowerData.plist */,
 				7CB5FA5D1A1450D000F6C0FD /* Main.storyboard */,
+				7C6560401A1AF6CB00EF6AAE /* flowerData.plist */,
 				C321FCAC1A1C5EF8006FF9FE /* AppIcon.appiconset */,
 				7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */,
-				7CB5FA601A1450D000F6C0FD /* Images.xcassets */,
 				7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */,
+				7CB5FA601A1450D000F6C0FD /* Images.xcassets */,
+				E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */,
+				E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */,
+				E1CD05AD1A1DB19F003B8C77 /* ListsTableViewController.h */,
+				E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */,
+				E1CD05B01A1DB1D9003B8C77 /* SearchTableViewController.h */,
+				E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */,
+				E1CD05B31A1DB1F5003B8C77 /* FloristsTableViewController.h */,
+				E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */,
+				E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */,
+				E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */,
+				E1CD05AA1A1DB16E003B8C77 /* FlowerDetailsViewController.h */,
+				E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */,
+				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
+				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
 			);
 			path = FlowerPicker;
@@ -524,9 +554,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */,
+				E1CD05AF1A1DB19F003B8C77 /* ListsTableViewController.m in Sources */,
 				7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */,
-				7CB5FA5C1A1450D000F6C0FD /* ViewController.m in Sources */,
+				E1CD05B21A1DB1D9003B8C77 /* SearchTableViewController.m in Sources */,
+				E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */,
+				E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */,
+				E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */,
+				E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */,
 				7CB5FA531A1450D000F6C0FD /* main.m in Sources */,
+				E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,10 +684,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FlowerPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -660,6 +698,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FlowerPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
