@@ -242,9 +242,6 @@
                     <navigationItem key="navigationItem" id="8XB-SC-5hL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="ColorsListLabel" destination="Hws-4I-zHX" id="lNv-wC-QeU"/>
-                        <outlet property="CostsLabel" destination="d3b-2Z-mo7" id="Wrs-JK-0Rm"/>
-                        <outlet property="DescriptionLabel" destination="rev-zU-3NA" id="Lfd-Po-2w2"/>
                         <outlet property="FlowerColors" destination="Hws-4I-zHX" id="5PD-zW-lzY"/>
                         <outlet property="FlowerCosts" destination="d3b-2Z-mo7" id="JYZ-Cb-497"/>
                         <outlet property="FlowerDescription" destination="rev-zU-3NA" id="H2q-zW-TTF"/>
