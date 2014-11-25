@@ -78,6 +78,7 @@
 		7CAD1C8C1A2410CA00AF3F55 /* yellowRose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD1C461A2410CA00AF3F55 /* yellowRose.jpg */; };
 		7CAD1C8D1A2410CA00AF3F55 /* yellowSnapdragon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD1C471A2410CA00AF3F55 /* yellowSnapdragon.jpg */; };
 		7CAD1C8E1A2410CA00AF3F55 /* yellowSunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD1C481A2410CA00AF3F55 /* yellowSunflower.jpg */; };
+		7CAD1C941A24112B00AF3F55 /* Flower.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD1C931A24112B00AF3F55 /* Flower.m */; };
 		7CB5FA531A1450D000F6C0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA521A1450D000F6C0FD /* main.m */; };
 		7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA551A1450D000F6C0FD /* AppDelegate.m */; };
 		7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA571A1450D000F6C0FD /* FlowerPicker.xcdatamodeld */; };
@@ -177,6 +178,8 @@
 		7CAD1C461A2410CA00AF3F55 /* yellowRose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowRose.jpg; sourceTree = "<group>"; };
 		7CAD1C471A2410CA00AF3F55 /* yellowSnapdragon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowSnapdragon.jpg; sourceTree = "<group>"; };
 		7CAD1C481A2410CA00AF3F55 /* yellowSunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowSunflower.jpg; sourceTree = "<group>"; };
+		7CAD1C921A24112B00AF3F55 /* Flower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flower.h; sourceTree = "<group>"; };
+		7CAD1C931A24112B00AF3F55 /* Flower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flower.m; sourceTree = "<group>"; };
 		7CB5FA4D1A1450D000F6C0FD /* FlowerPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB5FA511A1450D000F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB5FA521A1450D000F6C0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -354,6 +357,8 @@
 				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
 				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
+				7CAD1C921A24112B00AF3F55 /* Flower.h */,
+				7CAD1C931A24112B00AF3F55 /* Flower.m */,
 			);
 			path = FlowerPicker;
 			sourceTree = "<group>";
@@ -572,6 +577,7 @@
 				E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */,
 				E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */,
 				E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */,
+				7CAD1C941A24112B00AF3F55 /* Flower.m in Sources */,
 				E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */,
 				7CB5FA531A1450D000F6C0FD /* main.m in Sources */,
 				E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */,
