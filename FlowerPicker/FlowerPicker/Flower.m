@@ -31,4 +31,43 @@
 @synthesize season = _season;
 
 
+/*// Get methods
+-(NSDictionary*)season;
+-(BOOL)season: (NSString*)s; // Overload to allow getting specific season
+
+// Set methods
+-(void)setSeason:(NSString*)s to:(BOOL)val;
+*/
+
+// Display name methods
+-(void)setDisplayName:(NSString *)dn { _displayName = dn; }
+-(NSString*)displayName { return _displayName; }
+
+// Flower type
+-(void)setType:(NSString *)t { _type = t; }
+-(NSString*)type { return _type; }
+
+// Flower color
+-(void)setColor:(NSString *)c { _color = c; }
+-(NSString*)color { return _color; }
+
+// image filename
+-(void)setImageName:(NSString *)img { _imageName = img; }
+-(NSString*)imageName { return _imageName; }
+
+// Costs - per dozen
+-(void)setDozCost:(int)dc { _dozCost = dc; }
+-(int)dozCost { return _dozCost; }
+
+// Costs - per boquet
+-(void)setBoqCost:(int)bc { _boqCost = bc; }
+-(int)boqCost { return _boqCost; }
+
+// Seasonality
+-(void)setSeason:(NSString*)s to:(Boolean)val { val ? [_season setValue:@"true" forKey:s] : [_season setValue:@"false" forKey:s]; }
+-(void)setSeason:(NSDictionary*)s { _season = s; }
+-(NSDictionary*)season { return _season; }
+-(BOOL)season: (NSString*)s { return [_season objectForKey:s]; }
+
+
 @end

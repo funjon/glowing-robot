@@ -10,6 +10,7 @@
 
 @interface Flower : NSObject
 
+// Get methods
 -(NSString*)displayName;
 -(NSString*)type;
 -(NSString*)color;
@@ -17,13 +18,16 @@
 -(int)dozCost;
 -(int)boqCost;
 -(NSDictionary*)season;
+-(BOOL)season: (NSString*)s; // Overload to allow getting specific season
 
+// Set methods
 -(void)setDisplayName:(NSString*)dn;
 -(void)setType:(NSString*)t;
 -(void)setColor:(NSString*)c;
 -(void)setImageName:(NSString*)img;
 -(void)setDozCost:(int)dc;
 -(void)setBoqCost:(int)bc;
--(void)setSeason:(NSString*)sea to:(BOOL)value;
+-(void)setSeason:(NSDictionary*)s;
+-(void)setSeason:(NSString*)s to:(Boolean)val;
 
 @end
