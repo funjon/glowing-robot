@@ -86,6 +86,7 @@
 		7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA601A1450D000F6C0FD /* Images.xcassets */; };
 		7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */; };
 		7CB5FA701A1450D100F6C0FD /* FlowerPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */; };
+		7CEC415E1A26CE3D00563B12 /* ColorTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC415D1A26CE3D00563B12 /* ColorTracker.m */; };
 		C321FCAE1A1C5EF8006FF9FE /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C321FCAD1A1C5EF8006FF9FE /* Contents.json */; };
 		E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */; };
 		E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */; };
@@ -192,6 +193,8 @@
 		7CB5FA691A1450D100F6C0FD /* FlowerPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB5FA6E1A1450D100F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerPickerTests.m; sourceTree = "<group>"; };
+		7CEC415C1A26CE3D00563B12 /* ColorTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTracker.h; sourceTree = "<group>"; };
+		7CEC415D1A26CE3D00563B12 /* ColorTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTracker.m; sourceTree = "<group>"; };
 		C321FCAD1A1C5EF8006FF9FE /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutsPageViewController.h; sourceTree = "<group>"; };
 		E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutsPageViewController.m; sourceTree = "<group>"; };
@@ -359,6 +362,8 @@
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
 				7CAD1C921A24112B00AF3F55 /* Flower.h */,
 				7CAD1C931A24112B00AF3F55 /* Flower.m */,
+				7CEC415C1A26CE3D00563B12 /* ColorTracker.h */,
+				7CEC415D1A26CE3D00563B12 /* ColorTracker.m */,
 			);
 			path = FlowerPicker;
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 				E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */,
 				E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */,
 				7CAD1C941A24112B00AF3F55 /* Flower.m in Sources */,
+				7CEC415E1A26CE3D00563B12 /* ColorTracker.m in Sources */,
 				E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */,
 				7CB5FA531A1450D000F6C0FD /* main.m in Sources */,
 				E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */,

@@ -7,7 +7,7 @@
         <!--Colors-->
         <scene sceneID="D9C-Zc-4aC">
             <objects>
-                <viewController id="xLf-Cg-Pca" sceneMemberID="viewController">
+                <viewController id="xLf-Cg-Pca" customClass="ColorPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bpa-mx-iqW"/>
                         <viewControllerLayoutGuide type="bottom" id="OlH-Do-EYj"/>
@@ -447,6 +447,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Vqg-AB-9os"/>
+        <segue reference="fb5-Xo-ziB"/>
     </inferredMetricsTieBreakers>
 </document>

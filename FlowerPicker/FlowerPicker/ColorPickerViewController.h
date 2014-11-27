@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// Object to keep track of active colors across views
+#import "ColorTracker.h"
+
 /*
 
 
