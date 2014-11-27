@@ -30,15 +30,6 @@
 @synthesize boqCost = _boqCost;
 @synthesize season = _season;
 
-
-/*// Get methods
--(NSDictionary*)season;
--(BOOL)season: (NSString*)s; // Overload to allow getting specific season
-
-// Set methods
--(void)setSeason:(NSString*)s to:(BOOL)val;
-*/
-
 // Display name methods
 -(void)setDisplayName:(NSString *)dn { _displayName = dn; }
 -(NSString*)displayName { return _displayName; }
@@ -67,7 +58,7 @@
 -(void)setSeason:(NSString*)s to:(Boolean)val { val ? [_season setValue:@"true" forKey:s] : [_season setValue:@"false" forKey:s]; }
 -(void)setSeason:(NSDictionary*)s { _season = s; }
 -(NSDictionary*)season { return _season; }
--(BOOL)season: (NSString*)s { return [_season objectForKey:s]; }
+-(BOOL)season: (NSString*)s { if ([[_season objectForKey:s] isEqual: @"true"]) { return true; } else { return false; } }
 
 
 @end
