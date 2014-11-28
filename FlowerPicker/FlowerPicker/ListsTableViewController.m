@@ -45,7 +45,9 @@
 
     Flowers = [[NSMutableArray alloc] initWithCapacity:(dict.count)];
 
-    Flower *flowerObject = [Flower new];
+    //Flower *flowerObject = [Flower alloc];
+    Flower *flowerObject = [[Flower alloc]init];
+    
     int i = 0;
     for (NSString *key in keys){
         NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary: [dict objectForKey: key]];
@@ -53,12 +55,14 @@
         //
         // no assigning done below  --------------------------------------------
         //
-        flowerObject.displayName = [tempDict objectForKey:@"displayName"];
-        flowerObject.type = [tempDict objectForKey: @"type"];
+        [flowerObject setDisplayName: [tempDict objectForKey:@"displayName"]];
+ /*       flowerObject.type = [tempDict objectForKey: @"type"];
         flowerObject.color = [tempDict objectForKey: @"color"];
         flowerObject.dozCost = [tempDict objectForKey: @"dozCost"];
         flowerObject.boqCost = [tempDict objectForKey: @"boqCost"];
         flowerObject.imageName = [tempDict objectForKey: @"imageName"];
+  
+  */
         [Flowers insertObject:flowerObject atIndex:i];
         i++;
     }
