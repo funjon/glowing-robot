@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Flower.h"
 
 @interface FlowerDetailsViewController : UIViewController
 

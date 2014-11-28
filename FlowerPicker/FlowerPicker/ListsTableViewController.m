@@ -7,12 +7,25 @@
 //
 
 #import "ListsTableViewController.h"
+#import "Flower.h"
+#import "FlowerInfoCell.h"
 
 @interface ListsTableViewController ()
 
 @end
 
 @implementation ListsTableViewController
+{
+    NSMutableArray *flowerNames;
+    NSMutableArray *flowerTypes;
+    NSMutableArray *flowerColors;
+    NSMutableArray *flowerDozCosts;
+    NSMutableArray *flowerBoqCosts;
+    NSMutableArray *flowerImageNames;
+    
+    NSMutableArray *Flowers;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +35,33 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"flowerData" ofType:@"plist"];
+    
+    // get data from plist
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    // NSArray *values = [dict allValues];
+    NSArray *keys = [dict allKeys];
+
+    Flowers = [[NSMutableArray alloc] initWithCapacity:(dict.count)];
+
+    Flower *flowerObject = [Flower new];
+    int i = 0;
+    for (NSString *key in keys){
+        NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary: [dict objectForKey: key]];
+       
+        //
+        // no assigning done below  --------------------------------------------
+        //
+        flowerObject.displayName = [tempDict objectForKey:@"displayName"];
+        flowerObject.type = [tempDict objectForKey: @"type"];
+        flowerObject.color = [tempDict objectForKey: @"color"];
+        flowerObject.dozCost = [tempDict objectForKey: @"dozCost"];
+        flowerObject.boqCost = [tempDict objectForKey: @"boqCost"];
+        flowerObject.imageName = [tempDict objectForKey: @"imageName"];
+        [Flowers insertObject:flowerObject atIndex:i];
+        i++;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,24 +74,39 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [Flowers count];
 }
 
-/*
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *cellIdentifier = @"FlowerInfoCell";
+    FlowerInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if( cell == nil ){
+        cell  = [[FlowerInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     
+
+    
+    Flower *flowerObject = [Flowers objectAtIndex:indexPath.row];
+    
+   // NSLog(@"MY FLOWER: %@", flowerObject);
+    cell.ColorAndType.text = flowerObject.displayName;
     return cell;
 }
-*/
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [flowerNames count];
+}
+
 
 /*
 // Override to support conditional editing of the table view.
