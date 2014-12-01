@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+// Object to keep track of active colors across views
+#import "ColorTracker.h"
+
+
 /*
 
 
@@ -21,5 +25,9 @@
  
  */
 @interface ColorPickerViewController : UIViewController
+
+-(NSMutableDictionary*)getDictionary;
+-(void)selectColor:(NSString *)key;
+-(BOOL)isSelected:(NSString *)key;
 
 @end

@@ -10,18 +10,58 @@
 
 @interface ColorPickerViewController ()
 
+@property NSMutableDictionary *colorPicks;
+
 @end
 
 @implementation ColorPickerViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.colorPicks = [self getDictionary];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)colorPick:(UIButton *)sender {
+    [self selectColor: sender.currentTitle];
+}
+
+
+-(NSMutableDictionary*)getDictionary{
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithObjectsAndKeys:
+                                 @NO, @"Red",
+                                 @NO, @"Yellow",
+                                 @NO, @"Turquoise",
+                                 @NO, @"Purple",
+                                 @NO, @"Pink",
+                                 @NO, @"Orange",
+                                 @NO, @"Green",
+                                 @NO, @"Blue",
+                                 @NO, @"White",
+                                 @NO, @"Brown",
+                                 nil];
+    return dict;
+}
+
+
+-(void)selectColor:(NSString *)key{
+    if([self isSelected: key])
+        self.colorPicks[key] = @NO;
+    else
+        self.colorPicks[key] = @YES;
+}
+
+
+-(BOOL)isSelected:(NSString *)key{
+    return [[self.colorPicks objectForKey:key]boolValue];
 }
 
 /*
@@ -33,5 +73,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

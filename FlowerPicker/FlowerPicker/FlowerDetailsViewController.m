@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    Flower *flowerObject = [Flower new];
+/*
+    flowerObject.displayName = @"Yellow Rose";
+    flowerObject.type = @"rose";
+    flowerObject.colo
+*/
+    
 }
 
 - (void)didReceiveMemoryWarning {
