@@ -11,8 +11,7 @@
 @interface ColorPickerViewController ()
 
 @property ColorTracker* colorTracker;
-@property NSMutableArray* flowerDb;
-
+@property FlowerContainer* flowerDb;
 @end
 
 @implementation ColorPickerViewController
@@ -40,7 +39,7 @@
         NSLog(@"Loaded %lu flowers from plist", [keys count]);
         
         // Create the array and populate it
-        _flowerDb = [[NSMutableArray alloc] init];
+        _flowerDb = [[FlowerContainer alloc] init];
         
         for (NSString* key in keys) {
             Flower* newFlower = [[Flower alloc] init];
@@ -56,7 +55,8 @@
             [_colorTracker addAvailableColor:[newFlower color]];
             
 //            NSLog(@"Loaded flower %@ with color %@ and imagename %@ and costs $%lu $%lu", [newFlower displayName], [newFlower color], [newFlower imageName], [newFlower dozCost], [newFlower boqCost]);
-            [_flowerDb addObject:newFlower];
+            // Add the new flower to the container
+            [_flowerDb addFlower:newFlower withName:[newFlower displayName]];
         }
     }
 }

@@ -24,4 +24,7 @@
 // See if a color is active
 -(BOOL)isActive:(NSString*)color;
 
+// Class method to make this a singleton
++(id)sharedManager;
+
 @end

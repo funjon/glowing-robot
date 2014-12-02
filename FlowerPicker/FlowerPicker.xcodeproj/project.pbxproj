@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C3A529A1A2AB5C000C83CD4 /* ColorSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A52971A2AB5C000C83CD4 /* ColorSelection.m */; };
+		7C10A8021A2D67EE005195BA /* FlowerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10A8011A2D67EE005195BA /* FlowerContainer.m */; };
 		7C3A529B1A2AB5C000C83CD4 /* ColorTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A52991A2AB5C000C83CD4 /* ColorTracker.m */; };
 		7C6560411A1AF6CB00EF6AAE /* flowerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C6560401A1AF6CB00EF6AAE /* flowerData.plist */; };
 		7CAD1C491A2410CA00AF3F55 /* blueDelphinium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD1C031A2410CA00AF3F55 /* blueDelphinium.jpg */; };
@@ -112,8 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C3A52961A2AB5C000C83CD4 /* ColorSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSelection.h; sourceTree = "<group>"; };
-		7C3A52971A2AB5C000C83CD4 /* ColorSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSelection.m; sourceTree = "<group>"; };
+		7C10A8001A2D67EE005195BA /* FlowerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerContainer.h; sourceTree = "<group>"; };
+		7C10A8011A2D67EE005195BA /* FlowerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerContainer.m; sourceTree = "<group>"; };
 		7C3A52981A2AB5C000C83CD4 /* ColorTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTracker.h; sourceTree = "<group>"; };
 		7C3A52991A2AB5C000C83CD4 /* ColorTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTracker.m; sourceTree = "<group>"; };
 		7C6560401A1AF6CB00EF6AAE /* flowerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flowerData.plist; sourceTree = "<group>"; };
@@ -346,10 +346,28 @@
 		7CB5FA4F1A1450D000F6C0FD /* FlowerPicker */ = {
 			isa = PBXGroup;
 			children = (
-				7C3A52961A2AB5C000C83CD4 /* ColorSelection.h */,
-				7C3A52971A2AB5C000C83CD4 /* ColorSelection.m */,
+				E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */,
+				E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */,
+				E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */,
+				E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */,
 				7C3A52981A2AB5C000C83CD4 /* ColorTracker.h */,
 				7C3A52991A2AB5C000C83CD4 /* ColorTracker.m */,
+				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
+				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
+				E1CD05B31A1DB1F5003B8C77 /* FloristsTableViewController.h */,
+				E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */,
+				7CAD1C921A24112B00AF3F55 /* Flower.h */,
+				7CAD1C931A24112B00AF3F55 /* Flower.m */,
+				7C10A8001A2D67EE005195BA /* FlowerContainer.h */,
+				7C10A8011A2D67EE005195BA /* FlowerContainer.m */,
+				E1CD05AA1A1DB16E003B8C77 /* FlowerDetailsViewController.h */,
+				E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */,
+				D77C42C01A279BD8004E11FA /* FlowerInfoCell.h */,
+				D77C42C11A279BD8004E11FA /* FlowerInfoCell.m */,
+				E1CD05AD1A1DB19F003B8C77 /* ListsTableViewController.h */,
+				E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */,
+				E1CD05B01A1DB1D9003B8C77 /* SearchTableViewController.h */,
+				E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */,
 				7CAD1C011A2410CA00AF3F55 /* images */,
 				7CB5FA541A1450D000F6C0FD /* AppDelegate.h */,
 				7CB5FA551A1450D000F6C0FD /* AppDelegate.m */,
@@ -376,10 +394,6 @@
 				E1ECF9541A205390002D1752 /* LaunchImage.jpg */,
 				E1ECF9521A20535F002D1752 /* flower images */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
-				7CAD1C921A24112B00AF3F55 /* Flower.h */,
-				7CAD1C931A24112B00AF3F55 /* Flower.m */,
-				D77C42C01A279BD8004E11FA /* FlowerInfoCell.h */,
-				D77C42C11A279BD8004E11FA /* FlowerInfoCell.m */,
 			);
 			path = FlowerPicker;
 			sourceTree = "<group>";
@@ -535,8 +549,8 @@
 				7CAD1C941A24112B00AF3F55 /* Flower.m in Sources */,
 				E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */,
 				7CB5FA531A1450D000F6C0FD /* main.m in Sources */,
-				7C3A529A1A2AB5C000C83CD4 /* ColorSelection.m in Sources */,
 				E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */,
+				7C10A8021A2D67EE005195BA /* FlowerContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
