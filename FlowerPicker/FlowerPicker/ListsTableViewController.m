@@ -35,37 +35,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"flowerData" ofType:@"plist"];
-    
-    // get data from plist
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    // NSArray *values = [dict allValues];
-    NSArray *keys = [dict allKeys];
-
-    Flowers = [[NSMutableArray alloc] initWithCapacity:(dict.count)];
-
-    //Flower *flowerObject = [Flower alloc];
-    Flower *flowerObject = [[Flower alloc]init];
-    
-    int i = 0;
-    for (NSString *key in keys){
-        NSDictionary *tempDict = [[NSDictionary alloc] initWithDictionary: [dict objectForKey: key]];
-       
-        //
-        // no assigning done below  --------------------------------------------
-        //
-        [flowerObject setDisplayName: [tempDict objectForKey:@"displayName"]];
- /*       flowerObject.type = [tempDict objectForKey: @"type"];
-        flowerObject.color = [tempDict objectForKey: @"color"];
-        flowerObject.dozCost = [tempDict objectForKey: @"dozCost"];
-        flowerObject.boqCost = [tempDict objectForKey: @"boqCost"];
-        flowerObject.imageName = [tempDict objectForKey: @"imageName"];
-  
-  */
-        [Flowers insertObject:flowerObject atIndex:i];
-        i++;
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,7 +52,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [Flowers count];
+    return 0;
 }
 
 
