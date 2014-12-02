@@ -28,6 +28,5 @@
 -(void)setDozCost:(NSUInteger)dc;
 -(void)setBoqCost:(NSUInteger)bc;
 -(void)setSeason:(NSDictionary*)s;
--(void)setSeason:(NSString*)s to:(Boolean)val;
 
 @end

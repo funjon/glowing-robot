@@ -8,25 +8,9 @@
 
 #import "FlowerContainer.h"
 
-@interface FlowerContainer()
-
-@property NSMutableArray* flowerDb;
-
-@end
-
 @implementation FlowerContainer
 
 @synthesize flowerDb = _flowerDb;
-
-// Init method
--(id)init {
-    if (self = [super init]) {
-        // OK, init things that need to be initialized
-        _flowerDb = [[NSMutableArray alloc] init];
-        // Strings can be left alone
-    }
-    return self;
-}
 
 // Dealloc method
 -(void)dealloc {
@@ -67,6 +51,25 @@
     
     // Add it if we got here
     [_flowerDb addObject:flower];
+}
+
+#pragma mark Singleton Methods
+
++(id)sharedManager {
+    static FlowerContainer* sharedFlowerContainer = nil;
+    @synchronized(self) {
+        if (sharedFlowerContainer == nil) {
+            sharedFlowerContainer = [[self alloc] init];
+        }
+    }
+    return sharedFlowerContainer;
+}
+
+- (id)init {
+    if (self = [super init]) {
+        _flowerDb = [[NSMutableArray alloc] init];
+    }
+    return self;
 }
 
 @end

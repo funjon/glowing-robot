@@ -10,7 +10,12 @@
 
 #import "Flower.h"
 
-@interface FlowerContainer : NSObject
+@interface FlowerContainer : NSObject {
+    NSMutableArray* flowerDb;
+}
+
+@property (nonatomic, retain) NSMutableArray* flowerDb;
+
 
 // Get methods
 -(Flower*)getFlower:(NSString*)withName;
@@ -19,5 +24,8 @@
 
 // Set methods
 -(void)addFlower:(Flower*)flower withName:(NSString*)name;
+
+// Class method to make this a singleton
++(id)sharedManager;
 
 @end

@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ColorTracker : NSObject
+@interface ColorTracker : NSObject {
+    NSMutableDictionary* colors;
+}
+
+@property (nonatomic, retain) NSMutableDictionary* colors;
 
 // Set a color on or off
 // returns true if successful (or if currently set to that state
