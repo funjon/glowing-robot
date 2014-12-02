@@ -14,8 +14,8 @@
 @property NSString* type;
 @property NSString* color; // Should this be an enum?
 @property NSString* imageName;
-@property int dozCost;
-@property int boqCost;
+@property NSUInteger dozCost;
+@property NSUInteger boqCost;
 @property NSMutableDictionary* season;
 
 @end
@@ -62,12 +62,12 @@
 -(NSString*)imageName { return _imageName; }
 
 // Costs - per dozen
--(void)setDozCost:(int)dc { _dozCost = dc; }
--(int)dozCost { return _dozCost; }
+-(void)setDozCost:(NSUInteger)dc { _dozCost = dc; }
+-(NSUInteger)dozCost { return _dozCost; }
 
 // Costs - per boquet
--(void)setBoqCost:(int)bc { _boqCost = bc; }
--(int)boqCost { return _boqCost; }
+-(void)setBoqCost:(NSUInteger)bc { _boqCost = bc; }
+-(NSUInteger)boqCost { return _boqCost; }
 
 // Seasonality
 -(void)setSeason:(NSString*)s to:(Boolean)val { val ? [_season setValue:@"true" forKey:s] : [_season setValue:@"false" forKey:s]; }

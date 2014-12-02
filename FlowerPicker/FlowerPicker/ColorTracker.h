@@ -21,4 +21,7 @@
 // Add an available color, build available colors when we load the flowers from plist
 -(void)addAvailableColor:(NSString*)color;
 
+// See if a color is active
+-(BOOL)isActive:(NSString*)color;
+
 @end
