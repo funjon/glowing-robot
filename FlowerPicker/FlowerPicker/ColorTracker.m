@@ -65,4 +65,15 @@
     return false;
 }
 
+#pragma mark Singleton Methods
+
++(id)sharedManager {
+    static ColorTracker* sharedColorTracker = nil;
+    @synchronized(self) {
+        if (sharedColorTracker == nil) {
+            sharedColorTracker = [[self alloc] init];
+        }
+    }
+    return sharedColorTracker;
+}
 @end
