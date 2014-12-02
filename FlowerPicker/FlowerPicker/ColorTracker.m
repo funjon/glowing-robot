@@ -59,4 +59,10 @@
     [_colors setValue:@"off" forKey:color];
 }
 
+// See if a color is active
+-(BOOL)isActive:(NSString*)color {
+    if ([[_colors objectForKey:color] containsString:@"on"]) { return true; }
+    return false;
+}
+
 @end
