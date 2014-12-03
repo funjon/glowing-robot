@@ -16,7 +16,7 @@
 @property NSString* imageName;
 @property NSUInteger dozCost;
 @property NSUInteger boqCost;
-@property NSMutableDictionary* season;
+@property NSDictionary* season;
 
 @end
 
@@ -29,21 +29,6 @@
 @synthesize dozCost = _dozCost;
 @synthesize boqCost = _boqCost;
 @synthesize season = _season;
-
-// Init method
--(id)init {
-    if (self = [super init]) {
-        // OK, init things that need to be initialized
-        _season = [[NSMutableDictionary alloc] init];
-        // Strings can be left alone
-    }
-    return self;
-}
-
-// Dealloc method
--(void)dealloc {
-    [_season removeAllObjects];
-}
 
 // Display name methods
 -(void)setDisplayName:(NSString *)dn { _displayName = dn; }
@@ -70,8 +55,7 @@
 -(NSUInteger)boqCost { return _boqCost; }
 
 // Seasonality
--(void)setSeason:(NSString*)s to:(Boolean)val { val ? [_season setValue:@"true" forKey:s] : [_season setValue:@"false" forKey:s]; }
--(void)setSeason:(NSDictionary*)s { _season = [s mutableCopy]; }
+-(void)setSeason:(NSDictionary*)s { _season = [[NSDictionary alloc] initWithDictionary:s]; }
 -(NSDictionary*)season { return _season; }
 -(BOOL)season: (NSString*)s { if ([[_season objectForKey:s] isEqual: @"true"]) { return true; } else { return false; } }
 

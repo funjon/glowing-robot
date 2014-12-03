@@ -32,7 +32,6 @@
 		E1CD05B21A1DB1D9003B8C77 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */; };
 		E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */; };
 		E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */; };
-		E1ECF9531A20535F002D1752 /* flower images in Resources */ = {isa = PBXBuildFile; fileRef = E1ECF9521A20535F002D1752 /* flower images */; };
 		E1ECF9551A205390002D1752 /* LaunchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1ECF9541A205390002D1752 /* LaunchImage.jpg */; };
 /* End PBXBuildFile section */
 
@@ -158,7 +157,6 @@
 		E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristsTableViewController.m; sourceTree = "<group>"; };
 		E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
 		E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
-		E1ECF9521A20535F002D1752 /* flower images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "flower images"; sourceTree = "<group>"; };
 		E1ECF9541A205390002D1752 /* LaunchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,7 +317,6 @@
 				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
 				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
 				E1ECF9541A205390002D1752 /* LaunchImage.jpg */,
-				E1ECF9521A20535F002D1752 /* flower images */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
 			);
 			path = FlowerPicker;

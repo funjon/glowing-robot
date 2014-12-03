@@ -23,11 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    // If it doesn't exist, build the color tracker object. This is also where
-    // we will load the data from plist
+    // Get the color tracker object, and load from the plist.
     if (!_colorTracker) {
-        NSLog(@"Creating colorTracker object");
-        _colorTracker = [[ColorTracker alloc] init];
+        NSLog(@"Getting colorTracker object");
+        _colorTracker = [ColorTracker sharedManager];
         
         // Init the flowerDb
         NSString* path = [[NSBundle mainBundle] pathForResource:@"flowerData" ofType:@"plist"];
@@ -38,8 +37,8 @@
         
         NSLog(@"Loaded %lu flowers from plist", [keys count]);
         
-        // Create the array and populate it
-        _flowerDb = [[FlowerContainer alloc] init];
+        // Get the flowerbox singleton
+        _flowerDb = [FlowerContainer sharedManager];
         
         for (NSString* key in keys) {
             Flower* newFlower = [[Flower alloc] init];
