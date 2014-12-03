@@ -157,7 +157,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Colors" id="Kzz-Uk-kaA" userLabel="Colors"/>
+                    <tabBarItem key="tabBarItem" title="Colors" image="plant-element-7.png" id="Kzz-Uk-kaA" userLabel="Colors"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCi-jm-B5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,7 +358,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="Vzc-Ut-wQB"/>
+                    <tabBarItem key="tabBarItem" title="About" image="character-a-7.png" id="Vzc-Ut-wQB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAc-p5-jMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -477,7 +477,7 @@
         <scene sceneID="XNn-Vb-2Bx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ha-A2-EoW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="AT9-ek-NaZ"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-7.png" id="AT9-ek-NaZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dVg-sy-UqV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -496,7 +496,7 @@
         <scene sceneID="IJR-i2-oFC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="916-p8-Fe3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Florists" id="8D7-Xs-4qG"/>
+                    <tabBarItem key="tabBarItem" title="Florists" image="shop-7.png" id="8D7-Xs-4qG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ylt-Gf-Rjr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -515,7 +515,7 @@
         <scene sceneID="T4C-1j-1YV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gn6-c9-XH6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" id="csG-0p-Gde"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list-simple-7.png" id="csG-0p-Gde"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pEQ-39-O0w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -531,12 +531,19 @@
             <point key="canvasLocation" x="-372.5" y="458.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="character-a-7.png" width="30" height="30"/>
+        <image name="list-simple-7.png" width="30" height="30"/>
+        <image name="plant-element-7.png" width="30" height="30"/>
+        <image name="search-7.png" width="30" height="30"/>
+        <image name="shop-7.png" width="29" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fb5-Xo-ziB"/>
+        <segue reference="Vqg-AB-9os"/>
     </inferredMetricsTieBreakers>
 </document>
