@@ -10,19 +10,54 @@
 
 @interface ColorPickerViewController ()
 
-@property NSMutableDictionary *colorPicks;
-
+@property ColorTracker* colorTracker;
+@property FlowerContainer* flowerDb;
 @end
 
 @implementation ColorPickerViewController
 
+@synthesize colorTracker = _colorTracker;
+@synthesize flowerDb = _flowerDb;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.colorPicks = [self getDictionary];
 
+    // Get the color tracker object, and load from the plist.
+    if (!_colorTracker) {
+        NSLog(@"Getting colorTracker object");
+        _colorTracker = [ColorTracker sharedManager];
+        
+        // Init the flowerDb
+        NSString* path = [[NSBundle mainBundle] pathForResource:@"flowerData" ofType:@"plist"];
+        
+        // get data from plist
+        NSDictionary* dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+        NSArray *keys = [dict allKeys];
+        
+        NSLog(@"Loaded %lu flowers from plist", [keys count]);
+        
+        // Get the flowerbox singleton
+        _flowerDb = [FlowerContainer sharedManager];
+        
+        for (NSString* key in keys) {
+            Flower* newFlower = [[Flower alloc] init];
+            [newFlower setDisplayName:[[dict objectForKey:key] objectForKey:@"displayName"]];
+            [newFlower setColor:[[dict objectForKey:key] objectForKey:@"color"]];
+            [newFlower setType:[[dict objectForKey:key] objectForKey:@"type"]];
+            [newFlower setDozCost:(NSUInteger)[[dict objectForKey:key] objectForKey:@"dozCost"]];
+            [newFlower setBoqCost:(NSUInteger)[[dict objectForKey:key] objectForKey:@"boqCost"]];
+            [newFlower setImageName:[[dict objectForKey:key] objectForKey:@"imageName"]];
+            [newFlower setSeason:[[dict objectForKey:key] objectForKey:@"season"]];
+            
+            // Make sure the color is present in the colorTracker
+            [_colorTracker addAvailableColor:[newFlower color]];
+            
+//            NSLog(@"Loaded flower %@ with color %@ and imagename %@ and costs $%lu $%lu", [newFlower displayName], [newFlower color], [newFlower imageName], [newFlower dozCost], [newFlower boqCost]);
+            // Add the new flower to the container
+            [_flowerDb addFlower:newFlower withName:[newFlower displayName]];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,34 +69,9 @@
     [self selectColor: sender.currentTitle];
 }
 
-
--(NSMutableDictionary*)getDictionary{
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithObjectsAndKeys:
-                                 @NO, @"Red",
-                                 @NO, @"Yellow",
-                                 @NO, @"Turquoise",
-                                 @NO, @"Purple",
-                                 @NO, @"Pink",
-                                 @NO, @"Orange",
-                                 @NO, @"Green",
-                                 @NO, @"Blue",
-                                 @NO, @"White",
-                                 @NO, @"Brown",
-                                 nil];
-    return dict;
-}
-
-
 -(void)selectColor:(NSString *)key{
-    if([self isSelected: key])
-        self.colorPicks[key] = @NO;
-    else
-        self.colorPicks[key] = @YES;
-}
-
-
--(BOOL)isSelected:(NSString *)key{
-    return [[self.colorPicks objectForKey:key]boolValue];
+    if([_colorTracker isActive:key]) { [_colorTracker setColor:key to:@"off"]; }
+    else                             { [_colorTracker setColor:key to:@"on"]; }
 }
 
 /*

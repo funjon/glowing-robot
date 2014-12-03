@@ -10,7 +10,8 @@
 
 // Object to keep track of active colors across views
 #import "ColorTracker.h"
-
+#import "Flower.h"
+#import "FlowerContainer.h"
 
 /*
 
@@ -26,7 +27,6 @@
  */
 @interface ColorPickerViewController : UIViewController
 
--(NSMutableDictionary*)getDictionary;
 -(void)selectColor:(NSString *)key;
 -(BOOL)isSelected:(NSString *)key;
 

@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ColorTracker : NSObject
+@interface ColorTracker : NSObject {
+    NSMutableDictionary* colors;
+}
+
+@property (nonatomic, retain) NSMutableDictionary* colors;
 
 // Set a color on or off
 // returns true if successful (or if currently set to that state
@@ -20,5 +24,11 @@
 
 // Add an available color, build available colors when we load the flowers from plist
 -(void)addAvailableColor:(NSString*)color;
+
+// See if a color is active
+-(BOOL)isActive:(NSString*)color;
+
+// Class method to make this a singleton
++(id)sharedManager;
 
 @end

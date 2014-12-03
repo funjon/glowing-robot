@@ -15,8 +15,8 @@
 -(NSString*)type;
 -(NSString*)color;
 -(NSString*)imageName;
--(int)dozCost;
--(int)boqCost;
+-(NSUInteger)dozCost;
+-(NSUInteger)boqCost;
 -(NSDictionary*)season;
 -(BOOL)season: (NSString*)s; // Overload to allow getting specific season
 
@@ -25,9 +25,8 @@
 -(void)setType:(NSString*)t;
 -(void)setColor:(NSString*)c;
 -(void)setImageName:(NSString*)img;
--(void)setDozCost:(int)dc;
--(void)setBoqCost:(int)bc;
+-(void)setDozCost:(NSUInteger)dc;
+-(void)setBoqCost:(NSUInteger)bc;
 -(void)setSeason:(NSDictionary*)s;
--(void)setSeason:(NSString*)s to:(Boolean)val;
 
 @end
