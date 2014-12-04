@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Flower.h"
+#import "FlowerInfoCell.h"
+#import "ColorTracker.h"
+#import "FlowerContainer.h"
+
 @interface ListsTableViewController : UITableViewController
 
 @end

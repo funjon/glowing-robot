@@ -14,9 +14,8 @@
 @property FlowerContainer* flowerDb;
 @property (weak, nonatomic) IBOutlet UILabel *selectedCount;
 
-// Checkmark images
+// Checkmark images - cheats and uses the accessibilityLabel to id which is which
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *colorChecks;
-
 
 @end
 

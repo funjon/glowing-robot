@@ -277,7 +277,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksu-UP-cll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69.5" y="462.5"/>
+            <point key="canvasLocation" x="-372.5" y="1294.5"/>
         </scene>
         <!--FlowerDetailsViewController-->
         <scene sceneID="DRN-dl-rgO">
@@ -357,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyQ-om-2O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146.5" y="1288.5"/>
+            <point key="canvasLocation" x="-142.5" y="2222.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="aaA-79-Qrc">
@@ -416,7 +416,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1067.5" y="458.5"/>
+            <point key="canvasLocation" x="67.5" y="1294.5"/>
         </scene>
         <!--About-->
         <scene sceneID="I05-gj-TB7">
@@ -436,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAc-p5-jMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2520.5" y="457.5"/>
+            <point key="canvasLocation" x="975.5" y="458.5"/>
         </scene>
         <!--Florists-->
         <scene sceneID="F8d-sI-b2z">
@@ -495,7 +495,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1980.5" y="457.5"/>
+            <point key="canvasLocation" x="515.5" y="1294.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dVR-Nu-ESD">
@@ -544,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFg-3b-aeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497.5" y="1264.5"/>
+            <point key="canvasLocation" x="515.5" y="2222.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="XNn-Vb-2Bx">
@@ -563,7 +563,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bU-P8-Z02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654.5" y="457.5"/>
+            <point key="canvasLocation" x="67.5" y="458.5"/>
         </scene>
         <!--Florists-->
         <scene sceneID="IJR-i2-oFC">
@@ -582,7 +582,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lse-y0-yIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5" y="458.5"/>
+            <point key="canvasLocation" x="515.5" y="458.5"/>
         </scene>
         <!--List-->
         <scene sceneID="T4C-1j-1YV">

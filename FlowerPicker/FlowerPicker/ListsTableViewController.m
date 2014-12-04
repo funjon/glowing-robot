@@ -7,25 +7,26 @@
 //
 
 #import "ListsTableViewController.h"
-#import "Flower.h"
-#import "FlowerInfoCell.h"
 
 @interface ListsTableViewController ()
+
+// Static shared containers
+@property ColorTracker* colorTracker;
+@property FlowerContainer* flowerDb;
+
+// Local objects for managing the list
+@property NSMutableDictionary* selectedFlowers;
+@property NSArray* colorSectionTitles;
 
 @end
 
 @implementation ListsTableViewController
-{
-    NSMutableArray *flowerNames;
-    NSMutableArray *flowerTypes;
-    NSMutableArray *flowerColors;
-    NSMutableArray *flowerDozCosts;
-    NSMutableArray *flowerBoqCosts;
-    NSMutableArray *flowerImageNames;
-    
-    NSMutableArray *Flowers;
-}
 
+@synthesize colorTracker = _colorTracker;
+@synthesize flowerDb = _flowerDb;
+
+@synthesize selectedFlowers = _selectedFlowers;
+@synthesize colorSectionTitles = _colorSectionTitles;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +36,25 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // Get the ColorTracker and FlowerContainer objects
+    _colorTracker = [ColorTracker sharedManager];
+    _flowerDb = [FlowerContainer sharedManager];
+    
+    
+}
+
+// Need to have a -viewWillAppear so we reload data every time (go back to color picker, add/subtract, need to update data)
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    // Get the list of enabled colors
+    _colorSectionTitles = [_colorTracker getActiveColors];
+    
+    for (NSString* color in _colorSectionTitles) {
+        // Add the flowers for each color to _selectedFlowers
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,17 +65,14 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return [_colorSectionTitles count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return 0;
 }
-
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -67,17 +84,17 @@
     
 
     
-    Flower *flowerObject = [Flowers objectAtIndex:indexPath.row];
+//    Flower *flowerObject = [Flowers objectAtIndex:indexPath.row];
     
    // NSLog(@"MY FLOWER: %@", flowerObject);
-    cell.ColorAndType.text = flowerObject.displayName;
+//    cell.ColorAndType.text = flowerObject.displayName;
     return cell;
 }
 
 
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [flowerNames count];
+    return 0;
 }
 
 
