@@ -11,16 +11,7 @@
 
 @interface FlowerDetailsViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *FlowerName;
-// FlowerImage Info:
-// -location: x: 85 y: 142
-// -size: 220 x 230
-@property (strong, nonatomic) IBOutlet UIImageView *FlowerImage;
-@property (strong, nonatomic) IBOutlet UILabel *FlowerColors;
-@property (strong, nonatomic) IBOutlet UILabel *FlowerCosts;
-@property (strong, nonatomic) IBOutlet UILabel *season;
-@property (strong, nonatomic) IBOutlet UILabel *dozCost;
-@property (strong, nonatomic) IBOutlet UILabel *boqCost;
+
 
 
 // @property Flower Object?
