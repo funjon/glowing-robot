@@ -17,16 +17,7 @@
     [_flowerDb removeAllObjects];
 }
 
-// Todo
-/*
- // Get methods
- -(Flower*)getFlower:(NSString*)withName;
- -(NSArray*)getArray;
- -(int)count;
- 
- // Set methods
- -(void)addFlower:(Flower*)flower withName:(NSString*)name;
-*/
+#warning implement -(NSDictionary*)getFlowers:(NSString*)withColor;
 
 // Returns a flower by name if found, nil otherwise
 -(Flower*)getFlower:(NSString*)withName {
