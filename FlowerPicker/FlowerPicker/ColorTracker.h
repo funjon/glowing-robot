@@ -10,9 +10,11 @@
 
 @interface ColorTracker : NSObject {
     NSMutableDictionary* colors;
+    NSMutableDictionary* colorCounts;
 }
 
 @property (nonatomic, retain) NSMutableDictionary* colors;
+@property (nonatomic, retain) NSMutableDictionary* colorCounts;
 
 // Set a color on or off
 // returns true if successful (or if currently set to that state
@@ -27,6 +29,9 @@
 
 // See if a color is active
 -(BOOL)isActive:(NSString*)color;
+
+// Find out how many flowers of a color are registered
+-(NSInteger)countForcolor:(NSString*)color;
 
 // Class method to make this a singleton
 +(id)sharedManager;

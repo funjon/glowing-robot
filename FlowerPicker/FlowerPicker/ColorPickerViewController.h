@@ -28,6 +28,5 @@
 @interface ColorPickerViewController : UIViewController
 
 -(void)selectColor:(NSString *)key;
--(BOOL)isSelected:(NSString *)key;
 
 @end

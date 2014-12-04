@@ -18,6 +18,7 @@
 		7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA601A1450D000F6C0FD /* Images.xcassets */; };
 		7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5FA621A1450D000F6C0FD /* LaunchScreen.xib */; };
 		7CB5FA701A1450D100F6C0FD /* FlowerPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */; };
+		7CE5DDCF1A2FF44700555DA4 /* green_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE5DDCE1A2FF44700555DA4 /* green_check.png */; };
 		C321FCAE1A1C5EF8006FF9FE /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C321FCAD1A1C5EF8006FF9FE /* Contents.json */; };
 		D77C42C21A279BD8004E11FA /* FlowerInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D77C42C11A279BD8004E11FA /* FlowerInfoCell.m */; };
 		E149DD831A2FBFA5000F2097 /* shop-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E149DD821A2FBFA5000F2097 /* shop-7.png */; };
@@ -135,6 +136,7 @@
 		7CB5FA691A1450D100F6C0FD /* FlowerPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB5FA6E1A1450D100F6C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB5FA6F1A1450D100F6C0FD /* FlowerPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerPickerTests.m; sourceTree = "<group>"; };
+		7CE5DDCE1A2FF44700555DA4 /* green_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_check.png; sourceTree = "<group>"; };
 		C321FCAD1A1C5EF8006FF9FE /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		D77C42C01A279BD8004E11FA /* FlowerInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerInfoCell.h; sourceTree = "<group>"; };
 		D77C42C11A279BD8004E11FA /* FlowerInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerInfoCell.m; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		7CAD1C011A2410CA00AF3F55 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7CE5DDCB1A2FF40E00555DA4 /* icons */,
 				E149DD901A2FC1F3000F2097 /* tabBarIcons */,
 				7CAD1C021A2410CA00AF3F55 /* flower */,
 			);
@@ -348,6 +351,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7CE5DDCB1A2FF40E00555DA4 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				7CE5DDCE1A2FF44700555DA4 /* green_check.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
 		C321FCAC1A1C5EF8006FF9FE /* AppIcon.appiconset */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,8 +464,8 @@
 				7CB5FA5F1A1450D000F6C0FD /* Main.storyboard in Resources */,
 				7CB5FA641A1450D000F6C0FD /* LaunchScreen.xib in Resources */,
 				E149DD831A2FBFA5000F2097 /* shop-7.png in Resources */,
+				7CE5DDCF1A2FF44700555DA4 /* green_check.png in Resources */,
 				E1ECF9551A205390002D1752 /* LaunchImage.jpg in Resources */,
-				E1ECF9531A20535F002D1752 /* flower images in Resources */,
 				E149DD891A2FC075000F2097 /* plant-element-7.png in Resources */,
 				E149DD8F1A2FC116000F2097 /* list-simple-7.png in Resources */,
 				7CB5FA611A1450D000F6C0FD /* Images.xcassets in Resources */,
