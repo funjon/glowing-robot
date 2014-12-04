@@ -14,12 +14,10 @@
 
 //
 //Maria: Not sure if this is what we need to add but this is what i did.
-@property (strong, nonatomic) IBOutlet UIImageView *flowerImage;
 
 // FlowerImage Info:
 // -location: x: 8 y: 1
 // -size: 75 x 75
-@property (strong, nonatomic) IBOutlet UILabel *flowerName;
 
 @end
 
