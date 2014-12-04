@@ -18,6 +18,12 @@
 @property NSMutableDictionary* selectedFlowers;
 @property NSArray* colorSectionTitles;
 
+//maria's changes
+//Maria: Not sure if this is what we need to add but this is what i did.
+// FlowerImage Info:
+// -location: x: 8 y: 1
+// -size: 75 x 75
+
 @end
 
 @implementation ListsTableViewController
