@@ -24,14 +24,29 @@
     
     for (Flower* f in _flowerDb) {
         if ([[[f displayName] lowercaseString] containsString:[color lowercaseString]]) {
-            NSLog(@"Adding %@ for color %@",[f displayName], color);
             [_tempAry addObject:[f displayName]];
         }
     }
     
     _fixedAry = [[NSArray alloc] initWithArray:_tempAry];
     
-    NSLog(@"Returning %lu entries for color %@",[_fixedAry count],color);
+    // Return it
+    return _fixedAry;
+}
+
+-(NSArray*)getColorsForType:(NSString*)type {
+    // Create a temporary array of results
+    NSMutableArray* _tempAry = [[NSMutableArray alloc] init];
+    NSArray* _fixedAry;
+    
+    for (Flower* f in _flowerDb) {
+        if ([[[f type] lowercaseString] containsString:[type lowercaseString]]) {
+            [_tempAry addObject:[f color]];
+        }
+    }
+    
+    _fixedAry = [[NSArray alloc] initWithArray:_tempAry];
+    
     // Return it
     return _fixedAry;
 }

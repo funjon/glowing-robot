@@ -20,6 +20,7 @@
 // Get methods
 -(Flower*)getFlower:(NSString*)withName;
 -(NSArray*)getFlowersWithColor:(NSString*)color;
+-(NSArray*)getColorsForType:(NSString*)type;
 -(NSArray*)getArray;
 -(NSUInteger)count;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yJf-aD-aLd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yJf-aD-aLd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Colors-->
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCi-jm-B5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-816.5" y="458.5"/>
+            <point key="canvasLocation" x="-1530.9375" y="484.33098591549293"/>
         </scene>
         <!--Currently Selected Flowers-->
         <scene sceneID="AyK-BL-c2O">
@@ -246,7 +246,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FlowerInfoCell" rowHeight="78" id="Hce-fC-6MA" customClass="FlowerInfoCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlowerInfoCell" rowHeight="78" id="Hce-fC-6MA" customClass="FlowerInfoCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hce-fC-6MA" id="gSc-IL-p8J">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -265,7 +265,7 @@
                                 <connections>
                                     <outlet property="flowerImage" destination="i5C-s2-zzS" id="bXB-zH-7hz"/>
                                     <outlet property="flowerName" destination="Qns-Kg-5A6" id="xYC-Vv-BaX"/>
-                                    <segue destination="Dz9-Il-odf" kind="push" id="fb5-Xo-ziB"/>
+                                    <segue destination="Dz9-Il-odf" kind="show" identifier="showItemDetail" id="Yt0-F7-vVQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -279,7 +279,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksu-UP-cll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-372.5" y="1306.5"/>
+            <point key="canvasLocation" x="-698.4375" y="1380.1056338028168"/>
         </scene>
         <!--FlowerDetailsViewController-->
         <scene sceneID="DRN-dl-rgO">
@@ -294,89 +294,97 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoE-oa-XyT">
-                                <rect key="frame" x="0.0" y="83" width="375" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="0.0" y="65" width="375" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Cost is based on the cost of a dozen flowers. " lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rev-zU-3NA" userLabel="FlowerDescription">
-                                <rect key="frame" x="12" y="580" width="333" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alternate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX8-Rp-erq">
-                                <rect key="frame" x="15" y="448" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-M0-k0P">
+                                <rect key="frame" x="12" y="388" width="90" height="42"/>
+                                <string key="text">Available
+Colors</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Colors:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-M0-k0P">
-                                <rect key="frame" x="16" y="464" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pw-NV-arj">
-                                <rect key="frame" x="12" y="493" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost*:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-w0-QXf">
-                                <rect key="frame" x="39" y="512" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dozCosts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-2Z-mo7">
-                                <rect key="frame" x="106" y="503" width="162" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerColors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hws-4I-zHX">
-                                <rect key="frame" x="97" y="440" width="162" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-Je-1Wf">
+                                <rect key="frame" x="12" y="488" width="90" height="42"/>
+                                <string key="text">Bouquet
+Cost</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRz-oR-sS3" userLabel="FlowerImage">
-                                <rect key="frame" x="85" y="142" width="220" height="230"/>
+                                <rect key="frame" x="77" y="100" width="220" height="230"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Season" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLi-6V-oNw">
-                                <rect key="frame" x="26" y="404" width="87" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM2-VU-bQQ">
+                                <rect key="frame" x="12" y="338" width="90" height="42"/>
+                                <string key="text">Available
+Seasons</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Season" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp3-JS-nbg">
-                                <rect key="frame" x="99" y="419" width="131" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pw-NV-arj">
+                                <rect key="frame" x="12" y="438" width="90" height="42"/>
+                                <string key="text">Dozen
+Cost</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM2-VU-bQQ">
-                                <rect key="frame" x="14" y="419" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winter-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="RdG-2L-sOJ">
+                                <rect key="frame" x="121" y="339" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="dvO-fY-DTJ">
+                                <rect key="frame" x="224" y="339" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fall-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-tX-FCt">
+                                <rect key="frame" x="276" y="340" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="NWu-UM-D5y">
+                                <rect key="frame" x="120" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orange-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="JXY-Zq-UQx">
+                                <rect key="frame" x="140" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellow-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="qWF-Tg-AT9">
+                                <rect key="frame" x="160" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="turquoise-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-hN-RCX">
+                                <rect key="frame" x="180" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="ooo-cZ-63x">
+                                <rect key="frame" x="200" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="kbq-eh-fy3">
+                                <rect key="frame" x="220" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purple-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-SL-v7S">
+                                <rect key="frame" x="240" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-xp-vrG">
+                                <rect key="frame" x="260" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pink-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="dsq-7f-eda">
+                                <rect key="frame" x="280" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brown-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyH-2a-x5i">
+                                <rect key="frame" x="300" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spring-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="OIb-96-uI3">
+                                <rect key="frame" x="172" y="339" width="40" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bouquetCostLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zx-jI-Zo5">
+                                <rect key="frame" x="120" y="498" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="boqCost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-Uy-Dh1">
-                                <rect key="frame" x="143" y="551" width="109" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSZ-lE-Dad">
-                                <rect key="frame" x="49" y="560" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bouquet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-Je-1Wf">
-                                <rect key="frame" x="23" y="541" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dozenCostLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOg-rS-t9L">
+                                <rect key="frame" x="120" y="448" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -386,19 +394,31 @@
                     <navigationItem key="navigationItem" id="8XB-SC-5hL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="FlowerColors" destination="Hws-4I-zHX" id="5PD-zW-lzY"/>
-                        <outlet property="FlowerCosts" destination="d3b-2Z-mo7" id="JYZ-Cb-497"/>
-                        <outlet property="FlowerDescription" destination="rev-zU-3NA" id="H2q-zW-TTF"/>
                         <outlet property="FlowerImage" destination="KRz-oR-sS3" id="GND-9c-qzH"/>
                         <outlet property="FlowerName" destination="ZoE-oa-XyT" id="C02-On-HW2"/>
-                        <outlet property="boqCost" destination="aDp-Uy-Dh1" id="PWY-zm-X2Z"/>
-                        <outlet property="dozCost" destination="d3b-2Z-mo7" id="KK4-54-OPZ"/>
-                        <outlet property="season" destination="kp3-JS-nbg" id="VhV-U2-EQh"/>
+                        <outlet property="bouquetCost" destination="7zx-jI-Zo5" id="3wm-ND-p3F"/>
+                        <outlet property="dozenCost" destination="EOg-rS-t9L" id="HDH-ma-suq"/>
+                        <outlet property="flowerImage" destination="KRz-oR-sS3" id="i5J-yq-O5M"/>
+                        <outlet property="flowerName" destination="ZoE-oa-XyT" id="kie-6h-zQW"/>
+                        <outlet property="imageBlue" destination="kbq-eh-fy3" id="FaJ-m3-0AM"/>
+                        <outlet property="imageBrown" destination="gyH-2a-x5i" id="4Yt-3L-RYw"/>
+                        <outlet property="imageFall" destination="sIc-tX-FCt" id="U78-6m-j90"/>
+                        <outlet property="imageGreen" destination="ooo-cZ-63x" id="6DL-bU-Ucw"/>
+                        <outlet property="imageOrange" destination="JXY-Zq-UQx" id="ddA-9D-pLN"/>
+                        <outlet property="imagePink" destination="dsq-7f-eda" id="zmC-Fg-0RV"/>
+                        <outlet property="imagePurple" destination="CYk-SL-v7S" id="fam-0e-oj3"/>
+                        <outlet property="imageRed" destination="NWu-UM-D5y" id="bdz-qG-xKK"/>
+                        <outlet property="imageSpring" destination="OIb-96-uI3" id="dPw-Qr-QdQ"/>
+                        <outlet property="imageSummer" destination="dvO-fY-DTJ" id="84z-cv-Th0"/>
+                        <outlet property="imageTurquoise" destination="SEO-hN-RCX" id="YTe-Fh-mZB"/>
+                        <outlet property="imageWhite" destination="IaM-xp-vrG" id="qvo-vV-ewA"/>
+                        <outlet property="imageWinter" destination="RdG-2L-sOJ" id="la0-uY-MM9"/>
+                        <outlet property="imageYellow" destination="qWF-Tg-AT9" id="qfm-2V-DhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyQ-om-2O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152.5" y="2188.5"/>
+            <point key="canvasLocation" x="-283.5" y="2424.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="aaA-79-Qrc">
@@ -431,7 +451,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Dz9-Il-odf" kind="push" id="Vqg-AB-9os"/>
+                                    <segue destination="Dz9-Il-odf" kind="show" identifier="showItemDetail" id="5Il-Se-tal"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -457,7 +477,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="67.5" y="1306.5"/>
+            <point key="canvasLocation" x="126.5625" y="1380.1056338028168"/>
         </scene>
         <!--About-->
         <scene sceneID="I05-gj-TB7">
@@ -477,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAc-p5-jMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975.5" y="458.5"/>
+            <point key="canvasLocation" x="1829.0625" y="484.33098591549293"/>
         </scene>
         <!--Florists-->
         <scene sceneID="F8d-sI-b2z">
@@ -510,7 +530,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Dhw-Tg-sme" kind="push" id="cEt-6z-tDv"/>
+                                    <segue destination="Dhw-Tg-sme" kind="show" id="cEt-6z-tDv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -536,7 +556,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="515.5" y="1306.5"/>
+            <point key="canvasLocation" x="966.5625" y="1380.1056338028168"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dVR-Nu-ESD">
@@ -559,7 +579,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLd-np-IRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67.5" y="-569.5"/>
+            <point key="canvasLocation" x="126.5625" y="-601.58450704225345"/>
         </scene>
         <!--WebPageViewController-->
         <scene sceneID="Fzd-gw-2Zy">
@@ -585,7 +605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFg-3b-aeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515.5" y="2188.5"/>
+            <point key="canvasLocation" x="966.5625" y="2311.7957746478874"/>
         </scene>
         <!--Search-->
         <scene sceneID="XNn-Vb-2Bx">
@@ -604,7 +624,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bU-P8-Z02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67.5" y="458.5"/>
+            <point key="canvasLocation" x="126.5625" y="484.33098591549293"/>
         </scene>
         <!--Florists-->
         <scene sceneID="IJR-i2-oFC">
@@ -623,7 +643,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lse-y0-yIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515.5" y="458.5"/>
+            <point key="canvasLocation" x="966.5625" y="484.33098591549293"/>
         </scene>
         <!--List-->
         <scene sceneID="T4C-1j-1YV">
@@ -642,23 +662,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8g-TS-YnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-372.5" y="458.5"/>
+            <point key="canvasLocation" x="-698.4375" y="484.33098591549293"/>
         </scene>
     </scenes>
     <resources>
+        <image name="blue-disabled.png" width="20" height="40"/>
+        <image name="brown-disabled.png" width="20" height="40"/>
         <image name="character-a-7.png" width="30" height="30"/>
+        <image name="fall-disabled.png" width="40" height="40"/>
+        <image name="green-disabled.png" width="20" height="40"/>
         <image name="green_check.png" width="32" height="32"/>
         <image name="list-simple-7.png" width="30" height="30"/>
+        <image name="orange-disabled.png" width="20" height="40"/>
+        <image name="pink-disabled.png" width="20" height="40"/>
         <image name="plant-element-7.png" width="30" height="30"/>
+        <image name="purple-disabled.png" width="20" height="40"/>
+        <image name="red-disabled.png" width="20" height="40"/>
         <image name="search-7.png" width="30" height="30"/>
         <image name="shop-7.png" width="29" height="30"/>
+        <image name="spring-disabled.png" width="40" height="40"/>
+        <image name="summer-disabled.png" width="40" height="40"/>
+        <image name="turquoise-disabled.png" width="20" height="40"/>
+        <image name="white-disabled.png" width="20" height="40"/>
+        <image name="winter-disabled.png" width="40" height="40"/>
+        <image name="yellow-disabled.png" width="20" height="40"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fb5-Xo-ziB"/>
+        <segue reference="5Il-Se-tal"/>
     </inferredMetricsTieBreakers>
 </document>

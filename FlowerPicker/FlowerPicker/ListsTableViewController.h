@@ -12,6 +12,7 @@
 #import "FlowerInfoCell.h"
 #import "ColorTracker.h"
 #import "FlowerContainer.h"
+#import "FlowerDetailsViewController.h"
 
 @interface ListsTableViewController : UITableViewController
 

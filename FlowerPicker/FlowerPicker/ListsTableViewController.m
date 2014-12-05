@@ -63,17 +63,18 @@
         NSArray* temp = [[NSArray alloc] initWithArray:[_flowerDb getFlowersWithColor:color]];
         [_selectedFlowers setObject:temp forKey:[color capitalizedString]];
     }
-    
+
+    /*
     // DEBUG
     NSLog(@"_selectedFlowers has %lu entries",[_selectedFlowers count]);
     for (NSString* f in _selectedFlowers) {
         NSLog(@"Selection includes %@",f);
         NSLog(@"Flowers in this section are %@",[_selectedFlowers objectForKey:f]);
     }
+    */
     
     // Reload the table
     [self.tableView reloadData];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,82 +99,61 @@
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return [[_colorSectionTitles objectAtIndex:section] capitalizedString];
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    // Cell bootstrapping data
     static NSString *cellIdentifier = @"FlowerInfoCell";
     FlowerInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if( cell == nil ){
         cell  = [[FlowerInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
+    // Data we need for our cell
     NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
-    NSLog(@"We are in section %@",sectionTitle);
     NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
     
     NSString* flowerName = [sectionFlowers objectAtIndex:indexPath.row];
     NSString* flowerImage = [[_flowerDb getFlower:flowerName] imageName];
-    NSString* imagePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",flowerImage] ofType:@"jpg"];
     
-    NSLog(@"Building flower %@ with image %@ imagepath %@",flowerName, flowerImage, imagePath);
     cell.flowerName.text = flowerName;
-    
     cell.flowerImage.image = [UIImage imageNamed:flowerImage];
-    NSLog(@"Image is %@",cell.flowerImage.image);
     return cell;
 }
-
-
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 1;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showItemDetail"]) {
+        // Get the current row
+        NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+        
+        // Get the target viewController
+        FlowerDetailsViewController* dvc = segue.destinationViewController;
+        
+        // Get data we need for the selected cell
+        NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
+        NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
+
+        NSString* flowerName = [sectionFlowers objectAtIndex:indexPath.row];
+
+        // Pass data over to the dvc
+        dvc.segueFlowerName = flowerName;
+        dvc.segueFlowerImage = [[_flowerDb getFlower:flowerName] imageName];
+        dvc.segueDozenCost = (int)[[_flowerDb getFlower:flowerName] dozCost];
+        dvc.segueBouquetCost = (int)[[_flowerDb getFlower:flowerName] boqCost];
+        
+        // Send the seasons dictionary
+        dvc.segueSeasonImages = [[_flowerDb getFlower:flowerName] season];
+        
+        // Send the color array
+        dvc.segueColorImages = [_flowerDb getColorsForType:[[_flowerDb getFlower:flowerName] type]];
+    }
 }
-*/
 
 @end

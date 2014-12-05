@@ -65,8 +65,6 @@
     }
     
     [[self selectedCount] setText:@"Flowers Selected: 0"];
-    
-    NSLog(@"All colors registered: %@",[_colorTracker allColors]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -118,7 +116,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
 
 @end
