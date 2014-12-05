@@ -10,6 +10,7 @@
 
 @interface FlowerInfoCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UILabel *ColorAndType;
+@property (weak, nonatomic) IBOutlet UIImageView *flowerImage;
+@property (weak, nonatomic) IBOutlet UILabel *flowerName;
 
 @end

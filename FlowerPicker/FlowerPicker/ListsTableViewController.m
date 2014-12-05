@@ -47,7 +47,7 @@
     _colorTracker = [ColorTracker sharedManager];
     _flowerDb = [FlowerContainer sharedManager];
     
-    
+    _selectedFlowers = [[NSMutableDictionary alloc] init];
 }
 
 // Need to have a -viewWillAppear so we reload data every time (go back to color picker, add/subtract, need to update data)
@@ -57,11 +57,21 @@
     // Get the list of enabled colors
     _colorSectionTitles = [_colorTracker getActiveColors];
     
+    // Clear out any previously selected flowers
+    [_selectedFlowers removeAllObjects];
+    
+    // Get a list of flower names for each color
     for (NSString* color in _colorSectionTitles) {
-        // Add the flowers for each color to _selectedFlowers
-        
+        NSArray* temp = [[NSArray alloc] initWithArray:[_flowerDb getFlowersWithColor:color]];
+        [_selectedFlowers setObject:temp forKey:[color capitalizedString]];
     }
-
+    
+    // DEBUG
+    NSLog(@"_selectedFlowers has %lu entries",[_selectedFlowers count]);
+    for (NSString* f in _selectedFlowers) {
+        NSLog(@"Selection includes %@",f);
+        NSLog(@"Flowers in this section are %@",[_selectedFlowers objectForKey:f]);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,7 +88,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 0;
+    NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:section] capitalizedString];
+    NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
+    
+    return [sectionFlowers count];
+}
+
+-(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [_colorSectionTitles objectAtIndex:section];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -89,12 +107,8 @@
         cell  = [[FlowerInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-
+#warning finish configuring the cell here
     
-//    Flower *flowerObject = [Flowers objectAtIndex:indexPath.row];
-    
-   // NSLog(@"MY FLOWER: %@", flowerObject);
-//    cell.ColorAndType.text = flowerObject.displayName;
     return cell;
 }
 

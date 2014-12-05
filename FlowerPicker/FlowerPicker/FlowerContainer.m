@@ -17,7 +17,24 @@
     [_flowerDb removeAllObjects];
 }
 
-#warning implement -(NSDictionary*)getFlowers:(NSString*)withColor;
+-(NSArray*)getFlowersWithColor:(NSString *)color {
+    // Create a temporary array of results
+    NSMutableArray* _tempAry = [[NSMutableArray alloc] init];
+    NSArray* _fixedAry;
+    
+    for (Flower* f in _flowerDb) {
+        if ([[[f displayName] lowercaseString] containsString:[color lowercaseString]]) {
+            NSLog(@"Adding %@ for color %@",[f displayName], color);
+            [_tempAry addObject:[f displayName]];
+        }
+    }
+    
+    _fixedAry = [[NSArray alloc] initWithArray:_tempAry];
+    
+    NSLog(@"Returning %lu entries for color %@",[_fixedAry count],color);
+    // Return it
+    return _fixedAry;
+}
 
 // Returns a flower by name if found, nil otherwise
 -(Flower*)getFlower:(NSString*)withName {
