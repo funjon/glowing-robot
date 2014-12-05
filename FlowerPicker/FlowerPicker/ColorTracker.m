@@ -52,6 +52,10 @@
     return [[_colorCounts objectForKey:color] integerValue];
 }
 
+-(NSArray*)allColors {
+    return [_colors copy];
+}
+
 #pragma mark Singleton Methods
 
 +(id)sharedManager {

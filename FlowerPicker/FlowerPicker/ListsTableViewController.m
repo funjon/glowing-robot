@@ -46,8 +46,6 @@
     // Get the ColorTracker and FlowerContainer objects
     _colorTracker = [ColorTracker sharedManager];
     _flowerDb = [FlowerContainer sharedManager];
-    
-    _selectedFlowers = [[NSMutableDictionary alloc] init];
 }
 
 // Need to have a -viewWillAppear so we reload data every time (go back to color picker, add/subtract, need to update data)
@@ -55,10 +53,10 @@
     [super viewWillAppear:animated];
 
     // Get the list of enabled colors
-    _colorSectionTitles = [_colorTracker getActiveColors];
+    _colorSectionTitles = [[NSArray alloc] initWithArray:[_colorTracker getActiveColors]];
     
     // Clear out any previously selected flowers
-    [_selectedFlowers removeAllObjects];
+    _selectedFlowers = [[NSMutableDictionary alloc] init];
     
     // Get a list of flower names for each color
     for (NSString* color in _colorSectionTitles) {
@@ -72,6 +70,10 @@
         NSLog(@"Selection includes %@",f);
         NSLog(@"Flowers in this section are %@",[_selectedFlowers objectForKey:f]);
     }
+    
+    // Reload the table
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -95,7 +97,7 @@
 }
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return [_colorSectionTitles objectAtIndex:section];
+    return [[_colorSectionTitles objectAtIndex:section] capitalizedString];
     
 }
 
@@ -107,15 +109,26 @@
         cell  = [[FlowerInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-#warning finish configuring the cell here
+    NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
+    NSLog(@"We are in section %@",sectionTitle);
+    NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
     
+    NSString* flowerName = [sectionFlowers objectAtIndex:indexPath.row];
+    NSString* flowerImage = [[_flowerDb getFlower:flowerName] imageName];
+    NSString* imagePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",flowerImage] ofType:@"jpg"];
+    
+    NSLog(@"Building flower %@ with image %@ imagepath %@",flowerName, flowerImage, imagePath);
+    cell.flowerName.text = flowerName;
+    
+    cell.flowerImage.image = [UIImage imageNamed:flowerImage];
+    NSLog(@"Image is %@",cell.flowerImage.image);
     return cell;
 }
 
 
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
+    return 1;
 }
 
 

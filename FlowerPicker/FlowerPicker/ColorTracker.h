@@ -33,6 +33,9 @@
 // Find out how many flowers of a color are registered
 -(NSInteger)countForcolor:(NSString*)color;
 
+// List all colors registered
+-(NSArray*)allColors;
+
 // Class method to make this a singleton
 +(id)sharedManager;
 
