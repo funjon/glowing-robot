@@ -39,7 +39,7 @@
         FloristAnnotation *annotation = [[FloristAnnotation alloc] init];
         annotation.coordinate = mapItem.placemark.location.coordinate;
         annotation.title = mapItem.name;
-        annotation.subtitle = mapItem.phoneNumber;
+        annotation.subtitle = mapItem.placemark.addressDictionary[@"Street"];
         annotation.url = mapItem.url;
         [self.mapView addAnnotation:annotation];
         

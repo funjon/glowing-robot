@@ -141,24 +141,6 @@ static NSString *kCellIdentifier = @"floristDetailCell";
 }
 
 
-#pragma mark - UISearchBarDelegate
-
-- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
-{
-    [searchBar resignFirstResponder];
-}
-
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
-{
-    [searchBar setShowsCancelButton:YES animated:YES];
-}
-
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
-{
-    [searchBar setShowsCancelButton:NO animated:YES];
-}
-
-
 - (void)startLocalSearch
 {
     if (self.localSearch.searching)
@@ -177,14 +159,16 @@ static NSString *kCellIdentifier = @"floristDetailCell";
     // Comment lines below if using code above to get users location
     newRegion.center.latitude = 39.281516;
     newRegion.center.longitude= -76.580806;
+    //newRegion.center.latitude = 2.9960885786808235e-282;
+    //newRegion.center.longitude= 1.6178140217591351e-303;
     
     
     // setup the area spanned by the map region:
     // we use the delta values to indicate the desired zoom level of the map,
     //      (smaller delta values corresponding to a higher zoom level)
     //
-    newRegion.span.latitudeDelta = 100;//0.112872;
-    newRegion.span.longitudeDelta = 100;//0.109863;
+    newRegion.span.latitudeDelta = 10; //0.112872;
+    newRegion.span.longitudeDelta = 10;//0.109863;
     
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     

@@ -126,7 +126,7 @@
 		D75BDFB41A33974A00B4F757 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75BDFB31A33974A00B4F757 /* CoreGraphics.framework */; };
 		D75BDFB61A33977A00B4F757 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75BDFB51A33977A00B4F757 /* Foundation.framework */; };
 		D75BDFB91A339AB700B4F757 /* FloristAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D75BDFB81A339AB700B4F757 /* FloristAnnotation.m */; };
-		D75BDFBF1A33B04200B4F757 /* FloristAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D75BDFBE1A33B04200B4F757 /* FloristAnnotation.m */; };
+		D75BDFBF1A33B04200B4F757 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		D77C42C21A279BD8004E11FA /* FlowerInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D77C42C11A279BD8004E11FA /* FlowerInfoCell.m */; };
 		E149DD831A2FBFA5000F2097 /* shop-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E149DD821A2FBFA5000F2097 /* shop-7.png */; };
 		E149DD851A2FBFE3000F2097 /* search-7.png in Resources */ = {isa = PBXBuildFile; fileRef = E149DD841A2FBFE3000F2097 /* search-7.png */; };
@@ -508,16 +508,16 @@
 				E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */,
 				D75BDFB71A339AB700B4F757 /* FloristAnnotation.h */,
 				D75BDFB81A339AB700B4F757 /* FloristAnnotation.m */,
-				7C9283081A33AF58007ADA2E /* FlowerTableViewController.m */,
-				7C9283091A33AF58007ADA2E /* FlowerTableViewController.h */,
 				E1CD05B31A1DB1F5003B8C77 /* FloristsTableViewController.h */,
 				E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */,
+				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
+				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
+				7C9283081A33AF58007ADA2E /* FlowerTableViewController.m */,
+				7C9283091A33AF58007ADA2E /* FlowerTableViewController.h */,
 				E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */,
 				E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */,
 				E1CD05AA1A1DB16E003B8C77 /* FlowerDetailsViewController.h */,
 				E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */,
-				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
-				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
 			);
 			path = FlowerPicker;
@@ -885,7 +885,7 @@
 				E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */,
 				D77C42C21A279BD8004E11FA /* FlowerInfoCell.m in Sources */,
 				E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */,
-				D75BDFBF1A33B04200B4F757 /* FloristAnnotation.m in Sources */,
+				D75BDFBF1A33B04200B4F757 /* (null) in Sources */,
 				E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */,
 				7CAD1C941A24112B00AF3F55 /* Flower.m in Sources */,
 				E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */,
