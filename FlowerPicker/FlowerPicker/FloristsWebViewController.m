@@ -49,6 +49,9 @@
         // center the region around this map item's coordinate
         self.mapView.centerCoordinate = mapItem.placemark.coordinate;
     }
+    //
+    // Currently not using button to show all annotations
+    //************************************************************
     else
     {
         self.title = @"All Places";
@@ -63,6 +66,7 @@
             [self.mapView addAnnotation:annotation];
         }
     }
+    //************************************************************
 }
 
 - (void)viewDidDisappear:(BOOL)animated
