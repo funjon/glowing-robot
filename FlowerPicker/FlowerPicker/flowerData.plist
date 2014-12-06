@@ -275,7 +275,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>rose-red</string>
+		<string>blueOrchids.jpg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1445,7 +1445,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string></string>
+		<string>pinkMum.jpeg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1783,7 +1783,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>purpleSnapdragon</string>
+		<string>purpleSnapdragon.jpeg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
