@@ -60,8 +60,12 @@
     return nil;
 }
 
--(NSArray*)getArray {
-    return [_flowerDb copy];
+-(NSArray*)getFlowerNames {
+    NSMutableArray* _temp = [[NSMutableArray alloc] init];
+    for (Flower* f in _flowerDb) {
+        [_temp addObject:[f displayName]];
+    }
+    return [_temp copy];
 }
 
 -(NSUInteger)count { return [_flowerDb count]; }
