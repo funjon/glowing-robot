@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface FloristsTableViewController : UITableViewController
+@interface FloristsTableViewController : UITableViewController <CLLocationManagerDelegate, UISearchBarDelegate>
+
+@property (nonatomic, strong) NSArray *florists;
 
 @end
