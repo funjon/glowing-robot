@@ -142,6 +142,8 @@
 		E15F2EFA1A338F8000CE1F43 /* blueOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EF71A338F8000CE1F43 /* blueOrchids.jpg */; };
 		E15F2EFB1A338F8000CE1F43 /* pinkMum.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EF81A338F8000CE1F43 /* pinkMum.jpeg */; };
 		E15F2EFC1A338F8000CE1F43 /* purpleSnapdragon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EF91A338F8000CE1F43 /* purpleSnapdragon.jpeg */; };
+		E15F2EFF1A33955A00CE1F43 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EFE1A33955A00CE1F43 /* sun.png */; };
+		E15F2F011A33956900CE1F43 /* launchImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F2F001A33956900CE1F43 /* launchImage3.png */; };
 		E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */; };
 		E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */; };
 		E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */; };
@@ -149,7 +151,6 @@
 		E1CD05B21A1DB1D9003B8C77 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */; };
 		E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */; };
 		E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */; };
-		E1ECF9551A205390002D1752 /* LaunchImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1ECF9541A205390002D1752 /* LaunchImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -307,6 +308,8 @@
 		E15F2EF71A338F8000CE1F43 /* blueOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueOrchids.jpg; sourceTree = "<group>"; };
 		E15F2EF81A338F8000CE1F43 /* pinkMum.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkMum.jpeg; sourceTree = "<group>"; };
 		E15F2EF91A338F8000CE1F43 /* purpleSnapdragon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleSnapdragon.jpeg; sourceTree = "<group>"; };
+		E15F2EFE1A33955A00CE1F43 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		E15F2F001A33956900CE1F43 /* launchImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage3.png; sourceTree = "<group>"; };
 		E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutsPageViewController.h; sourceTree = "<group>"; };
 		E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutsPageViewController.m; sourceTree = "<group>"; };
 		E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloristsWebViewController.h; sourceTree = "<group>"; };
@@ -321,7 +324,6 @@
 		E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristsTableViewController.m; sourceTree = "<group>"; };
 		E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
 		E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
-		E1ECF9541A205390002D1752 /* LaunchImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +430,7 @@
 		7CAD1C011A2410CA00AF3F55 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				E15F2EFD1A33954900CE1F43 /* launchImages */,
 				E15F2EDE1A33883B00CE1F43 /* aboutPageImages */,
 				E149DD901A2FC1F3000F2097 /* tabBarIcons */,
 				7C9A45BD1A31849D0005B726 /* flower */,
@@ -491,7 +494,6 @@
 				E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */,
 				E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */,
 				E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */,
-				E1ECF9541A205390002D1752 /* LaunchImage.jpg */,
 				7CB5FA501A1450D000F6C0FD /* Supporting Files */,
 			);
 			path = FlowerPicker;
@@ -599,6 +601,15 @@
 			name = aboutPageImages;
 			sourceTree = "<group>";
 		};
+		E15F2EFD1A33954900CE1F43 /* launchImages */ = {
+			isa = PBXGroup;
+			children = (
+				E15F2F001A33956900CE1F43 /* launchImage3.png */,
+				E15F2EFE1A33955A00CE1F43 /* sun.png */,
+			);
+			name = launchImages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -691,6 +702,7 @@
 				7CB831461A31C5BD00907733 /* white-disabled.png in Resources */,
 				C321FCAE1A1C5EF8006FF9FE /* Contents.json in Resources */,
 				7C9A46481A3184B30005B726 /* yellowSnapdragon.png in Resources */,
+				E15F2EFF1A33955A00CE1F43 /* sun.png in Resources */,
 				7C9A46051A3184B30005B726 /* blueHydrangea.png in Resources */,
 				E15F2EEC1A33885600CE1F43 /* AboutPageRose.jpeg in Resources */,
 				7CB831471A31C5BD00907733 /* turquoise-disabled.png in Resources */,
@@ -701,6 +713,7 @@
 				E15F2EF61A33885600CE1F43 /* Sunflowers.jpg in Resources */,
 				7CB8312C1A31BD9A00907733 /* brown.png in Resources */,
 				7C9A46271A3184B30005B726 /* purpleDaisy.png in Resources */,
+				E15F2F011A33956900CE1F43 /* launchImage3.png in Resources */,
 				E15F2EFC1A338F8000CE1F43 /* purpleSnapdragon.jpeg in Resources */,
 				7C9A460C1A3184B30005B726 /* brownOrchids.png in Resources */,
 				7C9A461D1A3184B30005B726 /* pinkAlstroemerias.png in Resources */,
@@ -751,7 +764,6 @@
 				E15F2EF21A33885600CE1F43 /* Mum.jpg in Resources */,
 				7C9A46401A3184B30005B726 /* whiteRose.png in Resources */,
 				7CB8311C1A31BBBA00907733 /* spring.png in Resources */,
-				E1ECF9551A205390002D1752 /* LaunchImage.jpg in Resources */,
 				7C9A461F1A3184B30005B726 /* pinkDaisy.png in Resources */,
 				7C9A46091A3184B30005B726 /* brownCalla.png in Resources */,
 				7C9A46121A3184B30005B726 /* greenLilies.png in Resources */,
