@@ -91,13 +91,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.searchDisplayController.isActive) {
-        NSLog(@"[numberOfRowsInSection] I have %lu searchResults to display", [_searchResults count]);
         return [_searchResults count];
     } else {
         // Return the number of rows in the section.
         NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:section] capitalizedString];
         NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
-        NSLog(@"[numberOfRowsInSection] I have %lu flowers to display in this section", [sectionFlowers count]);
         return [sectionFlowers count];
     }
 }
@@ -109,7 +107,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 78;
+    if (self.searchDisplayController.isActive) { return 40; } else { return 78; }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -125,8 +123,6 @@
     NSString* flowerImage;
     
     if (self.searchDisplayController.isActive) {
-        NSLog(@"Trying to populate a default cell");
-        NSLog(@"There are %lu results in searchResults", [_searchResults count]);
         if ([_searchResults count]) { flowerName = [_searchResults objectAtIndex:indexPath.row]; }
         cell.textLabel.text = flowerName;
     } else {
@@ -185,6 +181,12 @@
     return YES;
 }
 
+// This is because the search controller isn't SMRT like Homer Simpson
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Only force from the search bar
+    if (self.searchDisplayController.isActive) { [self performSegueWithIdentifier:@"showItemDetail" sender:tableView]; }
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -198,19 +200,19 @@
         
         NSString* flowerName;
         if (self.searchDisplayController.isActive) {
+            if ([_searchResults count]) {
+                flowerName = [_searchResults objectAtIndex:indexPath.row];
+            }
+         } else {
             // Get data we need for the selected cell
             NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
             NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
             
             flowerName = [sectionFlowers objectAtIndex:indexPath.row];
-        } else {
-            if ([_searchResults count]) {
-                flowerName = [_searchResults objectAtIndex:indexPath.row];
-            }
-            \
         }
         
         // Pass the flower object over to the dvc, let the dvc unpack it.
+        NSLog(@"Passing flower %@ to the segue", flowerName);
         dvc.segueFlower = [_flowerDb getFlower:flowerName];
     }
 }
