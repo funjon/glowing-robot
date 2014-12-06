@@ -21,7 +21,7 @@
 -(Flower*)getFlower:(NSString*)withName;
 -(NSArray*)getFlowersWithColor:(NSString*)color;
 -(NSArray*)getColorsForType:(NSString*)type;
--(NSArray*)getArray;
+-(NSArray*)getFlowerNames;
 -(NSUInteger)count;
 
 // Set methods
