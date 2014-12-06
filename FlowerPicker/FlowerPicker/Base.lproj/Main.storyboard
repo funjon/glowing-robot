@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yJf-aD-aLd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yJf-aD-aLd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Colors-->
@@ -686,19 +686,11 @@ Cost</string>
         <!--Florists-->
         <scene sceneID="F8d-sI-b2z">
             <objects>
-                <tableViewController title="Florists" id="lR1-uW-igk" sceneMemberID="viewController">
+                <tableViewController title="Florists" id="lR1-uW-igk" customClass="FloristsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wPP-WH-IxE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" text="Zip Code" placeholder="Area Code" id="AOQ-rR-ZrW">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="lR1-uW-igk" id="CzI-hJ-NFh"/>
-                            </connections>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="floristDetailCell" id="WIb-iD-ahK">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -713,9 +705,6 @@ Cost</string>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Dhw-Tg-sme" kind="show" id="cEt-6z-tDv"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -725,20 +714,9 @@ Cost</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="AIN-uH-b1a"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="YDR-Qr-VPa" id="xBm-Km-OGF"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGE-G1-vfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="YDR-Qr-VPa">
-                    <connections>
-                        <outlet property="delegate" destination="lR1-uW-igk" id="vKh-D9-Qbh"/>
-                        <outlet property="searchBar" destination="AOQ-rR-ZrW" id="qHW-Uh-qIS"/>
-                        <outlet property="searchContentsController" destination="lR1-uW-igk" id="CBx-HK-kOv"/>
-                        <outlet property="searchResultsDataSource" destination="lR1-uW-igk" id="mWy-pK-ljl"/>
-                        <outlet property="searchResultsDelegate" destination="lR1-uW-igk" id="F8x-HS-wt8"/>
-                    </connections>
-                </searchDisplayController>
+                <searchDisplayController id="YDR-Qr-VPa"/>
             </objects>
             <point key="canvasLocation" x="966.5625" y="1380.1056338028168"/>
         </scene>
@@ -768,7 +746,7 @@ Cost</string>
         <!--WebPageViewController-->
         <scene sceneID="Fzd-gw-2Zy">
             <objects>
-                <viewController title="WebPageViewController" id="Dhw-Tg-sme" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebPageViewControllerID" title="WebPageViewController" id="Dhw-Tg-sme" customClass="FloristsWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vNc-sy-LHv"/>
                         <viewControllerLayoutGuide type="bottom" id="1lh-Tw-tGp"/>
@@ -777,10 +755,9 @@ Cost</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXi-fN-uu9">
-                                <rect key="frame" x="0.0" y="0.0" width="382" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i9O-fK-Nsg">
+                                <rect key="frame" x="0.0" y="63" width="375" height="667"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -789,7 +766,7 @@ Cost</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFg-3b-aeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966.5625" y="2311.7957746478874"/>
+            <point key="canvasLocation" x="1555.5" y="1379.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="XNn-Vb-2Bx">

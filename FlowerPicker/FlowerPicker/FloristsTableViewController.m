@@ -7,94 +7,280 @@
 //
 
 #import "FloristsTableViewController.h"
+#import "FloristsWebViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface FloristsTableViewController ()
+// note: we use a custom segue here in order to cache/reuse the
+//       destination view controller (i.e. MapViewController) each time you select a place
+//
+@interface DetailSegue : UIStoryboardSegue
+@end
+
+@implementation DetailSegue
+
+- (void)perform
+{
+    // our custom segue is being fired, push the map view controller
+    FloristsTableViewController *sourceViewController = self.sourceViewController;
+    FloristsWebViewController *destinationViewController = self.destinationViewController;
+    [sourceViewController.navigationController pushViewController:destinationViewController animated:YES];
+}
 
 @end
 
+
+#pragma mark -
+
+static NSString *kCellIdentifier = @"floristDetailCell";
+@interface FloristsTableViewController ()
+
+@property (nonatomic, assign) MKCoordinateRegion boundingRegion;
+
+@property (nonatomic, strong) MKLocalSearch *localSearch;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *viewAllButton;
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic) CLLocationCoordinate2D userLocation;
+
+@property (nonatomic, strong) DetailSegue *detailSegue;
+@property (nonatomic, strong) DetailSegue *showAllSegue;
+@property (nonatomic, strong) FloristsWebViewController *mapViewController;
+
+- (IBAction)showAll:(id)sender;
+
+@end
+
+
+#pragma mark -
+
 @implementation FloristsTableViewController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // start by locating user's current position
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    [self.locationManager startUpdatingLocation];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    // create and reuse for later the mapViewController
+    self.mapViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"WebPageViewControllerID"];
     
-    // Configure the cell...
+    // use our custom segues to the destination view controller is reused
+    self.detailSegue = [[DetailSegue alloc] initWithIdentifier:@"showDetail"
+                                                        source:self
+                                                   destination:self.mapViewController];
+    
+    self.showAllSegue = [[DetailSegue alloc] initWithIdentifier:@"showAll"
+                                                         source:self
+                                                    destination:self.mapViewController];
+    
+    [self checkForUserLocationStatus];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    [super viewWillAppear:animated];
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        return UIInterfaceOrientationMaskAll;
+    else
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+}
+
+
+#pragma mark - UITableView delegate methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.florists count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    
+    MKMapItem *mapItem = [self.florists objectAtIndex:indexPath.row];
+    cell.textLabel.text = mapItem.name;
+    cell.detailTextLabel.text = mapItem.placemark.addressDictionary[@"Street"];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (IBAction)showAll:(id)sender
+{
+    // pass the new bounding region to the map destination view controller
+    self.mapViewController.boundingRegion = self.boundingRegion;
+    
+    // pass the places list to the map destination view controller
+    self.mapViewController.mapItemList = self.florists;
+    
+    [self.showAllSegue perform];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // pass the new bounding region to the map destination view controller
+    self.mapViewController.boundingRegion = self.boundingRegion;
+    
+    // pass the individual place to our map destination view controller
+    NSIndexPath *selectedItem = [self.tableView indexPathForSelectedRow];
+    self.mapViewController.mapItemList = [NSArray arrayWithObject:[self.florists objectAtIndex:selectedItem.row]];
+    
+    [self.detailSegue perform];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
+{
+    [searchBar resignFirstResponder];
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+    [searchBar setShowsCancelButton:YES animated:YES];
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+    [searchBar setShowsCancelButton:NO animated:YES];
 }
-*/
 
+
+- (void)startLocalSearch
+{
+    if (self.localSearch.searching)
+    {
+        [self.localSearch cancel];
+    }
+    
+    MKCoordinateRegion newRegion;
+    
+    // Uncomment Lines below to confine the map search area to the user's current location
+    //
+    //newRegion.center.latitude = self.userLocation.latitude;
+    //newRegion.center.longitude = self.userLocation.longitude;
+    
+    // Coordinates assigned to Region for testing / more locations for better table building
+    // Comment lines below if using code above to get users location
+    newRegion.center.latitude = 39.281516;
+    newRegion.center.longitude= -76.580806;
+    
+    
+    // setup the area spanned by the map region:
+    // we use the delta values to indicate the desired zoom level of the map,
+    //      (smaller delta values corresponding to a higher zoom level)
+    //
+    newRegion.span.latitudeDelta = 100;//0.112872;
+    newRegion.span.longitudeDelta = 100;//0.109863;
+    
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    
+    request.naturalLanguageQuery = @"Florist";
+    request.region = newRegion;
+    
+    MKLocalSearchCompletionHandler completionHandler = ^(MKLocalSearchResponse *response, NSError *error)
+    {
+        if (error != nil)
+        {
+            NSString *errorStr = [[error userInfo] valueForKey:NSLocalizedDescriptionKey];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Could not find places"
+                                                            message:errorStr
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+        else
+        {
+            self.florists = [response mapItems];
+            
+            // used for later when setting the map's region in "prepareForSegue"
+            self.boundingRegion = response.boundingRegion;
+            
+            self.viewAllButton.enabled = self.florists != nil ? YES : NO;
+            
+            [self.tableView reloadData];
+        }
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    };
+    
+    if (self.localSearch != nil)
+    {
+        self.localSearch = nil;
+    }
+    self.localSearch = [[MKLocalSearch alloc] initWithRequest:request];
+    
+    [self.localSearch startWithCompletionHandler:completionHandler];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+
+
+- (void)checkForUserLocationStatus
+{
+    // check to see if Location Services is enabled, there are two state possibilities:
+    // 1) disabled for entire device, 2) disabled just for this app
+    //
+    NSString *causeStr = nil;
+    
+    // check whether location services are enabled on the device
+    if ([CLLocationManager locationServicesEnabled] == NO)
+    {
+        causeStr = @"device";
+    }
+    // check the application’s explicit authorization status:
+    else if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)
+    {
+        causeStr = @"app";
+    }
+    else
+    {
+        // we are good to go, start the search
+        [self startLocalSearch];
+    }
+    
+    if (causeStr != nil)
+    {
+        NSString *alertMessage = [NSString stringWithFormat:@"You currently have location services disabled for this %@. Please refer to \"Settings\" app to turn on Location Services.", causeStr];
+        
+        UIAlertView *servicesDisabledAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled"
+                                                                        message:alertMessage
+                                                                       delegate:nil
+                                                              cancelButtonTitle:@"OK"
+                                                              otherButtonTitles:nil];
+        [servicesDisabledAlert show];
+    }
+}
+
+
+#pragma mark - CLLocationManagerDelegate methods
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    // remember for later the user's current location
+    self.userLocation = newLocation.coordinate;
+    
+    [manager stopUpdatingLocation]; // we only want one update
+    
+    manager.delegate = nil;         // we might be called again here, even though we
+    // called "stopUpdatingLocation", remove us as the delegate to be sure
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    // report any errors returned back from Location Services
+}
 @end
