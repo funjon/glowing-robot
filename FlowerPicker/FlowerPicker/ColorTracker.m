@@ -53,7 +53,7 @@
 }
 
 -(NSArray*)allColors {
-    return [_colors copy];
+    return [[_colors copy] allKeys];
 }
 
 #pragma mark Singleton Methods
