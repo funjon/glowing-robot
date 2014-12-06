@@ -10,6 +10,9 @@
 		7C10A8021A2D67EE005195BA /* FlowerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10A8011A2D67EE005195BA /* FlowerContainer.m */; };
 		7C3A529B1A2AB5C000C83CD4 /* ColorTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A52991A2AB5C000C83CD4 /* ColorTracker.m */; };
 		7C6560411A1AF6CB00EF6AAE /* flowerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C6560401A1AF6CB00EF6AAE /* flowerData.plist */; };
+		7C9283001A338523007ADA2E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9282FF1A338523007ADA2E /* MapKit.framework */; };
+		7C9283021A338567007ADA2E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9283011A338567007ADA2E /* CoreLocation.framework */; };
+		7C9283041A33856E007ADA2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9283031A33856E007ADA2E /* UIKit.framework */; };
 		7C9A46041A3184B30005B726 /* blueDelphinium.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A45BE1A3184B30005B726 /* blueDelphinium.png */; };
 		7C9A46051A3184B30005B726 /* blueHydrangea.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A45BF1A3184B30005B726 /* blueHydrangea.png */; };
 		7C9A46061A3184B30005B726 /* blueIris.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A45C01A3184B30005B726 /* blueIris.png */; };
@@ -150,6 +153,9 @@
 		7C3A52981A2AB5C000C83CD4 /* ColorTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTracker.h; sourceTree = "<group>"; };
 		7C3A52991A2AB5C000C83CD4 /* ColorTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTracker.m; sourceTree = "<group>"; };
 		7C6560401A1AF6CB00EF6AAE /* flowerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flowerData.plist; sourceTree = "<group>"; };
+		7C9282FF1A338523007ADA2E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7C9283011A338567007ADA2E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7C9283031A33856E007ADA2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C9A45BE1A3184B30005B726 /* blueDelphinium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueDelphinium.png; sourceTree = "<group>"; };
 		7C9A45BF1A3184B30005B726 /* blueHydrangea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueHydrangea.png; sourceTree = "<group>"; };
 		7C9A45C01A3184B30005B726 /* blueIris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueIris.png; sourceTree = "<group>"; };
@@ -293,6 +299,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9283041A33856E007ADA2E /* UIKit.framework in Frameworks */,
+				7C9283021A338567007ADA2E /* CoreLocation.framework in Frameworks */,
+				7C9283001A338523007ADA2E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +405,9 @@
 		7CB5FA441A1450D000F6C0FD = {
 			isa = PBXGroup;
 			children = (
+				7C9283031A33856E007ADA2E /* UIKit.framework */,
+				7C9283011A338567007ADA2E /* CoreLocation.framework */,
+				7C9282FF1A338523007ADA2E /* MapKit.framework */,
 				7CB5FA4F1A1450D000F6C0FD /* FlowerPicker */,
 				7CB5FA6C1A1450D100F6C0FD /* FlowerPickerTests */,
 				7CB5FA4E1A1450D000F6C0FD /* Products */,
@@ -583,6 +595,11 @@
 				TargetAttributes = {
 					7CB5FA4C1A1450D000F6C0FD = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7CB5FA681A1450D100F6C0FD = {
 						CreatedOnToolsVersion = 6.1;
