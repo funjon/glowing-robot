@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C10A8021A2D67EE005195BA /* FlowerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10A8011A2D67EE005195BA /* FlowerContainer.m */; };
 		7C6560411A1AF6CB00EF6AAE /* flowerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C6560401A1AF6CB00EF6AAE /* flowerData.plist */; };
-		7C9283071A338605007ADA2E /* FlowerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9283061A338605007ADA2E /* FlowerTableViewController.m */; };
+		7C92830A1A33AF58007ADA2E /* FlowerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9283081A33AF58007ADA2E /* FlowerTableViewController.m */; };
 		7C9A46041A3184B30005B726 /* blueDelphinium.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A45BE1A3184B30005B726 /* blueDelphinium.png */; };
 		7C9A46051A3184B30005B726 /* blueHydrangea.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A45BF1A3184B30005B726 /* blueHydrangea.png */; };
 		7C9A46061A3184B30005B726 /* blueIris.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A45C01A3184B30005B726 /* blueIris.png */; };
@@ -153,8 +153,6 @@
 		E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */; };
 		E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */; };
 		E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */; };
-		E1CD05AF1A1DB19F003B8C77 /* ListsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */; };
-		E1CD05B21A1DB1D9003B8C77 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */; };
 		E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */; };
 		E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */; };
 		E1EB17601A33AA0900701F29 /* 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EB175F1A33AA0900701F29 /* 58x58.png */; };
@@ -178,8 +176,8 @@
 		7C10A8001A2D67EE005195BA /* FlowerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerContainer.h; sourceTree = "<group>"; };
 		7C10A8011A2D67EE005195BA /* FlowerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerContainer.m; sourceTree = "<group>"; };
 		7C6560401A1AF6CB00EF6AAE /* flowerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flowerData.plist; sourceTree = "<group>"; };
-		7C9283051A338605007ADA2E /* FlowerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerTableViewController.h; sourceTree = "<group>"; };
-		7C9283061A338605007ADA2E /* FlowerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerTableViewController.m; sourceTree = "<group>"; };
+		7C9283081A33AF58007ADA2E /* FlowerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerTableViewController.m; sourceTree = "<group>"; };
+		7C9283091A33AF58007ADA2E /* FlowerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerTableViewController.h; sourceTree = "<group>"; };
 		7C9A45BE1A3184B30005B726 /* blueDelphinium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueDelphinium.png; sourceTree = "<group>"; };
 		7C9A45BF1A3184B30005B726 /* blueHydrangea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueHydrangea.png; sourceTree = "<group>"; };
 		7C9A45C01A3184B30005B726 /* blueIris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueIris.png; sourceTree = "<group>"; };
@@ -302,9 +300,8 @@
 		D75BDFB01A33972700B4F757 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D75BDFB31A33974A00B4F757 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D75BDFB51A33977A00B4F757 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D75BDFB81A339AB700B4F757 /* FloristAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FloristAnnotation.m; path = ../FloristAnnotation.m; sourceTree = "<group>"; };
-		D75BDFBD1A33AFB100B4F757 /* FloristAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloristAnnotation.h; sourceTree = "<group>"; };
-		D75BDFBE1A33B04200B4F757 /* FloristAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristAnnotation.m; sourceTree = "<group>"; };
+		D75BDFB71A339AB700B4F757 /* FloristAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloristAnnotation.h; sourceTree = "<group>"; };
+		D75BDFB81A339AB700B4F757 /* FloristAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristAnnotation.m; sourceTree = "<group>"; };
 		D77C42C01A279BD8004E11FA /* FlowerInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerInfoCell.h; sourceTree = "<group>"; };
 		D77C42C11A279BD8004E11FA /* FlowerInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerInfoCell.m; sourceTree = "<group>"; };
 		E149DD821A2FBFA5000F2097 /* shop-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shop-7.png"; path = "../shop-7.png"; sourceTree = "<group>"; };
@@ -335,10 +332,6 @@
 		E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristsWebViewController.m; sourceTree = "<group>"; };
 		E1CD05AA1A1DB16E003B8C77 /* FlowerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerDetailsViewController.h; sourceTree = "<group>"; };
 		E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerDetailsViewController.m; sourceTree = "<group>"; };
-		E1CD05AD1A1DB19F003B8C77 /* ListsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsTableViewController.h; sourceTree = "<group>"; };
-		E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsTableViewController.m; sourceTree = "<group>"; };
-		E1CD05B01A1DB1D9003B8C77 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
-		E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		E1CD05B31A1DB1F5003B8C77 /* FloristsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloristsTableViewController.h; sourceTree = "<group>"; };
 		E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloristsTableViewController.m; sourceTree = "<group>"; };
 		E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
@@ -513,14 +506,10 @@
 				D73C8ECC1A2ACA640084FDE4 /* ColorTracker.m */,
 				E1CD05B61A1DB218003B8C77 /* ColorPickerViewController.h */,
 				E1CD05B71A1DB218003B8C77 /* ColorPickerViewController.m */,
-				E1CD05AD1A1DB19F003B8C77 /* ListsTableViewController.h */,
-				E1CD05AE1A1DB19F003B8C77 /* ListsTableViewController.m */,
-				E1CD05B01A1DB1D9003B8C77 /* SearchTableViewController.h */,
-				E1CD05B11A1DB1D9003B8C77 /* SearchTableViewController.m */,
-				7C9283051A338605007ADA2E /* FlowerTableViewController.h */,
-				7C9283061A338605007ADA2E /* FlowerTableViewController.m */,
-				D75BDFBD1A33AFB100B4F757 /* FloristAnnotation.h */,
-				D75BDFBE1A33B04200B4F757 /* FloristAnnotation.m */,
+				D75BDFB71A339AB700B4F757 /* FloristAnnotation.h */,
+				D75BDFB81A339AB700B4F757 /* FloristAnnotation.m */,
+				7C9283081A33AF58007ADA2E /* FlowerTableViewController.m */,
+				7C9283091A33AF58007ADA2E /* FlowerTableViewController.h */,
 				E1CD05B31A1DB1F5003B8C77 /* FloristsTableViewController.h */,
 				E1CD05B41A1DB1F5003B8C77 /* FloristsTableViewController.m */,
 				E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */,
@@ -891,21 +880,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB5FA591A1450D000F6C0FD /* FlowerPicker.xcdatamodeld in Sources */,
-				E1CD05AF1A1DB19F003B8C77 /* ListsTableViewController.m in Sources */,
 				7CB5FA561A1450D000F6C0FD /* AppDelegate.m in Sources */,
 				D73C8ECD1A2ACA640084FDE4 /* ColorTracker.m in Sources */,
-				E1CD05B21A1DB1D9003B8C77 /* SearchTableViewController.m in Sources */,
 				E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */,
 				D77C42C21A279BD8004E11FA /* FlowerInfoCell.m in Sources */,
 				E1CD05B51A1DB1F5003B8C77 /* FloristsTableViewController.m in Sources */,
 				D75BDFBF1A33B04200B4F757 /* FloristAnnotation.m in Sources */,
 				E1CD05B81A1DB218003B8C77 /* ColorPickerViewController.m in Sources */,
-				7C9283071A338605007ADA2E /* FlowerTableViewController.m in Sources */,
 				7CAD1C941A24112B00AF3F55 /* Flower.m in Sources */,
 				E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */,
 				D75BDFB91A339AB700B4F757 /* FloristAnnotation.m in Sources */,
 				7CB5FA531A1450D000F6C0FD /* main.m in Sources */,
 				E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */,
+				7C92830A1A33AF58007ADA2E /* FlowerTableViewController.m in Sources */,
 				7C10A8021A2D67EE005195BA /* FlowerContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
