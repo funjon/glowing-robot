@@ -157,18 +157,16 @@ static NSString *kCellIdentifier = @"floristDetailCell";
     
     // Coordinates assigned to Region for testing / more locations for better table building
     // Comment lines below if using code above to get users location
-    newRegion.center.latitude = 39.281516;
-    newRegion.center.longitude= -76.580806;
-    //newRegion.center.latitude = 2.9960885786808235e-282;
-    //newRegion.center.longitude= 1.6178140217591351e-303;
+    newRegion.center.latitude  = 39.281516;
+    newRegion.center.longitude = -76.580806;
     
     
     // setup the area spanned by the map region:
     // we use the delta values to indicate the desired zoom level of the map,
     //      (smaller delta values corresponding to a higher zoom level)
     //
-    newRegion.span.latitudeDelta = 10; //0.112872;
-    newRegion.span.longitudeDelta = 10;//0.109863;
+    newRegion.span.latitudeDelta = 0.112872;
+    newRegion.span.longitudeDelta = 0.109863;
     
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     
