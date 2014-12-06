@@ -11,6 +11,7 @@
 @implementation ColorTracker
 
 @synthesize colors = _colors;
+@synthesize colorCounts = _colorCounts;
 
 -(BOOL)setColor:(NSString*)color to:(NSString*)state {
     if (!_colors[color]) { return false; } // Return false if this color doesn't exist
@@ -36,12 +37,23 @@
 // Colors default to off
 -(void)addAvailableColor:(NSString *)color {
     [_colors setValue:@"off" forKey:color];
+    NSInteger count = [[_colorCounts objectForKey:color] integerValue];
+    count++;
+    [_colorCounts setObject:[NSNumber numberWithInteger:count] forKey:color];
 }
 
 // See if a color is active
 -(BOOL)isActive:(NSString*)color {
     if ([[_colors objectForKey:color] containsString:@"on"]) { return true; }
     return false;
+}
+
+-(NSInteger)countForcolor:(NSString *)color {
+    return [[_colorCounts objectForKey:color] integerValue];
+}
+
+-(NSArray*)allColors {
+    return [_colors copy];
 }
 
 #pragma mark Singleton Methods
@@ -59,6 +71,7 @@
 - (id)init {
     if (self = [super init]) {
         _colors = [[NSMutableDictionary alloc] init];
+        _colorCounts = [[NSMutableDictionary alloc] init];
     }
     return self;
 }

@@ -15,7 +15,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>blueRose.jpg</string>
+		<string>blueRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -41,7 +41,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>brownRose.jpg</string>
+		<string>brownRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -67,7 +67,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>greenRose.jpg</string>
+		<string>greenRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -93,7 +93,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>orangeRose.jpg</string>
+		<string>orangeRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -119,7 +119,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>pinkRose.jpg</string>
+		<string>pinkRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -145,7 +145,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>purpleRose.jpg</string>
+		<string>purpleRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -171,7 +171,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>redRose.jpg</string>
+		<string>redRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -197,7 +197,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>turquoiseRose.jpg</string>
+		<string>turquoiseRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -223,7 +223,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>whiteRose.jpg</string>
+		<string>whiteRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -249,7 +249,7 @@
 		<key>boqCost</key>
 		<integer>200</integer>
 		<key>imageName</key>
-		<string>yellowRose.jpg</string>
+		<string>yellowRose</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -275,7 +275,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>rose-red.jpg</string>
+		<string>blueOrchids.jpg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -301,7 +301,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>brownOrchids.jpg</string>
+		<string>brownOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -327,7 +327,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>greenOrchids.jpg</string>
+		<string>greenOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -353,7 +353,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>pinkOrchids.jpg</string>
+		<string>pinkOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -379,7 +379,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>purpleOrchids.jpg</string>
+		<string>purpleOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -405,7 +405,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>redOrchid.jpg</string>
+		<string>redOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -431,7 +431,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>turquoiseOrchid.jpg</string>
+		<string>turquoiseOrchid</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -457,7 +457,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>whiteOrchids.jpg</string>
+		<string>whiteOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -483,7 +483,7 @@
 		<key>boqCost</key>
 		<integer>800</integer>
 		<key>imageName</key>
-		<string>yellowOrchids.jpg</string>
+		<string>yellowOrchids</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -509,7 +509,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>greenLilies.jpg</string>
+		<string>greenLilies</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -535,7 +535,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>orangeLilies.jpg</string>
+		<string>orangelily</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -561,7 +561,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>pinkLilies.jpg</string>
+		<string>pinkLilies</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -587,7 +587,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>redLilies.jpg</string>
+		<string>redLilies</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -613,7 +613,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>whiteLilies.jpg</string>
+		<string>whiteLilies</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -639,7 +639,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>yellowLilies.jpg</string>
+		<string>yellowLilies</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -665,7 +665,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>brownCalla.jpg</string>
+		<string>brownCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -691,7 +691,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>greenCalla.jpg</string>
+		<string>greenCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -717,7 +717,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>orangeCalla.jpg</string>
+		<string>orangeCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -737,13 +737,13 @@
 		<key>type</key>
 		<string>calla</string>
 		<key>color</key>
-		<string>Pink</string>
+		<string>pink</string>
 		<key>dozCost</key>
 		<integer>60</integer>
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>pinkCalla.jpg</string>
+		<string>pinkCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -769,7 +769,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>purpleCalla.jpg</string>
+		<string>purpleCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -795,7 +795,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>redCalla.jpg</string>
+		<string>redCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -821,7 +821,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>whiteCalla.jpg</string>
+		<string>whiteCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -847,7 +847,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>yellowCalla.jpg</string>
+		<string>yellowCalla</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -867,13 +867,13 @@
 		<key>type</key>
 		<string>hydrangea</string>
 		<key>color</key>
-		<string>Blue</string>
+		<string>blue</string>
 		<key>dozCost</key>
 		<integer>60</integer>
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>blueHydrangea.jpg</string>
+		<string>blueHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -899,7 +899,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>brownHydrangea.jpg</string>
+		<string>brownHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -925,7 +925,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>greenHydrangea.jpg</string>
+		<string>greenHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -951,7 +951,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>pinkHydrangea.jpg</string>
+		<string>pinkHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -977,7 +977,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>purpleHydrangea.jpg</string>
+		<string>purpleHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1003,7 +1003,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>turquoiseHydrangea.jpg</string>
+		<string>turquoiseHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1029,7 +1029,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>whiteHydrangea.jpg</string>
+		<string>whiteHydrangea</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1055,7 +1055,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>brownSunflower.jpg</string>
+		<string>brownSunflower</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1081,7 +1081,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>orangeSunflower.jpg</string>
+		<string>orangeSunflower</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1107,7 +1107,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>redSunflower.jpg</string>
+		<string>redSunflower</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1133,7 +1133,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>yellowSunflower.jpg</string>
+		<string>yellowSunflower</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1159,7 +1159,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>purpleIris.jpg</string>
+		<string>purpleIris</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1185,7 +1185,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>blueDelphinium.jpg</string>
+		<string>blueDelphinium</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1211,7 +1211,7 @@
 		<key>boqCost</key>
 		<integer>120</integer>
 		<key>imageName</key>
-		<string>whiteDelphinium.jpg</string>
+		<string>whiteDelphinium</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1237,7 +1237,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>brownDaisy.jpg</string>
+		<string>brownDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1263,7 +1263,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>orangeDaisy.jpg</string>
+		<string>orangeDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1289,7 +1289,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>pinkDaisy.jpg</string>
+		<string>pinkDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1315,7 +1315,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>purpleDaisy.jpg</string>
+		<string>purpleDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1341,7 +1341,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>redDaisy.jpg</string>
+		<string>redDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1367,7 +1367,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>turquoiseDaisy.jpg</string>
+		<string>turquoiseDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1393,7 +1393,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>whiteDaisy.jpg</string>
+		<string>whiteDaisy</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1419,7 +1419,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>blueMum.jpg</string>
+		<string>blueMum</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1445,7 +1445,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>.jpg</string>
+		<string>pinkMum.jpeg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1471,7 +1471,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>turquoiseMum.jpg</string>
+		<string>turquoiseMum</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1497,7 +1497,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>yellowMum.jpg</string>
+		<string>yellowMum</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1523,7 +1523,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>greenMum.jpg</string>
+		<string>greenMum</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1549,7 +1549,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>greenAlstroemerias.jpg</string>
+		<string>greenAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1575,7 +1575,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>orangeAlstroemerias.jpg</string>
+		<string>orangeAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1601,7 +1601,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>pinkAlstroemerias.jpg</string>
+		<string>pinkAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1627,7 +1627,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>purpleAlstroemerias.jpg</string>
+		<string>purpleAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1653,7 +1653,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>redAlstroemerias.jpg</string>
+		<string>redAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1679,7 +1679,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>whiteAlstroemerias.jpg</string>
+		<string>whiteAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1705,7 +1705,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>yellowAlstroemeria.jpg</string>
+		<string>yellowAlstroemerias</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1731,7 +1731,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>orangeSnapdragon.jpg</string>
+		<string>orangeSnapdragon</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1757,7 +1757,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>pinkSnapdragon.jpg</string>
+		<string>pinkSnapdragon</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1783,7 +1783,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>purpleSnapdragon.jpg</string>
+		<string>purpleSnapdragon.jpeg</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1809,7 +1809,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>redSnapdragon.jpg</string>
+		<string>redSnapdragon</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1835,7 +1835,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>whiteSnapdragon.jpg</string>
+		<string>whiteSnapdragon</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>
@@ -1861,7 +1861,7 @@
 		<key>boqCost</key>
 		<integer>90</integer>
 		<key>imageName</key>
-		<string>yellowSnapdragon.jpg</string>
+		<string>yellowSnapdragon</string>
 		<key>season</key>
 		<dict>
 			<key>spring</key>

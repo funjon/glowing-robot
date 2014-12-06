@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yJf-aD-aLd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Colors-->
@@ -154,15 +154,88 @@
                                     <action selector="colorPick:" destination="xLf-Cg-Pca" eventType="touchUpInside" id="caH-kh-Ibi"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="uoz-lF-PUr" userLabel="Red">
+                                <rect key="frame" x="117" y="114" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Red">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="eib-0n-Q7s" userLabel="Yellow">
+                                <rect key="frame" x="117" y="202" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Yellow">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="MzR-Zt-WQu" userLabel="Turquoise">
+                                <rect key="frame" x="117" y="290" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Turquoise">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsN-y3-eo7" userLabel="Purple">
+                                <rect key="frame" x="117" y="378" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Purple">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRv-4w-QXd" userLabel="Pink">
+                                <rect key="frame" x="117" y="466" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Pink">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="1b0-D3-S1z" userLabel="Brown">
+                                <rect key="frame" x="307" y="466" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Brown">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Qy-1v7" userLabel="White">
+                                <rect key="frame" x="307" y="378" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="White">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-le-F5b" userLabel="Blue">
+                                <rect key="frame" x="307" y="290" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Blue">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-af-NNp" userLabel="Green">
+                                <rect key="frame" x="307" y="202" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Green">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="BVa-aU-mE2" userLabel="Orange">
+                                <rect key="frame" x="307" y="114" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Orange">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Colors" id="Kzz-Uk-kaA" userLabel="Colors"/>
+                    <tabBarItem key="tabBarItem" title="Colors" image="plant-element-7.png" id="Kzz-Uk-kaA" userLabel="Colors"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="selectedCount" destination="DpF-NR-YPc" id="jGi-ox-amj"/>
+                        <outletCollection property="colorChecks" destination="uoz-lF-PUr" id="iQX-s2-Ukg"/>
+                        <outletCollection property="colorChecks" destination="BVa-aU-mE2" id="Umf-u5-i16"/>
+                        <outletCollection property="colorChecks" destination="eib-0n-Q7s" id="fQN-zL-yDV"/>
+                        <outletCollection property="colorChecks" destination="jQD-af-NNp" id="cfK-qe-iMT"/>
+                        <outletCollection property="colorChecks" destination="MzR-Zt-WQu" id="tWJ-3g-j2I"/>
+                        <outletCollection property="colorChecks" destination="9dn-le-F5b" id="QSf-YX-dom"/>
+                        <outletCollection property="colorChecks" destination="jsN-y3-eo7" id="wQ6-q2-FX1"/>
+                        <outletCollection property="colorChecks" destination="g6i-Qy-1v7" id="mym-OO-ipI"/>
+                        <outletCollection property="colorChecks" destination="eRv-4w-QXd" id="HGx-FC-g0Y"/>
+                        <outletCollection property="colorChecks" destination="1b0-D3-S1z" id="mex-Lu-fuX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCi-jm-B5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-816.5" y="458.5"/>
+            <point key="canvasLocation" x="-1530.9375" y="484.33098591549293"/>
         </scene>
         <!--Currently Selected Flowers-->
         <scene sceneID="AyK-BL-c2O">
@@ -173,16 +246,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="78" id="Hce-fC-6MA" customClass="FlowerInfoCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FlowerInfoCell" rowHeight="78" id="Hce-fC-6MA" customClass="FlowerInfoCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hce-fC-6MA" id="gSc-IL-p8J">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5C-s2-zzS">
-                                            <rect key="frame" x="27" y="0.0" width="75" height="75"/>
+                                            <rect key="frame" x="8" y="1" width="75" height="75"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color + Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qns-Kg-5A6">
-                                            <rect key="frame" x="179" y="24" width="270" height="28"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qns-Kg-5A6">
+                                            <rect key="frame" x="91" y="25" width="192" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -190,7 +263,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Dz9-Il-odf" kind="push" id="fb5-Xo-ziB"/>
+                                    <outlet property="flowerImage" destination="i5C-s2-zzS" id="bXB-zH-7hz"/>
+                                    <outlet property="flowerName" destination="Qns-Kg-5A6" id="xYC-Vv-BaX"/>
+                                    <segue destination="Dz9-Il-odf" kind="show" identifier="showItemDetail" id="Yt0-F7-vVQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -204,7 +279,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksu-UP-cll" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69.5" y="462.5"/>
+            <point key="canvasLocation" x="-698.4375" y="1380.1056338028168"/>
         </scene>
         <!--FlowerDetailsViewController-->
         <scene sceneID="DRN-dl-rgO">
@@ -219,53 +294,97 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoE-oa-XyT">
-                                <rect key="frame" x="106" y="20" width="162" height="43"/>
+                                <rect key="frame" x="0.0" y="65" width="375" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-M0-k0P">
+                                <rect key="frame" x="12" y="388" width="90" height="42"/>
+                                <string key="text">Available
+Colors</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-Je-1Wf">
+                                <rect key="frame" x="12" y="488" width="90" height="42"/>
+                                <string key="text">Bouquet
+Cost</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRz-oR-sS3" userLabel="FlowerImage">
-                                <rect key="frame" x="72" y="66" width="220" height="230"/>
+                                <rect key="frame" x="77" y="100" width="220" height="230"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerDescription" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rev-zU-3NA" userLabel="FlowerDescription">
-                                <rect key="frame" x="52" y="310" width="270" height="108"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alternate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX8-Rp-erq">
-                                <rect key="frame" x="16" y="435" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM2-VU-bQQ">
+                                <rect key="frame" x="12" y="338" width="90" height="42"/>
+                                <string key="text">Available
+Seasons</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Colors:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-M0-k0P">
-                                <rect key="frame" x="16" y="454" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pw-NV-arj">
+                                <rect key="frame" x="12" y="438" width="90" height="42"/>
+                                <string key="text">Dozen
+Cost</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pw-NV-arj">
-                                <rect key="frame" x="14" y="522" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winter-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="RdG-2L-sOJ">
+                                <rect key="frame" x="121" y="339" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="dvO-fY-DTJ">
+                                <rect key="frame" x="224" y="339" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fall-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-tX-FCt">
+                                <rect key="frame" x="276" y="340" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="NWu-UM-D5y">
+                                <rect key="frame" x="120" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orange-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="JXY-Zq-UQx">
+                                <rect key="frame" x="140" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellow-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="qWF-Tg-AT9">
+                                <rect key="frame" x="160" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="turquoise-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-hN-RCX">
+                                <rect key="frame" x="180" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="ooo-cZ-63x">
+                                <rect key="frame" x="200" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="kbq-eh-fy3">
+                                <rect key="frame" x="220" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purple-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-SL-v7S">
+                                <rect key="frame" x="240" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-xp-vrG">
+                                <rect key="frame" x="260" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pink-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="dsq-7f-eda">
+                                <rect key="frame" x="280" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brown-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyH-2a-x5i">
+                                <rect key="frame" x="300" y="389" width="20" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spring-disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="OIb-96-uI3">
+                                <rect key="frame" x="172" y="339" width="40" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bouquetCostLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zx-jI-Zo5">
+                                <rect key="frame" x="120" y="498" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Costs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-w0-QXf">
-                                <rect key="frame" x="41" y="551" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerCosts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-2Z-mo7">
-                                <rect key="frame" x="106" y="522" width="162" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FlowerColors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hws-4I-zHX">
-                                <rect key="frame" x="106" y="435" width="162" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dozenCostLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOg-rS-t9L">
+                                <rect key="frame" x="120" y="448" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -275,16 +394,31 @@
                     <navigationItem key="navigationItem" id="8XB-SC-5hL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="FlowerColors" destination="Hws-4I-zHX" id="5PD-zW-lzY"/>
-                        <outlet property="FlowerCosts" destination="d3b-2Z-mo7" id="JYZ-Cb-497"/>
-                        <outlet property="FlowerDescription" destination="rev-zU-3NA" id="H2q-zW-TTF"/>
                         <outlet property="FlowerImage" destination="KRz-oR-sS3" id="GND-9c-qzH"/>
                         <outlet property="FlowerName" destination="ZoE-oa-XyT" id="C02-On-HW2"/>
+                        <outlet property="bouquetCost" destination="7zx-jI-Zo5" id="3wm-ND-p3F"/>
+                        <outlet property="dozenCost" destination="EOg-rS-t9L" id="HDH-ma-suq"/>
+                        <outlet property="flowerImage" destination="KRz-oR-sS3" id="i5J-yq-O5M"/>
+                        <outlet property="flowerName" destination="ZoE-oa-XyT" id="kie-6h-zQW"/>
+                        <outlet property="imageBlue" destination="kbq-eh-fy3" id="FaJ-m3-0AM"/>
+                        <outlet property="imageBrown" destination="gyH-2a-x5i" id="4Yt-3L-RYw"/>
+                        <outlet property="imageFall" destination="sIc-tX-FCt" id="U78-6m-j90"/>
+                        <outlet property="imageGreen" destination="ooo-cZ-63x" id="6DL-bU-Ucw"/>
+                        <outlet property="imageOrange" destination="JXY-Zq-UQx" id="ddA-9D-pLN"/>
+                        <outlet property="imagePink" destination="dsq-7f-eda" id="zmC-Fg-0RV"/>
+                        <outlet property="imagePurple" destination="CYk-SL-v7S" id="fam-0e-oj3"/>
+                        <outlet property="imageRed" destination="NWu-UM-D5y" id="bdz-qG-xKK"/>
+                        <outlet property="imageSpring" destination="OIb-96-uI3" id="dPw-Qr-QdQ"/>
+                        <outlet property="imageSummer" destination="dvO-fY-DTJ" id="84z-cv-Th0"/>
+                        <outlet property="imageTurquoise" destination="SEO-hN-RCX" id="YTe-Fh-mZB"/>
+                        <outlet property="imageWhite" destination="IaM-xp-vrG" id="qvo-vV-ewA"/>
+                        <outlet property="imageWinter" destination="RdG-2L-sOJ" id="la0-uY-MM9"/>
+                        <outlet property="imageYellow" destination="qWF-Tg-AT9" id="qfm-2V-DhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyQ-om-2O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146.5" y="1288.5"/>
+            <point key="canvasLocation" x="-283.5" y="2424.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="aaA-79-Qrc">
@@ -303,7 +437,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="gN8-3C-1EN" customClass="FlowerInfoCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="searchDetailCell" id="gN8-3C-1EN" customClass="FlowerInfoCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gN8-3C-1EN" id="Tea-vu-Lvr">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -317,7 +451,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Dz9-Il-odf" kind="push" id="Vqg-AB-9os"/>
+                                    <segue destination="Dz9-Il-odf" kind="show" identifier="showItemDetail" id="5Il-Se-tal"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -343,12 +477,12 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1067.5" y="458.5"/>
+            <point key="canvasLocation" x="126.5625" y="1380.1056338028168"/>
         </scene>
         <!--About-->
         <scene sceneID="I05-gj-TB7">
             <objects>
-                <viewController title="About" id="hqT-Sc-tIE" sceneMemberID="viewController">
+                <viewController title="About" id="hqT-Sc-tIE" customClass="AboutsPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JeP-y3-zn5"/>
                         <viewControllerLayoutGuide type="bottom" id="NoT-Bq-dQz"/>
@@ -356,14 +490,184 @@
                     <view key="view" contentMode="scaleToFill" id="j3D-hs-wCV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-La-8fB">
+                                <rect key="frame" x="38" y="20" width="143" height="61"/>
+                                <color key="backgroundColor" red="0.75408687549999998" green="1" blue="0.52466119369999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Flower">
+                                        <attributes>
+                                            <color key="NSColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="25" name="Papyrus"/>
+                                            <font key="NSOriginalFont" size="17" name="Herculanum"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20M-Tq-dEw">
+                                <rect key="frame" x="97" y="82" width="238" height="59"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Meanings">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50196081399917603" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="25" name="Noteworthy-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Herculanum"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-Ry-Nnl">
+                                <rect key="frame" x="67" y="360" width="247" height="53"/>
+                                <color key="backgroundColor" red="0.45490199329999997" green="0.87450987099999999" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="About Flowers">
+                                        <attributes>
+                                            <color key="NSColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="Noteworthy-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKK-YM-y9u">
+                                <rect key="frame" x="289" y="149" width="64" height="64"/>
+                                <state key="normal" title="Delphiniums" image="delphiniumpaganpurple.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DelphiniumsButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="Api-1h-xx2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdr-oA-oFK">
+                                <rect key="frame" x="161" y="149" width="64" height="64"/>
+                                <state key="normal" title="Mum" image="Mum.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MumButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="alL-uw-dAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21A-Im-1Qv">
+                                <rect key="frame" x="97" y="149" width="64" height="64"/>
+                                <state key="normal" title="Hydrangeas" image="Hydrangeas.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="HydrangeasButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="DVb-O2-VeL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjf-xo-adC">
+                                <rect key="frame" x="161" y="213" width="64" height="64"/>
+                                <state key="normal" title="Orchids" image="Orchids.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OrchidsButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="7I5-eo-jmR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUY-Lh-Dyx">
+                                <rect key="frame" x="289" y="213" width="64" height="64"/>
+                                <state key="normal" title="Iris" image="iris.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="IrisButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="n9x-Hd-4Nl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2Z-eR-hg1">
+                                <rect key="frame" x="129" y="277" width="64" height="64"/>
+                                <state key="normal" title="Lilies" image="Lilies.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LiliesButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="fOd-mF-oig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdJ-mM-fzH">
+                                <rect key="frame" x="193" y="278" width="64" height="63"/>
+                                <state key="normal" title="SnapDragons" image="Snapdragons.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SnapdragonsButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="HIB-kF-fcL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5x-Ek-rsJ">
+                                <rect key="frame" x="225" y="213" width="64" height="64"/>
+                                <state key="normal" title="Alstroemeria" image="AboutPageAlstroemeria.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AlstroemeriaButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="jJV-vp-mSz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhD-UC-ZLO">
+                                <rect key="frame" x="225" y="149" width="64" height="64"/>
+                                <state key="normal" title="Calla" image="Calla.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CallaButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="RX8-QJ-36i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-oq-Si2">
+                                <rect key="frame" x="33" y="213" width="64" height="64"/>
+                                <state key="normal" title="Rose" image="AboutPageRose.jpeg"/>
+                                <connections>
+                                    <action selector="RoseButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="WaS-Kv-gvb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi5-ol-pbQ">
+                                <rect key="frame" x="33" y="149" width="64" height="64"/>
+                                <state key="normal" title="Daisy" image="Daisy.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DaisyButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="oTm-s7-SaZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIN-l4-rqX" userLabel="Description">
+                                <rect key="frame" x="12" y="410" width="350" height="200"/>
+                                <color key="backgroundColor" red="0.42349634330000002" green="1" blue="0.69393434139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Flower Info.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.16078431372549021" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-MP-sUn">
+                                <rect key="frame" x="97" y="213" width="64" height="64"/>
+                                <state key="normal" title="Sunflowers" image="Sunflowers.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SunflowersButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="Uwh-d9-rLE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="Vzc-Ut-wQB"/>
+                    <tabBarItem key="tabBarItem" title="About" image="character-a-7.png" id="Vzc-Ut-wQB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="AboutFlowers" destination="Bpv-Ry-Nnl" id="VBK-gQ-YdH"/>
+                        <outlet property="Description" destination="NIN-l4-rqX" id="WPD-4F-jLz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAc-p5-jMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2520.5" y="457.5"/>
+            <point key="canvasLocation" x="1828.5" y="483.5"/>
         </scene>
         <!--Florists-->
         <scene sceneID="F8d-sI-b2z">
@@ -373,7 +677,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Area Code" id="AOQ-rR-ZrW">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="Zip Code" placeholder="Area Code" id="AOQ-rR-ZrW">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -382,7 +686,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="WIb-iD-ahK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="floristDetailCell" id="WIb-iD-ahK">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIb-iD-ahK" id="ngA-AK-Rp7">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -396,7 +700,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Dhw-Tg-sme" kind="push" id="cEt-6z-tDv"/>
+                                    <segue destination="Dhw-Tg-sme" kind="show" id="cEt-6z-tDv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -422,7 +726,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1980.5" y="457.5"/>
+            <point key="canvasLocation" x="966.5625" y="1380.1056338028168"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dVR-Nu-ESD">
@@ -445,7 +749,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLd-np-IRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67.5" y="-569.5"/>
+            <point key="canvasLocation" x="126.5625" y="-601.58450704225345"/>
         </scene>
         <!--WebPageViewController-->
         <scene sceneID="Fzd-gw-2Zy">
@@ -477,7 +781,7 @@
         <scene sceneID="XNn-Vb-2Bx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ha-A2-EoW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="AT9-ek-NaZ"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-7.png" id="AT9-ek-NaZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dVg-sy-UqV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -490,13 +794,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bU-P8-Z02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654.5" y="457.5"/>
+            <point key="canvasLocation" x="126.5625" y="484.33098591549293"/>
         </scene>
         <!--Florists-->
         <scene sceneID="IJR-i2-oFC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="916-p8-Fe3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Florists" id="8D7-Xs-4qG"/>
+                    <tabBarItem key="tabBarItem" title="Florists" image="shop-7.png" id="8D7-Xs-4qG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ylt-Gf-Rjr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -509,13 +813,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lse-y0-yIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5" y="458.5"/>
+            <point key="canvasLocation" x="966.5625" y="484.33098591549293"/>
         </scene>
         <!--List-->
         <scene sceneID="T4C-1j-1YV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gn6-c9-XH6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" id="csG-0p-Gde"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list-simple-7.png" id="csG-0p-Gde"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pEQ-39-O0w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -528,15 +832,44 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8g-TS-YnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-372.5" y="458.5"/>
+            <point key="canvasLocation" x="-698.4375" y="484.33098591549293"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
+    <resources>
+        <image name="AboutPageAlstroemeria.jpg" width="64" height="64"/>
+        <image name="AboutPageRose.jpeg" width="64" height="64"/>
+        <image name="Calla.jpg" width="64" height="64"/>
+        <image name="Daisy.jpg" width="64" height="64"/>
+        <image name="Hydrangeas.jpg" width="64" height="64"/>
+        <image name="Lilies.jpg" width="64" height="64"/>
+        <image name="Mum.jpg" width="64" height="64"/>
+        <image name="Orchids.jpg" width="64" height="64"/>
+        <image name="Snapdragons.jpg" width="64" height="64"/>
+        <image name="Sunflowers.jpg" width="64" height="64"/>
+        <image name="blue-disabled.png" width="20" height="40"/>
+        <image name="brown-disabled.png" width="20" height="40"/>
+        <image name="character-a-7.png" width="30" height="30"/>
+        <image name="delphiniumpaganpurple.jpg" width="66" height="64"/>
+        <image name="fall-disabled.png" width="40" height="40"/>
+        <image name="green-disabled.png" width="20" height="40"/>
+        <image name="green_check.png" width="32" height="32"/>
+        <image name="iris.png" width="64" height="64"/>
+        <image name="list-simple-7.png" width="30" height="30"/>
+        <image name="orange-disabled.png" width="20" height="40"/>
+        <image name="pink-disabled.png" width="20" height="40"/>
+        <image name="plant-element-7.png" width="30" height="30"/>
+        <image name="purple-disabled.png" width="20" height="40"/>
+        <image name="red-disabled.png" width="20" height="40"/>
+        <image name="search-7.png" width="30" height="30"/>
+        <image name="shop-7.png" width="29" height="30"/>
+        <image name="spring-disabled.png" width="40" height="40"/>
+        <image name="summer-disabled.png" width="40" height="40"/>
+        <image name="turquoise-disabled.png" width="20" height="40"/>
+        <image name="white-disabled.png" width="20" height="40"/>
+        <image name="winter-disabled.png" width="40" height="40"/>
+        <image name="yellow-disabled.png" width="20" height="40"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vqg-AB-9os"/>
+        <segue reference="5Il-Se-tal"/>
     </inferredMetricsTieBreakers>
 </document>
