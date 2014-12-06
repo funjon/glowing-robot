@@ -40,7 +40,6 @@
     _colorTracker = [ColorTracker sharedManager];
     _flowerDb = [FlowerContainer sharedManager];
     _searchResults = [[NSMutableArray alloc] init];
-    
 }
 
 // Need to have a -viewWillAppear so we reload data every time (go back to color picker, add/subtract, need to update data)
@@ -48,8 +47,12 @@
     [super viewWillAppear:animated];
     
     // Get the list of enabled colors
-    _colorSectionTitles = [[NSArray alloc] initWithArray:[_colorTracker getActiveColors]];
-    
+    if ([[_colorTracker getActiveColors] count] == 0) {
+        _colorSectionTitles = [[NSArray alloc] initWithArray:[_colorTracker allColors]];
+    } else {
+        _colorSectionTitles = [[NSArray alloc] initWithArray:[_colorTracker getActiveColors]];
+    }
+        
     // Clear out any previously selected flowers
     _selectedFlowers = [[NSMutableDictionary alloc] init];
     
@@ -58,6 +61,7 @@
         NSArray* temp = [[NSArray alloc] initWithArray:[_flowerDb getFlowersWithColor:color]];
         [_selectedFlowers setObject:temp forKey:[color capitalizedString]];
     }
+
     
     /*
      // DEBUG
@@ -81,55 +85,61 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    if (tableView == self.searchDisplayController.searchResultsTableView) { return 1; }
+    if (self.searchDisplayController.isActive) { return 1; }
     else { return [_colorSectionTitles count]; }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"Checking to see if we're in an SDC or not");
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        NSLog(@"There are %lu rows in this section",[_searchResults count]);
-        
+    if (self.searchDisplayController.isActive) {
+        NSLog(@"[numberOfRowsInSection] I have %lu searchResults to display", [_searchResults count]);
         return [_searchResults count];
     } else {
         // Return the number of rows in the section.
         NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:section] capitalizedString];
         NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
+        NSLog(@"[numberOfRowsInSection] I have %lu flowers to display in this section", [sectionFlowers count]);
         return [sectionFlowers count];
     }
 }
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (tableView == self.searchDisplayController.searchResultsTableView) { return @"Search Results"; }
+    if (self.searchDisplayController.isActive) { return @"Search Results"; }
     else { return [[_colorSectionTitles objectAtIndex:section] capitalizedString]; }
     
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 78;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // Cell bootstrapping data
     static NSString *cellIdentifier = @"FlowerInfoCell";
+
     FlowerInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if( cell == nil ){
         cell  = [[FlowerInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    
+
     NSString* flowerName;
     NSString* flowerImage;
     
-    if (self.tableView == self.searchDisplayController.searchResultsTableView) {
-        flowerName = [_searchResults objectAtIndex:indexPath.row];
+    if (self.searchDisplayController.isActive) {
+        NSLog(@"Trying to populate a default cell");
+        NSLog(@"There are %lu results in searchResults", [_searchResults count]);
+        if ([_searchResults count]) { flowerName = [_searchResults objectAtIndex:indexPath.row]; }
+        cell.textLabel.text = flowerName;
     } else {
         // Data we need for our cell
         NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
         NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
         
         flowerName = [sectionFlowers objectAtIndex:indexPath.row];
+        flowerImage = [[_flowerDb getFlower:flowerName] imageName];
+        cell.flowerName.text = flowerName;
+        cell.flowerImage.image = [UIImage imageNamed:flowerImage];
     }
     
-    flowerImage = [[_flowerDb getFlower:flowerName] imageName];
-
-    cell.flowerName.text = flowerName;
-    cell.flowerImage.image = [UIImage imageNamed:flowerImage];
 
     return cell;
 }
@@ -139,7 +149,6 @@
 }
 
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
-    NSLog(@"Entering filterContentForSearchText");
     // Temporary dict to dedupe results
     NSMutableDictionary* tempDict = [[NSMutableDictionary alloc] init];
     
@@ -151,9 +160,7 @@
     for (NSString* flowerName in [_flowerDb getFlowerNames]) {
         NSString* fColor = [[[_flowerDb getFlower:flowerName] color] lowercaseString];
         NSString* fType = [[[_flowerDb getFlower:flowerName] type] lowercaseString];
-        
-        NSLog(@"Checking %@ with color %@ and type %@",flowerName, fColor, fType);
-        
+ 
         // Check flowerName first
         if ([[flowerName lowercaseString] rangeOfString:[searchText lowercaseString]].location != NSNotFound) {
             [tempDict setObject:@"YES" forKey:flowerName];
@@ -178,7 +185,6 @@
     return YES;
 }
 
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -190,11 +196,19 @@
         // Get the target viewController
         FlowerDetailsViewController* dvc = segue.destinationViewController;
         
-        // Get data we need for the selected cell
-        NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
-        NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
-        
-        NSString* flowerName = [sectionFlowers objectAtIndex:indexPath.row];
+        NSString* flowerName;
+        if (self.searchDisplayController.isActive) {
+            // Get data we need for the selected cell
+            NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
+            NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
+            
+            flowerName = [sectionFlowers objectAtIndex:indexPath.row];
+        } else {
+            if ([_searchResults count]) {
+                flowerName = [_searchResults objectAtIndex:indexPath.row];
+            }
+            \
+        }
         
         // Pass the flower object over to the dvc, let the dvc unpack it.
         dvc.segueFlower = [_flowerDb getFlower:flowerName];
