@@ -139,6 +139,9 @@
 		E15F2EF41A33885600CE1F43 /* iris.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EE81A33885600CE1F43 /* iris.png */; };
 		E15F2EF51A33885600CE1F43 /* Snapdragons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EE91A33885600CE1F43 /* Snapdragons.jpg */; };
 		E15F2EF61A33885600CE1F43 /* Sunflowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EEA1A33885600CE1F43 /* Sunflowers.jpg */; };
+		E15F2EFA1A338F8000CE1F43 /* blueOrchids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EF71A338F8000CE1F43 /* blueOrchids.jpg */; };
+		E15F2EFB1A338F8000CE1F43 /* pinkMum.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EF81A338F8000CE1F43 /* pinkMum.jpeg */; };
+		E15F2EFC1A338F8000CE1F43 /* purpleSnapdragon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E15F2EF91A338F8000CE1F43 /* purpleSnapdragon.jpeg */; };
 		E1CD05A61A1DB13B003B8C77 /* AboutsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */; };
 		E1CD05A91A1DB159003B8C77 /* FloristsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05A81A1DB159003B8C77 /* FloristsWebViewController.m */; };
 		E1CD05AC1A1DB16E003B8C77 /* FlowerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CD05AB1A1DB16E003B8C77 /* FlowerDetailsViewController.m */; };
@@ -301,6 +304,9 @@
 		E15F2EE81A33885600CE1F43 /* iris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iris.png; sourceTree = "<group>"; };
 		E15F2EE91A33885600CE1F43 /* Snapdragons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snapdragons.jpg; sourceTree = "<group>"; };
 		E15F2EEA1A33885600CE1F43 /* Sunflowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sunflowers.jpg; sourceTree = "<group>"; };
+		E15F2EF71A338F8000CE1F43 /* blueOrchids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueOrchids.jpg; sourceTree = "<group>"; };
+		E15F2EF81A338F8000CE1F43 /* pinkMum.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkMum.jpeg; sourceTree = "<group>"; };
+		E15F2EF91A338F8000CE1F43 /* purpleSnapdragon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpleSnapdragon.jpeg; sourceTree = "<group>"; };
 		E1CD05A41A1DB13B003B8C77 /* AboutsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutsPageViewController.h; sourceTree = "<group>"; };
 		E1CD05A51A1DB13B003B8C77 /* AboutsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutsPageViewController.m; sourceTree = "<group>"; };
 		E1CD05A71A1DB159003B8C77 /* FloristsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloristsWebViewController.h; sourceTree = "<group>"; };
@@ -342,6 +348,9 @@
 		7C9A45BD1A31849D0005B726 /* flower */ = {
 			isa = PBXGroup;
 			children = (
+				E15F2EF71A338F8000CE1F43 /* blueOrchids.jpg */,
+				E15F2EF81A338F8000CE1F43 /* pinkMum.jpeg */,
+				E15F2EF91A338F8000CE1F43 /* purpleSnapdragon.jpeg */,
 				7C9A45BE1A3184B30005B726 /* blueDelphinium.png */,
 				7C9A45BF1A3184B30005B726 /* blueHydrangea.png */,
 				7C9A45C01A3184B30005B726 /* blueIris.png */,
@@ -688,9 +697,11 @@
 				7C9A462A1A3184B30005B726 /* purpleOrchids.png in Resources */,
 				7C9A46101A3184B30005B726 /* greenCalla.png in Resources */,
 				7C9A46131A3184B30005B726 /* greenMum.png in Resources */,
+				E15F2EFB1A338F8000CE1F43 /* pinkMum.jpeg in Resources */,
 				E15F2EF61A33885600CE1F43 /* Sunflowers.jpg in Resources */,
 				7CB8312C1A31BD9A00907733 /* brown.png in Resources */,
 				7C9A46271A3184B30005B726 /* purpleDaisy.png in Resources */,
+				E15F2EFC1A338F8000CE1F43 /* purpleSnapdragon.jpeg in Resources */,
 				7C9A460C1A3184B30005B726 /* brownOrchids.png in Resources */,
 				7C9A461D1A3184B30005B726 /* pinkAlstroemerias.png in Resources */,
 				7CB8314C1A31C5BD00907733 /* green-disabled.png in Resources */,
@@ -731,6 +742,7 @@
 				7C9A46441A3184B30005B726 /* yellowLilies.png in Resources */,
 				7C9A46181A3184B30005B726 /* orangeDaisy.png in Resources */,
 				7C9A46141A3184B30005B726 /* greenOrchids.png in Resources */,
+				E15F2EFA1A338F8000CE1F43 /* blueOrchids.jpg in Resources */,
 				7CE5DDCF1A2FF44700555DA4 /* green_check.png in Resources */,
 				E15F2EEB1A33885600CE1F43 /* AboutPageAlstroemeria.jpg in Resources */,
 				7CB8311B1A31BBBA00907733 /* spring-disabled.png in Resources */,
