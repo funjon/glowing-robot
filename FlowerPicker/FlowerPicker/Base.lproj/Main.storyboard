@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="OlH-Do-EYj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rc0-qa-uOq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdt-2h-SFj" userLabel="Red">
-                                <rect key="frame" x="29" y="66" width="120" height="80"/>
+                                <rect key="frame" x="29" y="86" width="120" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.097872770519999999" blue="0.21994973139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Red">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDD-HP-Auw" userLabel="Yellow">
-                                <rect key="frame" x="29" y="154" width="120" height="80"/>
+                                <rect key="frame" x="29" y="174" width="120" height="80"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Yellow">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl0-hQ-isk" userLabel="Orange">
-                                <rect key="frame" x="219" y="66" width="120" height="80"/>
+                                <rect key="frame" x="219" y="86" width="120" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Orange">
                                     <color key="titleColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QC-hX-ldf" userLabel="Purple">
-                                <rect key="frame" x="29" y="330" width="120" height="80"/>
+                                <rect key="frame" x="29" y="350" width="120" height="80"/>
                                 <color key="backgroundColor" red="0.25098040699958801" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Purple">
                                     <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOK-3U-tYD" userLabel="Green">
-                                <rect key="frame" x="219" y="154" width="120" height="80"/>
+                                <rect key="frame" x="219" y="174" width="120" height="80"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Green">
                                     <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYh-rx-aF4" userLabel="Blue">
-                                <rect key="frame" x="219" y="242" width="120" height="80"/>
+                                <rect key="frame" x="219" y="262" width="120" height="80"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Blue">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tD-CH-yV7" userLabel="Turquoise">
-                                <rect key="frame" x="29" y="242" width="120" height="80"/>
+                                <rect key="frame" x="29" y="262" width="120" height="80"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Turquoise">
                                     <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,8 +94,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezP-sg-U47">
-                                <rect key="frame" x="45" y="20" width="284" height="38"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Pick your Flower Color!">
                                         <attributes>
@@ -109,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O68-Hn-n2N" userLabel="Brown">
-                                <rect key="frame" x="219" y="418" width="120" height="80"/>
+                                <rect key="frame" x="219" y="438" width="120" height="80"/>
                                 <color key="backgroundColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Brown">
                                     <color key="titleColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,12 +119,13 @@
                                     <action selector="colorPick:" destination="xLf-Cg-Pca" eventType="touchUpInside" id="YaJ-gA-dFi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpF-NR-YPc">
-                                <rect key="frame" x="29" y="516" width="310" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpF-NR-YPc">
+                                <rect key="frame" x="29" y="529" width="310" height="76"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Flowers Selected">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="18" name="AmericanTypewriter-CondensedBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -133,7 +134,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvE-Zq-BBS" userLabel="White">
-                                <rect key="frame" x="219" y="330" width="120" height="80"/>
+                                <rect key="frame" x="219" y="350" width="120" height="80"/>
                                 <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="White">
                                     <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -144,7 +145,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6W-Ic-OYv" userLabel="Pink">
-                                <rect key="frame" x="29" y="418" width="120" height="80"/>
+                                <rect key="frame" x="29" y="438" width="120" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Pink">
                                     <color key="titleColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,69 +156,71 @@
                                 </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="uoz-lF-PUr" userLabel="Red">
-                                <rect key="frame" x="117" y="114" width="32" height="32"/>
+                                <rect key="frame" x="73" y="110" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Red">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="eib-0n-Q7s" userLabel="Yellow">
-                                <rect key="frame" x="117" y="202" width="32" height="32"/>
+                                <rect key="frame" x="73" y="198" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Yellow">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="MzR-Zt-WQu" userLabel="Turquoise">
-                                <rect key="frame" x="117" y="290" width="32" height="32"/>
+                                <rect key="frame" x="73" y="286" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Turquoise">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsN-y3-eo7" userLabel="Purple">
-                                <rect key="frame" x="117" y="378" width="32" height="32"/>
+                                <rect key="frame" x="73" y="374" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Purple">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRv-4w-QXd" userLabel="Pink">
-                                <rect key="frame" x="117" y="466" width="32" height="32"/>
+                                <rect key="frame" x="73" y="462" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Pink">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="1b0-D3-S1z" userLabel="Brown">
-                                <rect key="frame" x="307" y="466" width="32" height="32"/>
+                                <rect key="frame" x="263" y="462" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Brown">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Qy-1v7" userLabel="White">
-                                <rect key="frame" x="307" y="378" width="32" height="32"/>
-                                <accessibility key="accessibilityConfiguration" label="White">
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
-                            </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-le-F5b" userLabel="Blue">
-                                <rect key="frame" x="307" y="290" width="32" height="32"/>
+                                <rect key="frame" x="263" y="286" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Blue">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-af-NNp" userLabel="Green">
-                                <rect key="frame" x="307" y="202" width="32" height="32"/>
+                                <rect key="frame" x="263" y="198" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Green">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="BVa-aU-mE2" userLabel="Orange">
-                                <rect key="frame" x="307" y="114" width="32" height="32"/>
+                                <rect key="frame" x="263" y="110" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="Orange">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green_check.png" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Qy-1v7" userLabel="White">
+                                <rect key="frame" x="263" y="374" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="White">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Colors" image="plant-element-7.png" id="Kzz-Uk-kaA" userLabel="Colors"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="selectedCount" destination="DpF-NR-YPc" id="jGi-ox-amj"/>
@@ -235,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCi-jm-B5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1530.9375" y="484.33098591549293"/>
+            <point key="canvasLocation" x="-1531.5" y="483.5"/>
         </scene>
         <!--Currently Selected Flowers-->
         <scene sceneID="AyK-BL-c2O">
@@ -492,28 +495,13 @@ Cost</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-La-8fB">
-                                <rect key="frame" x="38" y="20" width="143" height="61"/>
+                                <rect key="frame" x="16" y="42" width="143" height="61"/>
                                 <color key="backgroundColor" red="0.75408687549999998" green="1" blue="0.52466119369999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Flower">
                                         <attributes>
                                             <color key="NSColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="25" name="Papyrus"/>
-                                            <font key="NSOriginalFont" size="17" name="Herculanum"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20M-Tq-dEw">
-                                <rect key="frame" x="97" y="82" width="238" height="59"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Meanings">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50196081399917603" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="25" name="Noteworthy-Bold"/>
                                             <font key="NSOriginalFont" size="17" name="Herculanum"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -655,6 +643,27 @@ Cost</string>
                                     <action selector="SunflowersButton:" destination="hqT-Sc-tIE" eventType="touchUpInside" id="Uwh-d9-rLE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lP-XJ-Oaz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="27"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20M-Tq-dEw">
+                                <rect key="frame" x="124" y="82" width="238" height="59"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Meanings">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50196081399917603" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="25" name="Noteworthy-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Herculanum"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -870,6 +879,6 @@ Cost</string>
         <image name="yellow-disabled.png" width="20" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Il-Se-tal"/>
+        <segue reference="Yt0-F7-vVQ"/>
     </inferredMetricsTieBreakers>
 </document>
