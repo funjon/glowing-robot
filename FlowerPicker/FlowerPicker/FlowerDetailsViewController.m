@@ -13,19 +13,25 @@
 // -location: x: 85 y: 142
 // -size: 220 x 230
 
+@property FlowerContainer* flowerDb;
+
 @end
 
 @implementation FlowerDetailsViewController
+
+@synthesize flowerDb = _flowerDb;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Get the flowerDB
+    _flowerDb = [FlowerContainer sharedManager];
     // Flower data
-    self.flowerName.text = self.segueFlowerName;
-    self.flowerImage.image = [UIImage imageNamed:self.segueFlowerImage];
-    self.dozenCost.text = [NSString stringWithFormat:@"$%.2f", (float)self.segueDozenCost];
-    self.bouquetCost.text = [NSString stringWithFormat:@"$%.2f", (float)self.segueBouquetCost];
+    self.flowerName.text = [[self segueFlower] displayName];
+    self.flowerImage.image = [UIImage imageNamed:[[self segueFlower] imageName]];
+    self.dozenCost.text = [NSString stringWithFormat:@"$%.2f", (double)[[self segueFlower] dozCost]];
+    self.bouquetCost.text = [NSString stringWithFormat:@"$%.2f", (double)[[self segueFlower] boqCost]];
     
     // Set all the seasons and colors to disabled
     self.imageWinter.image = [UIImage imageNamed:@"winter-disabled"];
@@ -34,19 +40,20 @@
     self.imageFall.image = [UIImage imageNamed:@"fall-disabled"];
     
     // Parse the season dictionary
-    for (NSString* season in self.segueSeasonImages.allKeys) {
-        NSLog(@"Looking at season %@, value is %@",season, [[self segueSeasonImages] objectForKey:season]);
-        if ([[[self segueSeasonImages] objectForKey:season] boolValue]) {
-            if ([season isEqualToString:@"winter"]) { self.imageWinter.image = [UIImage imageNamed:season]; }
-            if ([season isEqualToString:@"spring"]) { self.imageSpring.image = [UIImage imageNamed:season]; }
-            if ([season isEqualToString:@"summer"]) { self.imageSummer.image = [UIImage imageNamed:season]; }
-            if ([season isEqualToString:@"fall"])   { self.imageFall.image   = [UIImage imageNamed:season]; }
+    for (NSString* s in [[[self segueFlower] season] allKeys]) {
+//        NSLog(@"Looking at season %@, value is %@", s, [[self segueFlower] season:s] ? @"TRUE" : @"FALSE");
+        if ([[self segueFlower] season:s] == true) {
+            if ([s isEqualToString:@"winter"]) { self.imageWinter.image = [UIImage imageNamed:s]; }
+            if ([s isEqualToString:@"spring"]) { self.imageSpring.image = [UIImage imageNamed:s]; }
+            if ([s isEqualToString:@"summer"]) { self.imageSummer.image = [UIImage imageNamed:s]; }
+            if ([s isEqualToString:@"fall"])   { self.imageFall.image   = [UIImage imageNamed:s]; }
        }
     }
     
     // Parse the colorsForType array
-    for (NSString* color in self.segueColorImages) {
-        NSLog(@"Available color: %@",color);
+    NSArray* colorImages = [[NSArray alloc] initWithArray:[_flowerDb getColorsForType:[[self segueFlower] type]]];
+    for (NSString* color in colorImages) {
+//        NSLog(@"Available color: %@",color);
         if ([color isEqualToString:@"red"])       { self.imageRed.image = [UIImage imageNamed:color];       self.imageRed.alpha = 1;       }
         if ([color isEqualToString:@"orange"])    { self.imageOrange.image = [UIImage imageNamed:color];    self.imageOrange.alpha = 1;    }
         if ([color isEqualToString:@"yellow"])    { self.imageYellow.image = [UIImage imageNamed:color];    self.imageYellow.alpha = 1;    }

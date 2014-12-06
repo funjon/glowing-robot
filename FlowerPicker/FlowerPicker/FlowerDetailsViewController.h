@@ -44,13 +44,6 @@
  * Remote properties - to set via segue
  */
 
-@property (strong, nonatomic) NSString* segueFlowerName;
-@property (strong, nonatomic) NSString* segueFlowerImage;
-@property (nonatomic) NSUInteger segueDozenCost;
-@property (nonatomic) NSUInteger segueBouquetCost;
-
-// We will iterate through these two arrays to figure out which ones
-@property (strong, nonatomic) NSArray* segueColorImages;
-@property (strong, nonatomic) NSDictionary* segueSeasonImages;
+@property (strong, nonatomic) Flower* segueFlower;
 
 @end

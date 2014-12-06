@@ -44,14 +44,14 @@
         
         // Get the flowerbox singleton
         _flowerDb = [FlowerContainer sharedManager];
-        
+        _colorTracker = [ColorTracker sharedManager];
         for (NSString* key in keys) {
             Flower* newFlower = [[Flower alloc] init];
             [newFlower setDisplayName:[[dict objectForKey:key] objectForKey:@"displayName"]];
             [newFlower setColor:[[dict objectForKey:key] objectForKey:@"color"]];
             [newFlower setType:[[dict objectForKey:key] objectForKey:@"type"]];
-            [newFlower setDozCost:(NSUInteger)[[dict objectForKey:key] objectForKey:@"dozCost"]];
-            [newFlower setBoqCost:(NSUInteger)[[dict objectForKey:key] objectForKey:@"boqCost"]];
+            [newFlower setDozCost:(int)[[dict objectForKey:key] objectForKey:@"dozCost"]];
+            [newFlower setBoqCost:(int)[[dict objectForKey:key] objectForKey:@"boqCost"]];
             [newFlower setImageName:[[dict objectForKey:key] objectForKey:@"imageName"]];
             [newFlower setSeason:[[dict objectForKey:key] objectForKey:@"season"]];
             

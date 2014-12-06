@@ -142,17 +142,8 @@
 
         NSString* flowerName = [sectionFlowers objectAtIndex:indexPath.row];
 
-        // Pass data over to the dvc
-        dvc.segueFlowerName = flowerName;
-        dvc.segueFlowerImage = [[_flowerDb getFlower:flowerName] imageName];
-        dvc.segueDozenCost = (int)[[_flowerDb getFlower:flowerName] dozCost];
-        dvc.segueBouquetCost = (int)[[_flowerDb getFlower:flowerName] boqCost];
-        
-        // Send the seasons dictionary
-        dvc.segueSeasonImages = [[_flowerDb getFlower:flowerName] season];
-        
-        // Send the color array
-        dvc.segueColorImages = [_flowerDb getColorsForType:[[_flowerDb getFlower:flowerName] type]];
+        // Pass the flower object over to the dvc, let the dvc unpack it.
+        dvc.segueFlower = [_flowerDb getFlower:flowerName];
     }
 }
 
