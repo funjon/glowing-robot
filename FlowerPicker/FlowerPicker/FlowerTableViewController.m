@@ -6,6 +6,10 @@
 //  Copyright (c) 2014 CDGL. All rights reserved.
 //
 
+/*
+ * This controller class is shared by the List View and the Search view (Tab index 1 and 2).
+ */
+
 #import "FlowerTableViewController.h"
 
 @interface FlowerTableViewController ()
