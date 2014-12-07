@@ -44,8 +44,6 @@
     
     MKCoordinateRegion adjusteDMapView = [self.mapView regionThatFits:myMapView];
     
-
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -74,6 +72,7 @@
         // we have only one annotation, select it's callout
         [self.mapView selectAnnotation:[self.mapView.annotations objectAtIndex:0] animated:YES];
         
+        
         // center the region around this map item's coordinate
         self.mapView.centerCoordinate = mapItem.placemark.coordinate;
     }
@@ -89,7 +88,7 @@
         {
             FloristAnnotation *annotation = [[FloristAnnotation alloc] init];
             annotation.coordinate = item.placemark.location.coordinate;
-            annotation.Title = item.name;
+            annotation.title = item.name;
             annotation.url = item.url;
             [self.mapView addAnnotation:annotation];
         }
@@ -105,6 +104,8 @@
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
     NSLog(@"tap event");
+    
+    // [self performSegueWithIdentifier:@"AnnotationDetail" sender:view];
 }
 
 
@@ -115,6 +116,20 @@
     else
         return UIInterfaceOrientationMaskAllButUpsideDown;
 }
+
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"AnnotationDetail"]) {
+    
+    
+    }
+
+
+}
+
 
 
 #pragma mark - MKMapViewDelegate
@@ -130,6 +145,11 @@
             annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Pin"];
             annotationView.canShowCallout = YES;
             annotationView.animatesDrop = YES;
+            
+            // Add a detail button to the callout.
+            UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            annotationView.rightCalloutAccessoryView = rightButton;
+            
         }
     }
     return annotationView;

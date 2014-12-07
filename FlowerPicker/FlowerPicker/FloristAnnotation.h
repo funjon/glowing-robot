@@ -11,8 +11,8 @@
 @interface FloristAnnotation : NSObject <MKAnnotation>
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, retain) NSString *Title;
-@property (nonatomic, retain) NSString *Subtitle;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *subtitle;
 @property (nonatomic, retain) NSURL *url;
 
 @end
