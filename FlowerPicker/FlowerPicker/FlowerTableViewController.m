@@ -197,17 +197,18 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showItemDetail"]) {
         // Get the current row
-        NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
-        
+        NSIndexPath* indexPath;
         // Get the target viewController
         FlowerDetailsViewController* dvc = segue.destinationViewController;
         
         NSString* flowerName;
         if (self.searchDisplayController.isActive) {
+            indexPath = [[[self searchDisplayController] searchResultsTableView] indexPathForSelectedRow];
             if ([_searchResults count]) {
                 flowerName = [_searchResults objectAtIndex:indexPath.row];
             }
          } else {
+             indexPath = [self.tableView indexPathForSelectedRow];
             // Get data we need for the selected cell
             NSString* sectionTitle = [[_colorSectionTitles objectAtIndex:indexPath.section] capitalizedString];
             NSArray* sectionFlowers = [_selectedFlowers objectForKey:sectionTitle];
@@ -216,6 +217,7 @@
         }
         
         // Pass the flower object over to the dvc, let the dvc unpack it.
+        NSLog(@"Selected row %ld", indexPath.row);
         NSLog(@"Passing flower %@ to the segue", flowerName);
         dvc.segueFlower = [_flowerDb getFlower:flowerName];
     }
