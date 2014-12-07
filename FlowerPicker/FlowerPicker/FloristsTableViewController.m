@@ -77,6 +77,7 @@ static NSString *kCellIdentifier = @"floristDetailCell";
                                                     destination:self.mapViewController];
     
     [self checkForUserLocationStatus];
+    NSLog(@"At the end of viewDidLoad, current lat %f lon %f", self.userLocation.latitude, self.userLocation.longitude);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -148,31 +149,36 @@ static NSString *kCellIdentifier = @"floristDetailCell";
         [self.localSearch cancel];
     }
     
-    MKCoordinateRegion newRegion;
+    MKCoordinateRegion currentLocation;
     
     // Uncomment Lines below to confine the map search area to the user's current location
     //
-    //newRegion.center.latitude = self.userLocation.latitude;
-    //newRegion.center.longitude = self.userLocation.longitude;
+//    currentLocation.center.latitude = self.userLocation.latitude;
+//    currentLocation.center.longitude = self.userLocation.longitude;
+//    
     
+#warning Currently hardcoding location because LocationServices is not updating until AFTER the search
     // Coordinates assigned to Region for testing / more locations for better table building
     // Comment lines below if using code above to get users location
-    newRegion.center.latitude  = 39.281516;
-    newRegion.center.longitude = -76.580806;
+    currentLocation.center.latitude  = 37.323406;
+    currentLocation.center.longitude = -122.038436;
     
     
     // setup the area spanned by the map region:
     // we use the delta values to indicate the desired zoom level of the map,
     //      (smaller delta values corresponding to a higher zoom level)
     //
-    newRegion.span.latitudeDelta = 0.112872;
-    newRegion.span.longitudeDelta = 0.109863;
+    currentLocation.span.latitudeDelta = 0.112872;
+    currentLocation.span.longitudeDelta = 0.109863;
     
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     
-    request.naturalLanguageQuery = @"Florist";
-    request.region = newRegion;
+    request.naturalLanguageQuery = @"florist";
+    request.region = currentLocation;
     
+    [[self locationManager] startUpdatingLocation];
+    
+    NSLog(@"Current lat %f lon %f", self.userLocation.latitude, self.userLocation.longitude);
     MKLocalSearchCompletionHandler completionHandler = ^(MKLocalSearchResponse *response, NSError *error)
     {
         if (error != nil)
@@ -203,8 +209,10 @@ static NSString *kCellIdentifier = @"floristDetailCell";
     {
         self.localSearch = nil;
     }
+    NSLog(@"Current lat %f lon %f", self.userLocation.latitude, self.userLocation.longitude);
     self.localSearch = [[MKLocalSearch alloc] initWithRequest:request];
     
+    NSLog(@"actually starting search");
     [self.localSearch startWithCompletionHandler:completionHandler];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
@@ -254,8 +262,9 @@ static NSString *kCellIdentifier = @"floristDetailCell";
 {
     // remember for later the user's current location
     self.userLocation = newLocation.coordinate;
-    
-    [manager stopUpdatingLocation]; // we only want one update
+    NSLog(@"Set lat %f lon %f", self.userLocation.latitude, self.userLocation.longitude);
+
+//    [manager stopUpdatingLocation]; // we only want one update
     
     manager.delegate = nil;         // we might be called again here, even though we
     // called "stopUpdatingLocation", remove us as the delegate to be sure
@@ -263,6 +272,7 @@ static NSString *kCellIdentifier = @"floristDetailCell";
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
+    
     // report any errors returned back from Location Services
 }
 @end

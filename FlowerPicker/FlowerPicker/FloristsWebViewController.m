@@ -7,18 +7,46 @@
 //
 
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+
 #import "FloristsWebViewController.h"
 #import "FloristAnnotation.h"
 
 
-@interface FloristsWebViewController ()
+@interface FloristsWebViewController () <CLLocationManagerDelegate> {
+    CLPlacemark* currentPlacemark;
+}
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) FloristAnnotation *annotation;
+@property (nonatomic) CLLocationCoordinate2D userLocation;
+@property (nonatomic, strong) CLLocationManager* locationManager;
 
 @end
 
 @implementation FloristsWebViewController
+
+@synthesize locationManager;
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    self.locationManager = [[CLLocationManager alloc ] init];
+    self.locationManager.delegate = self;
+    
+    if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+    
+    MKCoordinateRegion myMapView = MKCoordinateRegionMakeWithDistance(self.userLocation, 20*1609.34, 20*1609.34);
+    
+    MKCoordinateRegion adjusteDMapView = [self.mapView regionThatFits:myMapView];
+    
+
+    
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -74,6 +102,11 @@
     [super viewDidDisappear:animated];
     [self.mapView removeAnnotations:self.mapView.annotations];
 }
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    NSLog(@"tap event");
+}
+
 
 - (NSUInteger)supportedInterfaceOrientations
 {
