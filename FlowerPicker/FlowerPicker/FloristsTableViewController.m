@@ -10,6 +10,9 @@
 #import "FloristsWebViewController.h"
 #import <MapKit/MapKit.h>
 
+// Silence the deprecation warnings of UISearchDisplayController
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 // note: we use a custom segue here in order to cache/reuse the
 //       destination view controller (i.e. MapViewController) each time you select a place
 //
@@ -262,11 +265,11 @@ static NSString *kCellIdentifier = @"floristDetailCell";
 {
     // remember for later the user's current location
     self.userLocation = newLocation.coordinate;
-    NSLog(@"Set lat %f lon %f", self.userLocation.latitude, self.userLocation.longitude);
+    NSLog(@"Set lat %f lon %f from %f %f", self.userLocation.latitude, self.userLocation.longitude, oldLocation.coordinate.latitude, oldLocation.coordinate.longitude);
 
 //    [manager stopUpdatingLocation]; // we only want one update
     
-    manager.delegate = nil;         // we might be called again here, even though we
+//    manager.delegate = nil;         // we might be called again here, even though we
     // called "stopUpdatingLocation", remove us as the delegate to be sure
 }
 
