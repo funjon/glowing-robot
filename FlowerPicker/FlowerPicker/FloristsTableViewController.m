@@ -184,7 +184,7 @@ static NSString *kCellIdentifier = @"floristDetailCell";
         if (error != nil)
         {
             NSString *errorStr = [[error userInfo] valueForKey:NSLocalizedDescriptionKey];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Could not find places"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Florists Found"
                                                             message:errorStr
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"

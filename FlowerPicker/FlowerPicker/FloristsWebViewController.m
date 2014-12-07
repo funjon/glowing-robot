@@ -66,8 +66,8 @@
         // add the single annotation to our map
         FloristAnnotation *annotation = [[FloristAnnotation alloc] init];
         annotation.coordinate = mapItem.placemark.location.coordinate;
-        annotation.title = mapItem.name;
-        annotation.subtitle = mapItem.placemark.addressDictionary[@"Street"];
+        annotation.Title = mapItem.name;
+        annotation.Subtitle = mapItem.placemark.addressDictionary[@"Street"];
         annotation.url = mapItem.url;
         [self.mapView addAnnotation:annotation];
         
@@ -89,7 +89,7 @@
         {
             FloristAnnotation *annotation = [[FloristAnnotation alloc] init];
             annotation.coordinate = item.placemark.location.coordinate;
-            annotation.title = item.name;
+            annotation.Title = item.name;
             annotation.url = item.url;
             [self.mapView addAnnotation:annotation];
         }
