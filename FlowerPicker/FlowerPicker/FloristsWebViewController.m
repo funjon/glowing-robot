@@ -40,9 +40,9 @@
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
     
-    MKCoordinateRegion myMapView = MKCoordinateRegionMakeWithDistance(self.userLocation, 20*1609.34, 20*1609.34);
+    //MKCoordinateRegion myMapView = MKCoordinateRegionMakeWithDistance(self.userLocation, 20*1609.34, 20*1609.34);
     
-    MKCoordinateRegion adjusteDMapView = [self.mapView regionThatFits:myMapView];
+    //MKCoordinateRegion adjustedMapView = [self.mapView regionThatFits:myMapView];
     
 }
 
@@ -105,7 +105,7 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
     NSLog(@"tap event");
     
-    // [self performSegueWithIdentifier:@"AnnotationDetail" sender:view];
+    [self performSegueWithIdentifier:@"AnnotationDetail" sender:view];
 }
 
 
@@ -123,7 +123,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"AnnotationDetail"]) {
-    
+        NSLog(@"called");
     
     }
 

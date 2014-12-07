@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface FloristsWebViewController : UIViewController
+@interface FloristsWebViewController : UIViewController <MKMapViewDelegate>
 
 @property (nonatomic, strong) NSArray *mapItemList;
 @property (nonatomic, assign) MKCoordinateRegion boundingRegion;
