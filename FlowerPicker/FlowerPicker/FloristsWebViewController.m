@@ -11,6 +11,7 @@
 
 #import "FloristsWebViewController.h"
 #import "FloristAnnotation.h"
+#import "FloristDetailViewController.h"
 
 
 @interface FloristsWebViewController () <CLLocationManagerDelegate> {
@@ -105,7 +106,8 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
     NSLog(@"tap event");
     
-    [self performSegueWithIdentifier:@"AnnotationDetail" sender:view];
+    FloristAnnotation *segAnnotation = (FloristAnnotation *)view.annotation;
+    [self performSegueWithIdentifier:@"AnnotationDetail" sender:segAnnotation];
 }
 
 
@@ -124,7 +126,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"AnnotationDetail"]) {
         NSLog(@"called");
-    
+        
+        FloristDetailViewController* dvc = [segue destinationViewController];
+        FloristAnnotation *selectedAnnotation = (FloristAnnotation *)sender;
+       
+        // Pass the florist annotation object to the dvc
+        dvc.florist = selectedAnnotation;
+        NSLog(@"Sending: %@", selectedAnnotation.title);
     }
 
 
